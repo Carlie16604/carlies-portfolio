@@ -1,5 +1,7 @@
 import ReactDOM from "react-dom/client";
 import React from "react";
+import Black_Sig from "./imgs/Black_Sig.png";
+import './App.css'
 // import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 // import AboutMe from './AboutMe';
 
@@ -11,9 +13,7 @@ function App() {
           <p>Projects</p>
           <p>Contact</p>
         </nav>
-        <div>
-          {/* <img src="./Public/Black_Sig.png" className={signatures.logo} alt="Black Signature" /> */}
-        </div>
+          <img src={Black_Sig} className="App-logo" alt="Black Signature" />
           <p>bro?</p>
       </div>
     );
