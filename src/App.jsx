@@ -9,12 +9,14 @@ function App() {
     return (
       <div>
         <nav className='navBar'>
+        <img src={Black_Sig} className="App-logo" alt="Black Signature" />
           <p>About Me</p>
           <p>Projects</p>
           <p>Contact</p>
         </nav>
-          <img src={Black_Sig} className="App-logo" alt="Black Signature" />
-          <p>bro?</p>
+        <div>
+          <h1>Hello</h1>
+        </div>
       </div>
     );
   };
