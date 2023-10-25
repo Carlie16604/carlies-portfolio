@@ -1,13 +1,22 @@
+:root {
+  --background-light: #ffffff;
+  --background-dark: #202020;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --border-color: #bac7cd;
+}
+
 body {
-  background-color: #687e8d
+  background-color: var(--background-light);
 }
 
 .App-logo {
-  height: 10vmin;
+  height: 8rem;
   pointer-events: none;
-  /* position: absolute; */
+  position: fixed;
   padding-left: 0.5rem;
   padding-top: 0.5rem;
+  left: 7rem;
 }
 
 .navBar {
@@ -21,17 +30,15 @@ body {
   right: 0;
   padding-right: 2rem;
   padding-bottom: 0.5rem;
-  border-bottom: solid 1px #bac7cd;
   /* align-items: center; */
-  color: rgb(0, 0, 0);
-  background-color: #687e8d
+  background-color: var(--background-light);
 }
 
 .contact{
   display:flex;
   flex-direction: column;
   font-size: 200%;
-  color: #687e8d;
+  color: var(--background-light);
   font-family: monospace;
   font-weight: bold;
   position: fixed;
@@ -39,16 +46,14 @@ body {
   right: 0;
   padding-right: 1rem;
   z-index: 1;
-  border: solid 1px #bac7cd;
-  background-color: #bac7cd;
+  background-color: #89bed7;
   padding: 2rem;
 }
 
 .sideBar {
   display: flex;
   flex-direction: column;
-  color: rgb(255, 255, 255);
-  background-color: #687e8d;
+  background-color: var(--background-light);
   font-family: verdana;
   border-right: 1px solid #bac7cd;
   position: fixed;
@@ -56,7 +61,7 @@ body {
   bottom: 0;
   top: 0;
   padding: 0.5rem;
-  /* justify-content: flex-end; */
+  justify-content: flex-end;
   z-index: 2;
 }
 
@@ -64,20 +69,22 @@ body {
   transform: scale(1.2);
 }
 
-.logo-size {
+.logo-setting {
+  display: flex;
+  justify-content: center;
   width: 40px;
   height: 40px;
   padding: 0.5rem;
   padding-bottom: 3rem;
 }
 
-.logo-setting {
+.logo-size {
   display: flex;
   justify-content: flex-end;
   bottom:0;
   left: 0;
-  width: 40px;
-  height: 40px;
+  width: 40rem;
+  height: 40rem;
   padding: 0.5rem;
   padding-bottom: 3rem;
 }
@@ -86,4 +93,33 @@ body {
   display: flex;
   flex-direction: column;
   padding: 10rem;
+}
+
+.selfie {
+  display: flex;
+  justify-content: fixed;
+  padding-left: 55rem;
+  height: 532px;
+  width: 524px;
+}
+
+.about {
+  font-family: monospace;
+  top: 25rem;
+  position: fixed;
+  left: 9rem;
+  z-index: 3;
+  color: #476472;
+  font-style: bold;
+}
+
+.techstack {
+  display: flex;
+  justify-content: row;
+  font-family: monospace;
+  top: 35rem;
+  position: fixed;
+  left: 9rem;
+  z-index: 3;
+  color: #476472;
 }

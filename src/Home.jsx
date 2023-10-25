@@ -4,7 +4,6 @@ const Home = () => {
     return (
     <>
     <div>
-        <h1 className='name'>Carlie Malone</h1>
         <h1 className='titles'>
             <div>?</div>
             <span>FullStack Developer</span>
