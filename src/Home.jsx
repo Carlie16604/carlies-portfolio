@@ -8,9 +8,9 @@ const Home = () => {
         <h1 className='titles'>
             <div>?</div>
             <span>FullStack Developer</span>
-            <span>UX Developer</span>
             <span>Professional Mucisian</span>
-            <span>Leader</span>
+            <span>UX Developer</span>
+            <span>Problem Solver</span>
         </h1>
     </div>
     </>

@@ -11,28 +11,29 @@
 }
 
 .name {
-    margin-top: 6vw;
-    margin-bottom: 1vw;
+    top: 15rem;
     position: fixed;
-    right: 5vw;
+    left: 9rem;
     font-size: 4vw;
     z-index: 3;
+    color: #687e8d;
+    font-style: bold;
+    text-shadow: 8px 5px 15px #bac7cd;
 }
 
 .titles {
     display: flex;
     position: relative;
-    margin-top: 6vw;
-    margin-bottom: 6vw;
+    top: 0rem;
+    bottom: 6rem;
     font-size: 3vw;
-    color:rgb(140, 177, 125);
+    color:#bac7cd;
 }
 
 .titles span {
     position: absolute;
     width: fit-content;
-    top: 60;
-    width: 5vw;
+    top: 10rem;
     opacity: 0;
     animation: animate2 10s linear infinite;
     text-align: center;
@@ -77,6 +78,6 @@
     animation-delay: 6s;
 }
 
-/* .titles span:nth-child(5) {
+.titles span:nth-child(5) {
     animation-delay: 8s;
-} */
+}

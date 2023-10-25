@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(255, 244, 227);
+  background-color: #687e8d
 }
 
 .App-logo {
@@ -21,40 +21,42 @@ body {
   right: 0;
   padding-right: 2rem;
   padding-bottom: 0.5rem;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px #bac7cd;
   /* align-items: center; */
   color: rgb(0, 0, 0);
-  background-color: rgb(140, 177, 125);
+  background-color: #687e8d
 }
 
 .contact{
   display:flex;
   flex-direction: column;
-  text-shadow: 1px 1px 6px rgb(255, 255, 255);
   font-size: 200%;
-  color: rgb(140, 177, 125);
+  color: #687e8d;
   font-family: monospace;
   font-weight: bold;
   position: fixed;
   top: 0;
   right: 0;
   padding-right: 1rem;
-  z-index: 3;
+  z-index: 1;
+  border: solid 1px #bac7cd;
+  background-color: #bac7cd;
+  padding: 2rem;
 }
 
 .sideBar {
   display: flex;
   flex-direction: column;
   color: rgb(255, 255, 255);
-  background-color: rgb(140, 177, 125);
+  background-color: #687e8d;
   font-family: verdana;
-  border-right: 1px black solid;
+  border-right: 1px solid #bac7cd;
   position: fixed;
   left: 0;
   bottom: 0;
   top: 0;
   padding: 0.5rem;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   z-index: 2;
 }
 
@@ -63,6 +65,17 @@ body {
 }
 
 .logo-size {
+  width: 40px;
+  height: 40px;
+  padding: 0.5rem;
+  padding-bottom: 3rem;
+}
+
+.logo-setting {
+  display: flex;
+  justify-content: flex-end;
+  bottom:0;
+  left: 0;
   width: 40px;
   height: 40px;
   padding: 0.5rem;
