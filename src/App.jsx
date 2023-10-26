@@ -8,11 +8,11 @@ import Postgresql from './imgs/PSQL.png';
 import React_logo from './imgs/React-icon.svg.png';
 import JS from './imgs/JavaScript-logo.png';
 import './App.css';
-import Home from './Home.jsx';
+import Home from './Titles.jsx';
 // import About from './AboutMe.jsx';
 import selfie from './imgs/selfie.png';
 // import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-// import AboutMe from './AboutMe';
+import About from './AboutMe.jsx';
 
 function App() {
   // const toggleButton = document.querySelector('#theme-toggle');
@@ -66,7 +66,7 @@ function App() {
           </div>
         </div>
       </div>
-      {/* About Section */}
+      <About />
     </div>
     </>
   )

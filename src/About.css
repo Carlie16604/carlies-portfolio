@@ -1,15 +1,21 @@
 .about {
     background-color: white;
-    padding: 15rem;
+    padding: 8rem;
 }
 
 .about-content {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
 }
 
-.about-img {
-    position: relative;
+.img-about {
+    display: flex;
+    background-position: 50%;
+    background-size: cover;
+    border: 3px solid #2d2e32;
+    border-radius: 25%;
+    height: 425px;
+    width: 430px;
 }

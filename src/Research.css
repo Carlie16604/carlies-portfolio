@@ -1,0 +1,33 @@
+body { margin: 0; padding: 0; }
+
+.page {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.usage {
+  position: absolute;
+  top: 40px;
+  line-height: 50px;
+  z-index: 1000;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  font-family: "Arial Black", Gadget, sans-serif;
+  pointer-events: none;
+}
+
+h1{
+  color: white;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+/* use for research section */
