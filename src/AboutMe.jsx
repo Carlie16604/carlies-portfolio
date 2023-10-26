@@ -1,10 +1,14 @@
+import './About.css';
+
 const About = () => {
     return (
-        <>
-        <div>
-            <p></p>
+        <section className='about' id='about'>
+        <div className='container'>
+          <div className='about-content'>
+            
+          </div>
         </div>
-        </>
+      </section>
     );
 };
 

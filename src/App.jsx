@@ -9,7 +9,6 @@ import React_logo from './imgs/React-icon.svg.png';
 import JS from './imgs/JavaScript-logo.png';
 import './App.css';
 import Home from './Home.jsx';
-import './Home.css';
 // import About from './AboutMe.jsx';
 import selfie from './imgs/selfie.png';
 // import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
@@ -29,35 +28,81 @@ function App() {
 
     return (
       <>
-        <nav className='navBar'>
+      <div id='root'>
+        <nav>
           <img src={Black_Sig} className="App-logo" alt="Black Signature" />
-        {/* <button id="theme-toggle">Click Me!</button> */}
-            {/* <img className='logo-size' src={Nav} alt="Nav" /> */}
+          <section>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </section>
         </nav>
-        <p className='contact'>CONTACT</p>
-        <div className='sideBar'>
-          <a href='https://github.com/Carlie16604'>
-            <img src={Github} className='logo-setting' alt="Github"/>
-          </a>
-          <a href='https://www.linkedin.com/in/carlie-malone23/'>
-            <img src={LinkedIn} className='logo-setting' alt="LinkedIn" />
-          </a>
+      <div className='sideBar'>
+        <a href='https://github.com/Carlie16604'>
+          <img src={Github} className='logo-setting' alt="Github"/>
+        </a>
+        <a href='https://www.linkedin.com/in/carlie-malone23/'>
+          <img src={LinkedIn} className='logo-setting' alt="LinkedIn" />
+        </a>
+      </div>
+      <div id='home' className='media'>
+        <div className='container'>
+          <div className='content'>
+            <div className='port-main'>
+              <div className='port-text'><Home /><br/><br/>
+              {/* dont leave the breaks here lol */}
+                <p>Hey, I'm Carlie. I'm a software engineer / fullstack developer with an eye for style. With my psychology degree, I implement seemless applications and excellent user interface.</p>
+                <p>📍 Denver, CO</p>
+                </div>
+              <img className='selfie' src={selfie} alt='selfie'/>
+            </div>
+            <div className='techStack'>
+              <p>Tech Stack |</p>
+                <img src={Postgresql} className='logo-setting' alt='PostgresQL logo' />
+                <img src={JS} className='logo-space' alt='JS logo' />
+                <img src={React_logo} className='logo-setting' alt='react logo' />
+            </div>
+          </div>
         </div>
-        <Home />
-        <div className='about'>
-          <p>My name is Carlie. I'm a software engineer / fullstack developer with an eye for style.</p>
-          <p>With my psychology degree, I implement seemless applications and excellent user interface.</p>
-          <p>Denver, CO</p>
-        </div>
-        <p className='techstack'>Tech Stack | 
-          <img src={Postgresql} className='logo-setting' alt='PostgresQL logo' />
-          <img src={JS} className='logo-setting' alt='JS logo' />
-          <img src={React_logo} className='logo-setting' alt='react logo' />
-          <img></img>
-        </p>
-        <img src={selfie} className='selfie' alt='selfie'/>
-      </>
-    );
-  };
+      </div>
+      {/* About Section */}
+    </div>
+    </>
+  )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//       <div className='grid'>
+//         <nav className='navBar'>
+//           <img src={Black_Sig} className="App-logo" alt="Black Signature" />
+//         {/* <button id="theme-toggle">Click Me!</button> */}
+          //  <img className='logo-size' src={Nav} alt="Nav" />
+//         </nav>
+//         <p className='contact'>CONTACT</p>
+//         <Home />
+//         <div className='about'>
+//           <br/>
+//         </div>
+//         <p className='techstack'>Tech Stack | 
+//           <img></img>
+//         </p>
+//         <img src={selfie} className='selfie' alt='selfie'/>
+//       </div>
+//       </>
+//     );
+//   };
 
 export default App;
