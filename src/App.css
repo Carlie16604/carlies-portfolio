@@ -139,6 +139,7 @@ nav section a:hover {
   top: 0;
   padding: 0.5rem;
   justify-content: flex-end;
+  align-items: center;
   z-index: 2;
 }
 
