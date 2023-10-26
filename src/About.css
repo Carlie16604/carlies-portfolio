@@ -1,0 +1,15 @@
+.about {
+    background-color: white;
+    padding: 15rem;
+}
+
+.about-content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-img {
+    position: relative;
+}
