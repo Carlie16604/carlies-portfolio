@@ -39,10 +39,10 @@ function App() {
           </section>
         </nav>
       <div className='sideBar'>
-        <a href='https://github.com/Carlie16604'>
+        <a href='https://github.com/Carlie16604' target='_blank'>
           <img src={Github} className='logo-setting' alt="Github"/>
         </a>
-        <a href='https://www.linkedin.com/in/carlie-malone23/'>
+        <a href='https://www.linkedin.com/in/carlie-malone23/' target='_blank'>
           <img src={LinkedIn} className='logo-setting' alt="LinkedIn" />
         </a>
       </div>
