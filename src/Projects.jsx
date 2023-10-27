@@ -1,6 +1,6 @@
 import React from 'react';
 import capstone from './imgs/capstone.png';
-import './projects.css';
+import './Projects.css';
 import github from './imgs/Github.png';
 import preview from './imgs/preview.png';
 
