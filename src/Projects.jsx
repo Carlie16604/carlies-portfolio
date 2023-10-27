@@ -36,7 +36,7 @@ const Projects = () => {
                                     </a>
                                     <a href='https://black-market-50e6.onrender.com/' target='_blank'>
                                         <img src={preview} className='pro-setting' title='View the Website' alt='preview icon'/>
-                                        <p>Deploy!</p>
+                                        <p>Live Demo</p>
                                     </a>
                                 </div>
                             </div>
