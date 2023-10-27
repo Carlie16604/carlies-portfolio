@@ -5,6 +5,9 @@ import Github from "./imgs/Github.png";
 import LinkedIn from "./imgs/LinkedIn.png";
 // import Nav from "./imgs/lines.png";
 import Postgresql from './imgs/PSQL.png';
+import nodejs from './imgs/nodejs.png';
+import html from './imgs/html.png';
+import css from './imgs/css.png';
 import React_logo from './imgs/React-icon.svg.png';
 import JS from './imgs/JavaScript-logo.png';
 import './App.css';
@@ -31,11 +34,11 @@ function App() {
       <div id='root'>
         <nav>
           <img src={Black_Sig} className="App-logo" alt="Black Signature" />
-          <section>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+          <section className='navFormat'>
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
           </section>
         </nav>
       <div className='sideBar'>
@@ -59,9 +62,12 @@ function App() {
             </div>
             <div className='techStack'>
               <p>Tech Stack |</p>
-                <img src={Postgresql} className='logo-setting' alt='PostgresQL logo' />
+                <img src={html} className='logo-space' alt='html logo' />
+                <img src={css} className='logo-space' alt='css logo' />
                 <img src={JS} className='logo-space' alt='JS logo' />
-                <img src={React_logo} className='logo-setting' alt='react logo' />
+                <img src={Postgresql} className='logo-space' alt='PostgresQL logo' />
+                <img src={React_logo} className='logo-space' alt='react logo' />
+                <img src={nodejs} className='logo-space' alt='node.js logo' />
             </div>
           </div>
         </div>
