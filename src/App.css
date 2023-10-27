@@ -47,7 +47,7 @@ nav > section {
   padding-right: 175px;
 }
 
-a {
+.navFormat a {
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -129,16 +129,15 @@ nav section a:hover {
 }
 
 .sideBar {
-  grid-column: 1/2;
+  /* grid-column: 1/2; */
   display: flex;
   flex-direction: column;
   /* background-color: var(--background-light); */
   position: fixed;
   left: 0;
   bottom: 0;
-  top: 0;
   padding: 0.5rem;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   align-items: center;
   z-index: 2;
 }
@@ -149,12 +148,11 @@ nav section a:hover {
 
 .logo-setting {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 40px;
   height: 40px;
-  /* padding: 0.5rem; */
-  /* padding-bottom: 3rem; */
+  padding: 0.5rem;
+  padding-bottom: 3rem;
 }
 
 .logo-size {
@@ -172,7 +170,7 @@ nav section a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2rem; 
+  padding: 1rem; 
   width: 40px;
   height: 40px;
 }
