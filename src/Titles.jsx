@@ -7,7 +7,7 @@ const Home = () => {
         <h1 className='titles'>
             <span>FullStack Developer</span>
             <span>Successful Musician</span>
-            <span>UX Developer</span>
+            <span>UX / UI Developer</span>
             <span>Problem Solver</span>
         </h1>
     </div>

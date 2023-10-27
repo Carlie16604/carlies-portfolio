@@ -1,21 +1,19 @@
 import ReactDOM from "react-dom/client";
-import React from "react";
+import React, {useEffect, useRef} from "react";
+import './App.css';
 import Black_Sig from "./imgs/Black_Sig.png";
 import Github from "./imgs/Github.png";
 import LinkedIn from "./imgs/LinkedIn.png";
-// import Nav from "./imgs/lines.png";
 import Postgresql from './imgs/PSQL.png';
 import nodejs from './imgs/nodejs.png';
 import html from './imgs/html.png';
 import css from './imgs/css.png';
 import React_logo from './imgs/React-icon.svg.png';
-import JS from './imgs/JavaScript-logo.png';
-import './App.css';
-import Home from './Titles.jsx';
-// import About from './AboutMe.jsx';
 import selfie from './imgs/selfie.png';
-// import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import JS from './imgs/JavaScript-logo.png';
+import Home from './Titles.jsx';
 import About from './AboutMe.jsx';
+import Projects from './Projects.jsx';
 
 function App() {
   // const toggleButton = document.querySelector('#theme-toggle');
@@ -28,6 +26,13 @@ function App() {
   //     body.classList.add('dark-mode');
   //   }
   // });
+  // function scrollToSection(id) {
+  //   window.scroll({
+  //     top: document.useRef(id),
+  //     //fix this
+  //     left: 0,
+  //     behavior: 'smooth',
+  //   });
 
     return (
       <>
@@ -38,7 +43,7 @@ function App() {
               <a href="#home">Home</a>
               <a href="#about">About</a>
               <a href="#projects">Projects</a>
-              <a href="#contact">Contact</a>
+              {/* <a href="#contact">Contact</a> */}
           </section>
         </nav>
       <div className='sideBar'>
@@ -62,20 +67,21 @@ function App() {
             </div>
             <div className='techStack'>
               <p>Tech Stack |</p>
-                <img src={html} className='logo-space' alt='html logo' />
-                <img src={css} className='logo-space' alt='css logo' />
-                <img src={JS} className='logo-space' alt='JS logo' />
-                <img src={Postgresql} className='logo-space' alt='PostgresQL logo' />
-                <img src={React_logo} className='logo-space' alt='react logo' />
-                <img src={nodejs} className='logo-space' alt='node.js logo' />
+                <img src={html} className='logo-space' title='HTML' alt='html logo' />
+                <img src={css} className='logo-space' title='CSS' alt='css logo' />
+                <img src={JS} className='logo-space' title='JavaScript' alt='JS logo' />
+                <img src={Postgresql} className='logo-space' title='Postgresql' alt='PostgresQL logo' />
+                <img src={React_logo} className='logo-space' title='React' alt='react logo' />
+                <img src={nodejs} className='logo-space' title='Node.js' alt='node.js logo' />
             </div>
           </div>
         </div>
       </div>
       <About />
+      <Projects />
     </div>
     </>
-  )
+  ) 
 }
 
 

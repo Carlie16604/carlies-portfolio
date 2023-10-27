@@ -1,15 +1,6 @@
-/* .titles {
-    display: flex;
-    flex-direction: column;
-    padding: 10rem;
-} */
-
 .titles {
     display: flex;
     position: relative;
-    /* top: 7rem;
-    bottom: 6rem; */
-    /* right:0; */
     font-size: 3vw;
     color:rgb(49, 181, 225);
     font-family: monospace;
@@ -19,8 +10,6 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    /* width: fit-content; */
-    /* top: 10rem; */
     opacity: 0;
     animation: animate2 10s linear infinite;
     text-align: center;
