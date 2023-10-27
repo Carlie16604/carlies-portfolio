@@ -1,0 +1,145 @@
+.projects-grid {
+    grid-gap: 5rem;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: auto;
+    width: 100%;
+} 
+
+.projects-grid .pro__img {
+    background-color: hsla(0,0%,46%,.2);
+    border-radius: 1.7rem;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    height: 35rem;
+    overflow: hidden;
+    width: 30rem; 
+}
+
+.pro__img {
+    height: 50px;
+    width: 50px;
+}
+
+.projects-grid .pro {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 1.7rem;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    gap: 8rem;
+    padding: 2rem;
+}
+
+.projects-grid .pro__1 {
+    flex-direction: row;
+    gap: 8rem;
+    padding: 2rem;
+}
+
+.projects-grid .pro {
+    background-color: #fff;
+    border-radius: 1.7rem;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    display: flex;
+}
+
+.projects-grid .pro_img .capstone_pro {
+    transform: translateY(0%); 
+    transition: transform 10s ease-in-out 0s;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.projects-grid .pro__text h3 {
+    align-items: center;
+    color: #2d2e32;
+    display: flex;
+    font-size: 1.7rem;
+    gap: 0.2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.projects-grid .date-class {
+    color: hsla(0,5%,8%,.773);
+    font-size: 1.4rem;
+    margin-left: 0.2rem;
+}
+
+.stack {
+    display:flex;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    text-align: center;
+    margin: 4rem;
+}
+
+.projects-grid .stack {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.pro__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pro__text > .stack {
+    display: flex;
+    flex-direction: column;
+}
+
+#description {
+    width: 100%;
+    font-family: monospace;
+    text-align:left;
+}
+
+.portfolio-title {
+    font-family: monospace;
+    color:rgb(49, 181, 225);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.links a .pro-setting:hover {
+    transform: scale(1.2);
+    transition: all .23s;
+}
+
+.links {
+    display: flex;
+}
+
+.links p {
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+    color: black;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links p:hover {
+    color:rgb(49, 181, 225);
+    transition: all .23s;
+}
+
+.pro-setting {
+    margin: 0px 25px;
+    width: 40px;
+    height: 40px;
+    padding: 0.5rem;
+}
