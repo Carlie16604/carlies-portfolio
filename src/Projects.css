@@ -1,3 +1,12 @@
+.port-container {
+    background-color: #f9f9f9;
+    /* padding-top: 5rem; */
+    display: flex;
+    margin: 0px auto 0px auto;
+    max-width: 107rem;
+    padding: 60px 4rem 0px 4rem;
+}
+
 .projects-grid {
     grid-gap: 5rem;
     display: grid;
