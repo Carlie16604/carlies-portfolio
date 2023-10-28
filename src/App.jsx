@@ -12,7 +12,7 @@ import css from './imgs/css.png';
 import React_logo from './imgs/React-icon.svg.png';
 import selfie from './imgs/selfie.png';
 import JS from './imgs/JavaScript-logo.png';
-import Home from './Titles.jsx';
+import Titles from './Titles.jsx';
 import About from './AboutMe.jsx';
 import Projects from './Projects.jsx';
 
@@ -56,10 +56,11 @@ function App() {
         </a>
       </div>
       <div id='home' className='media'>
+        {/* rename to className home */}
         <div className='container'>
           <div className='content'>
             <div className='port-main'>
-              <div className='port-text'><Home /><br/><br/>
+              <div className='port-text'><Titles /><br/><br/>
               {/* dont leave the breaks here lol */}
                 <p>Hey, I'm Carlie. I'm a software engineer / fullstack developer with an eye for style. With my psychology degree, I implement seemless applications and excellent user interface.</p>
                 <p>📍 Denver, CO</p>

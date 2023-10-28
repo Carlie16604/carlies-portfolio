@@ -23,7 +23,7 @@ const Projects = () => {
                                     <p id='description'>
                                         <li>Worked closely with a diverse team of 4, collaborating on all aspects of the project including project planning, design, development and deployment.</li><br/>
                                         <li>Responsible for verification, importing & exporting, routes, front & backend debugging, etc.</li><br/>
-                                        <li>Played a pivotal role in building the platform, contributing to the frontend using React.js and backend utilizing Node.js, demonstrating proficiency in flil-stack development.</li><br/>
+                                        <li>Played a pivotal role in building the platform, contributing to the frontend using React.js and backend utilizing Node.js, demonstrating proficiency in full-stack development.</li><br/>
                                         <li>Excelled in communication, database management, project board, tasks management, human-computer interactions.</li><br/>
                                     </p>
                                 <div className='stack'>

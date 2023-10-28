@@ -1,12 +1,12 @@
 import './titles.css'
 
-const Home = () => {
+const Titles = () => {
     return (
     <>
     <div>
         <h1 className='titles'>
             <span>FullStack Developer</span>
-            <span>Successful Musician</span>
+            <span>Professional Musician</span>
             <span>UX / UI Developer</span>
             <span>Problem Solver</span>
         </h1>
@@ -15,4 +15,4 @@ const Home = () => {
     );
 };
 
-export default Home
+export default Titles
