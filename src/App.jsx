@@ -1,6 +1,7 @@
 import ReactDOM from "react-dom/client";
 import React, {useEffect, useRef} from "react";
 import './App.css';
+import './Projects.css';
 import Black_Sig from "./imgs/Black_Sig.png";
 import Github from "./imgs/Github.png";
 import LinkedIn from "./imgs/LinkedIn.png";
