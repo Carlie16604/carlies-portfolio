@@ -110,12 +110,12 @@ img {
 
 #description {
     width: 100%;
-    font-family: monospace;
+    font-family: poppins, sans-serif;
     text-align:left;
 }
 
 .portfolio-title {
-    font-family: monospace;
+    font-family: poppins, sans-serif;
     color:rgb(49, 181, 225);
     font-size: 25px;
     font-weight: 500;
