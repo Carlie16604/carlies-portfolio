@@ -116,7 +116,7 @@ nav section a:hover {
   flex-direction: column;
   max-width: 50rem;
   position: relative;
-  font-family: monospace;
+  font-family: poppins, sans-serif;
 }
 
 .sideBar {
@@ -180,7 +180,7 @@ nav section a:hover {
 
 .techStack {
   display: flex;
-  font-family: monospace;
+  font-family: poppins, sans-serif;
   align-items: center;
   bottom: 0;
   color: #767676;
