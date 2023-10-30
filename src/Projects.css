@@ -71,7 +71,7 @@ img {
     font-size: 1.7rem;
     gap: 0.2rem;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     position: relative;
     text-transform: uppercase;
 }
@@ -111,7 +111,23 @@ img {
 #description {
     width: 100%;
     font-family: poppins, sans-serif;
-    text-align:left;
+    padding-left: 2rem;
+}
+
+.desc1 {
+    width: 100%;
+    font-family: poppins, sans-serif;
+    text-align: center;
+}
+
+.desc2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: poppins, sans-serif;
+    color:rgb(49, 181, 225);
 }
 
 .portfolio-title {

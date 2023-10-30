@@ -4,14 +4,17 @@
 }
 
 .about-content {
+    grid-gap: 5rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: column;
+    gap: 5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: auto;
+    width: 100%;
 }
 
 .img-about {
-    display: flex;
-    flex-wrap: wrap;
     background-position: 50%;
     background-size: cover;
     border: 3px solid #2d2e32;
@@ -22,8 +25,8 @@
 
 .text-about {
     font-family: poppins, sans-serif;
-    padding-left: 6rem;
-    padding-left: 6rem;
+    /* padding-left: 6rem; */
+    /* padding-top: 6rem; */
 }
 
 .text-title {
@@ -32,7 +35,7 @@
     text-decoration: none;
     font-family: poppins, sans-serif;
     color:rgb(49, 181, 225);
-    padding-left: 6rem;
+    padding-top: 6rem;
     overflow: hidden; 
     border-right: .15em solid;
     white-space: nowrap; 
