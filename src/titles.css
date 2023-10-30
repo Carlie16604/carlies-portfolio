@@ -3,7 +3,8 @@
     position: relative;
     font-size: 3vw;
     color:rgb(49, 181, 225);
-    font-family: poppins, sans-serif;;
+    font-family: poppins, sans-serif;
+    padding-bottom: 3rem;
 }
 
 .titles span {

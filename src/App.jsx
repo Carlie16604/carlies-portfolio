@@ -60,8 +60,8 @@ function App() {
         <div className='container'>
           <div className='content'>
             <div className='port-main'>
-              <div className='port-text'><Titles /><br/><br/>
-              {/* dont leave the breaks here lol */}
+              <div className='port-text'>
+                <Titles />
                 <p>Hey, I'm Carlie. I'm a software engineer / fullstack developer with an eye for style. With my psychology degree, I implement seemless applications and excellent user interface.</p>
                 <p>📍 Denver, CO</p>
                 </div>
