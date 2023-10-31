@@ -10,9 +10,10 @@ const Contact = () => {
                 <div className='cont-container'> 
                     <h1 className='cont-title'>Contact</h1>
                         <h3>Feel free to reach out to me!</h3>
+                        <img src={mail} className='logo-setting' alt='Mail PNG' />
                             <div className='cont-info'>
-                                <img src={mail} className='logo-setting' alt='Mail PNG' />
-                                <p>Email: carliemaloneco@gmail.com</p>
+                                <p>Email:</p>
+                                <a className='email' href='mailto:carliemaloneco@gmail.com'>carliemaloneco@gmail.com</a>
                             </div>
                     {/* <p>Location: Broomfield, CO?</p> */}
                 </div>
