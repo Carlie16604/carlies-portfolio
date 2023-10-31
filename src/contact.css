@@ -1,0 +1,25 @@
+.contact {
+    background-color: white;
+    padding: 8rem;
+}
+
+.cont-container {
+    grid-gap: 5rem;
+    height: auto;
+    width: 100%;
+}
+
+.cont-title {
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+    color:rgb(49, 181, 225);
+}
+
+.cont-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
