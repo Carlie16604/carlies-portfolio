@@ -7,16 +7,24 @@ const Contact = () => {
     return (
         <>
             <section id='contact' className='contact'>
-                <div className='cont-container'> 
-                    <h1 className='cont-title'>Contact</h1>
-                        <h3>Feel free to reach out to me!</h3>
-                        <img src={mail} className='logo-setting' alt='Mail PNG' />
+                <div className='container'> 
+                    <div className='cont-content'>
+                        <div className='cont-title'>
+                            <p>Contact</p>
+                            <h3>Feel free to reach out to me!</h3>
+                        </div>
+                    <div className='cont-icons'>
+                        <div className='cont-icon-box'>
+                            <img src={mail} className='cont-logo-setting' alt='Mail PNG' />
                             <div className='cont-info'>
-                                <p>Email:</p>
+                                <h3>Email:</h3>
                                 <a className='email' href='mailto:carliemaloneco@gmail.com'>carliemaloneco@gmail.com</a>
                             </div>
-                    {/* <p>Location: Broomfield, CO?</p> */}
+                        </div>
+                    </div>
                 </div>
+                    {/* <p>Location: Broomfield, CO?</p> */}
+            </div>
             </section>
         </>
     )

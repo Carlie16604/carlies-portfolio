@@ -1,34 +1,59 @@
 .contact {
-    background-color: white;
-    padding: 5rem 15rem;
-    font-family: poppins, sans-serif;
+    padding: 8rem;
+    /* font-family: poppins, sans-serif; */
+    /* font-size: 1.5rem; */
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 107rem;
+    padding: 0 4rem;
+}
+
+.cont-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-title p {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    /* text-transform: uppercase; */
+    color:rgb(49, 181, 225);
+}
+
+.cont-title h3 {
+    color: #2d2e32;
     font-size: 1.5rem;
 }
 
-.cont-container {
-    grid-gap: 5rem;
-    height: auto;
-    width: 100%;
+.cont-icons {
+    display: flex;
+    flex-direction: row;
+    /* gap: 8rem; */
+    margin-top: 4rem;
 }
 
-.cont-title {
-    font-size: px;
-    font-weight: 500;
-    text-decoration: none;
-    font-family: poppins, sans-serif;
-    color:rgb(49, 181, 225);
+.cont-icons-box {
+    align-items: row;
+    align-items: center;
+    /* gap: 1.5rem; */
+}
+
+.cont-logo-setting {
+    width: 40px;
+    height: 40px;
 }
 
 .cont-info {
     display: flex;
-    flex-wrap: wrap;
-    padding: 0 8rem;
-    font-family: poppins, sans-serif;
-    /* text-decoration: underline; */
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .email {
-   padding: 1.5rem 1rem;
+   /* padding: 1.5rem 1rem; */
    text-decoration: none;
    color: black;
 }
