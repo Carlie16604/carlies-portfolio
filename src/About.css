@@ -4,14 +4,9 @@
 }
 
 .about-content {
-    grid-gap: 5rem;
     display: flex;
     flex-wrap: column;
     gap: 5rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    height: auto;
-    width: 100%;
 }
 
 .img-about {
@@ -25,8 +20,6 @@
 
 .text-about {
     font-family: poppins, sans-serif;
-    /* padding-left: 6rem; */
-    /* padding-top: 6rem; */
 }
 
 .text-title {

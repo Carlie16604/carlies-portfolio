@@ -1,5 +1,4 @@
-import ReactDOM from "react-dom/client";
-import React, {useEffect, useRef} from "react";
+import React from "react";
 import './App.css';
 import './Projects.css';
 import Black_Sig from "./imgs/Black_Sig.png";
@@ -15,6 +14,7 @@ import JS from './imgs/JavaScript-logo.png';
 import Titles from './Titles.jsx';
 import About from './AboutMe.jsx';
 import Projects from './Projects.jsx';
+import Contact from './Contact.jsx';
 
 function App() {
   // const toggleButton = document.querySelector('#theme-toggle');
@@ -44,7 +44,7 @@ function App() {
               <a href="#home">Home</a>
               <a href="#about">About</a>
               <a href="#projects">Projects</a>
-              {/* <a href="#contact">Contact</a> */}
+              <a href="#contact">Contact</a>
           </section>
         </nav>
       <div className='sideBar'>
@@ -55,14 +55,14 @@ function App() {
           <img src={LinkedIn} className='logo-setting' alt="LinkedIn" />
         </a>
       </div>
-      <div id='home' className='media'>
+      <div id='home' className='home'>
         {/* rename to className home */}
         <div className='container'>
           <div className='content'>
             <div className='port-main'>
               <div className='port-text'>
                 <Titles />
-                <p>Hey, I'm Carlie. I'm a software engineer / fullstack developer with an eye for style. With my psychology degree, I implement seemless applications and excellent user interface.</p>
+                <p>Hey, I'm Carlie. I'm a software engineer / fullstack developer with an eye for style. I implement seemless applications and excellent user interface.</p>
                 <p>📍 Denver, CO</p>
                 </div>
               <img className='selfie' src={selfie} alt='selfie'/>
@@ -81,6 +81,7 @@ function App() {
       </div>
       <About />
       <Projects />
+      <Contact />
     </div>
     </>
   ) 
