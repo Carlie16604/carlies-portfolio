@@ -1,16 +1,11 @@
-.port-container {
+.projects {
     background-color: #f9f9f9;
-    /* padding-top: 5rem; */
-    display: flex;
-    margin: 0px auto 0px auto;
-    max-width: 107rem;
-    padding: 60px 4rem 0px 4rem;
+    padding: 4rem;
 }
 
 .projects-grid {
-    grid-gap: 5rem;
     display: grid;
-    gap: 5rem;
+    grid-gap: 5rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     height: auto;
@@ -18,17 +13,17 @@
 } 
 
 .projects-grid .pro__img {
-    background-color: hsla(0,0%,46%,.2);
     border-radius: 1.7rem;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
     height: 35rem;
-    overflow: hidden;
-    width: 30rem; 
+    width: 30rem;
+    margin: auto;
 }
 
 .pro__img {
     height: 50px;
     width: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 .projects-grid .pro {
@@ -43,15 +38,8 @@
 
 .projects-grid .pro__1 {
     flex-direction: row;
-    gap: 8rem;
+    gap: 4rem;
     padding: 2rem;
-}
-
-.projects-grid .pro {
-    background-color: #fff;
-    border-radius: 1.7rem;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
-    display: flex;
 }
 
 .projects-grid .pro_img .capstone_pro {
@@ -71,6 +59,7 @@ img {
     font-size: 1.7rem;
     gap: 0.2rem;
     justify-content: center;
+    align-items: center;
     margin-bottom: 1rem;
     position: relative;
     text-transform: uppercase;
@@ -101,6 +90,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .pro__text > .stack {
@@ -166,5 +156,4 @@ img {
     margin: 0px 25px;
     width: 40px;
     height: 40px;
-    padding: 0.5rem;
 }

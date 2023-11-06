@@ -7,7 +7,7 @@ import preview from './imgs/preview.png';
 const Projects = () => {
     return (
         <section id='projects' className='projects'>
-            <div className='port-container'>
+            <div className='container'>
                 <div className='project-content'>
                     <p className='portfolio-title'>Portfolio</p>
                     <h3>Here's a look at some of my work!</h3>

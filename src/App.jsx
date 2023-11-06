@@ -55,14 +55,14 @@ function App() {
           <img src={LinkedIn} className='logo-setting' alt="LinkedIn" />
         </a>
       </div>
-      <div id='home' className='media'>
+      <div id='home' className='home'>
         {/* rename to className home */}
         <div className='container'>
           <div className='content'>
             <div className='port-main'>
               <div className='port-text'>
                 <Titles />
-                <p>Hey, I'm Carlie. I'm a software engineer / fullstack developer with an eye for style. With my psychology degree, I implement seemless applications and excellent user interface.</p>
+                <p>Hey, I'm Carlie. I'm a software engineer / fullstack developer with an eye for style. I implement seemless applications and excellent user interface.</p>
                 <p>📍 Denver, CO</p>
                 </div>
               <img className='selfie' src={selfie} alt='selfie'/>

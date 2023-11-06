@@ -1,3 +1,2 @@
 # Portfolio
-- [ ] slow down the titles runtime 
-- [ ] finish contact formation
+- [ ] fix container settings (congruent across all sections)

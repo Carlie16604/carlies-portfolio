@@ -28,11 +28,15 @@
     font-size: 1.5rem;
 }
 
+.cont-icon-box{
+    padding-top: 0.5rem;
+}
+
 .cont-icons {
     display: flex;
     flex-direction: row;
-    /* gap: 8rem; */
-    margin-top: 4rem;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .cont-icons-box {
@@ -45,6 +49,7 @@
 .cont-logo-setting {
     width: 40px;
     height: 40px;
+    align-items: center;
 }
 
 .cont-info {
@@ -54,7 +59,8 @@
 }
 
 .email {
-   /* padding: 1.5rem 1rem; */
+    justify-content: center;
+   /* padding: .5rem 1rem; */
    text-decoration: none;
    color: black;
 }
