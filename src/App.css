@@ -178,18 +178,10 @@ nav section a:hover {
   padding-left: 5rem;
 }
 
-/* .contact{
-  display:flex;
-  flex-direction: column;
-  font-size: 200%;
-  color: var(--background-light);
-  font-family: monospace;
-  font-weight: bold;
-  position: fixed;
-  top: 0;
-  right: 0;
-  padding-right: 1rem;
-  z-index: 1;
-  background-color: #89bed7;
-  padding: 2rem;
+/* @media only screen and (max-width: 1000px) {
+  .text-about {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+  }
 } */
