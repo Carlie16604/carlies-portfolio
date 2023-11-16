@@ -1,5 +1,7 @@
 import React from 'react';
 import mail from './imgs/mail.png';
+import LinkedIn from './imgs/linkedin-cont.png';
+import GitHub from './imgs/github-cont.png';
 import './contact.css';
 import './About.css';
 
@@ -15,12 +17,14 @@ const Contact = () => {
                         </div>
                     <div className='cont-icons'>
                         <img src={mail} className='cont-logo-setting' alt='Mail PNG' />
-                        <div className='cont-icon-box'>
                             <div className='cont-info'>
-                                {/* <h3>Email:</h3> */}
-                                <a className='email' href='mailto:carliemaloneco@gmail.com'>carliemaloneco@gmail.com</a>
+                                <a className='portal' href='mailto:carliemaloneco@gmail.com'>carliemaloneco@gmail.com</a>
                             </div>
-                        </div>
+                        <img src={LinkedIn} className='cont-logo-setting' alt='LinkedIn PNG' />
+                            <div className='cont-info'>
+                                <a className='portal' href='https://www.linkedin.com/in/carlie-malone23/' target='_blank'>Carlie Malone</a>
+                            </div>
+                        {/* <img src={GitHub} className='cont-logo-setting' alt='GitHub PNG' /> */}
                     </div>
                 </div>
                     {/* <p>Location: Broomfield, CO?</p> */}

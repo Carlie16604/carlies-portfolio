@@ -16,6 +16,8 @@
     text-align: center;
 }
 
+/* Add overflow: hidden somewhere so sizing doesn't matter for width */
+
 .titles div {
     opacity: 0;
 }
