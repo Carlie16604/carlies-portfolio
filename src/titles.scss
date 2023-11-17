@@ -2,27 +2,26 @@
     display: flex;
     position: relative;
     font-size: 3vw;
-    color:rgb(49, 181, 225);
+    color: rgb(49, 181, 225);
     font-family: poppins, sans-serif;
     padding-bottom: 3rem;
-}
-
-.titles span {
+    overflow: hidden;
+  }
+  
+  .titles span {
     display: flex;
     flex-direction: column;
     position: absolute;
     opacity: 0;
     animation: animate2 15s linear infinite;
     text-align: center;
-}
-
-/* Add overflow: hidden somewhere so sizing doesn't matter for width */
-
-.titles div {
+  }
+  
+  .titles div {
     opacity: 0;
-}
-
-@keyframes animate2 {
+  }
+  
+  @keyframes animate2 {
     0% {
       opacity: 0;
       transform: translateY(-50px);
@@ -39,24 +38,24 @@
       opacity: 0;
       transform: translateY(50px);
     }
-}
-
-.titles span:nth-child(1) {
-    animation-delay: 0s;
-}
+  }
   
-.titles span:nth-child(2) {
+  .titles span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .titles span:nth-child(2) {
     animation-delay: 3s;
-}
-
-.titles span:nth-child(3) {
+  }
+  
+  .titles span:nth-child(3) {
     animation-delay: 6s;
-}
-
-.titles span:nth-child(4) {
+  }
+  
+  .titles span:nth-child(4) {
     animation-delay: 9s;
-}
-
-.titles span:nth-child(5) {
+  }
+  
+  .titles span:nth-child(5) {
     animation-delay: 12s;
-}
+  }  

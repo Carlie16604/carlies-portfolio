@@ -1,0 +1,54 @@
+.about {
+    padding: 8rem;
+  
+    .about-content {
+      display: flex;
+      flex-wrap: column;
+      gap: 5rem;
+    }
+  
+    .img-about {
+      background-position: 50%;
+      background-size: cover;
+      border: 3px solid #2d2e32;
+      border-radius: 25%;
+      height: 425px;
+      width: 430px;
+    }
+  
+    .text-about {
+      font-family: poppins, sans-serif;
+  
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+  
+      @keyframes blink-caret {
+        from, to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: white;
+        }
+      }
+    }
+  }
+  
+  .text-title {
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+    color: rgb(49, 181, 225);
+    padding-top: 6rem;
+    overflow: hidden;
+    border-right: .15em solid;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  } 

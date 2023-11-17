@@ -33,7 +33,7 @@ body {
 nav {
   align-items: center;
   background-color: var(--background-light);
-  box-shadow: 0 0 10px rgba(0,0,0,.09);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
   display: flex;
   font-size: 1.2rem;
   height: auto;
@@ -43,33 +43,33 @@ nav {
   top: 0;
   width: 100%;
   z-index: 100;
-}
 
-nav > section {
-  color:black;
-  display: flex;
-  margin-left: auto;
-  padding-right: 175px;
-}
+  > section {
+    color: black;
+    display: flex;
+    margin-left: auto;
+    padding-right: 175px;
+  }
 
-.navFormat a {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
+  .navFormat a {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
 
-nav section a {
-  color: #2d2e32;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all .23s;
-  margin-left: 20px;
-}
+  section a {
+    color: #2d2e32;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.23s;
+    margin-left: 20px;
 
-nav section a:hover {
-  color:rgb(49, 181, 225);
+    &:hover {
+      color: rgb(49, 181, 225);
+    }
+  }
 }
 
 .home {
@@ -91,7 +91,7 @@ nav section a:hover {
 }
 
 .port-main {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 10rem;
@@ -117,11 +117,11 @@ nav section a:hover {
   padding: 0.5rem;
   align-items: center;
   z-index: 2;
-}
 
-.sideBar > a:hover {
-  transform: scale(1.2);
-  transition: all .23s;
+  > a:hover {
+    transform: scale(1.2);
+    transition: all 0.23s;
+  }
 }
 
 .logo-setting {
@@ -136,7 +136,7 @@ nav section a:hover {
 .logo-size {
   display: flex;
   justify-content: flex-end;
-  bottom:0;
+  bottom: 0;
   left: 0;
   width: 40rem;
   height: 40rem;
@@ -148,7 +148,7 @@ nav section a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem; 
+  padding: 1rem;
   width: 40px;
   height: 40px;
 }
@@ -162,7 +162,7 @@ nav section a:hover {
   height: 332px;
   width: 324px;
   top: 50px;
-  right: 150px; 
+  right: 150px;
   /* attempt wiggly border */
 }
 
@@ -177,11 +177,3 @@ nav section a:hover {
   position: absolute;
   padding-left: 5rem;
 }
-
-/* @media only screen and (max-width: 1000px) {
-  .text-about {
-    background-color: lightblue;
-    display: flex;
-    flex-direction: column;
-  }
-} */

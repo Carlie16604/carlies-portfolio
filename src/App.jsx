@@ -1,6 +1,7 @@
 import React from "react";
-import './App.css';
-import './Projects.css';
+import './App.scss';
+import './Projects.scss';
+import './Mode.scss';
 import Black_Sig from "./imgs/Black_Sig.png";
 import Github from "./imgs/Github.png";
 import LinkedIn from "./imgs/LinkedIn.png";
@@ -15,6 +16,8 @@ import Titles from './Titles.jsx';
 import About from './AboutMe.jsx';
 import Projects from './Projects.jsx';
 import Contact from './Contact.jsx';
+import Mode from './Mode.jsx';
+import Sass from './imgs/sass.png';
 
 function App() {
   // const toggleButton = document.querySelector('#theme-toggle');
@@ -45,6 +48,26 @@ function App() {
               <a href="#about">About</a>
               <a href="#projects">Projects</a>
               <a href="#contact">Contact</a>
+              <Mode />
+              <button className="theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
+                <svg className="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                  <mask className="moon" id="moon-mask">
+                    <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                    <circle cx="24" cy="10" r="6" fill="black" />
+                  </mask>
+                  <circle className="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+                  <g className="sun-beams" stroke="currentColor">
+                    <line x1="12" y1="1" x2="12" y2="3" />
+                    <line x1="12" y1="21" x2="12" y2="23" />
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                    <line x1="1" y1="12" x2="3" y2="12" />
+                    <line x1="21" y1="12" x2="23" y2="12" />
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                  </g>
+                </svg>
+              </button>
           </section>
         </nav>
       <div className='sideBar'>
@@ -56,7 +79,6 @@ function App() {
         </a>
       </div>
       <div id='home' className='home'>
-        {/* rename to className home */}
         <div className='container'>
           <div className='content'>
             <div className='port-main'>
@@ -75,6 +97,7 @@ function App() {
                 <img src={Postgresql} className='logo-space' title='Postgresql' alt='PostgresQL logo' />
                 <img src={React_logo} className='logo-space' title='React' alt='react logo' />
                 <img src={nodejs} className='logo-space' title='Node.js' alt='node.js logo' />
+                <img src={Sass} className='logo-space' title='Sass' alt='Sass logo' />
             </div>
           </div>
         </div>
