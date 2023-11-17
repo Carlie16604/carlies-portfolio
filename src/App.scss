@@ -14,6 +14,7 @@
   --text-color: var(--text-light);
   --border: #4c4d51;
   --border2: #2d2e32;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
 }
 
 [data-theme="dark"] {
@@ -22,6 +23,7 @@
   --text-color: var(--text-dark);
   --border: #2d2e32;
   --border2: #4c4d51;
+  --box-shadow: 0 0 10px rgba(255, 255, 255, 0.17);
 }
 
 body {
@@ -36,7 +38,6 @@ body {
 }
 
 .container {
-  // background-color: var(--button-background);
   display: flex;
   margin: 0px auto 0px auto;
   max-width: 107rem;
@@ -53,7 +54,7 @@ body {
 nav {
   align-items: center;
   background-color: var(--background);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  box-shadow: var(--box-shadow);
   display: flex;
   font-size: 1.2rem;
   height: auto;

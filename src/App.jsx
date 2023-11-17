@@ -4,8 +4,10 @@ import './Projects.scss';
 import './sun-and-moon.scss';
 import Black_Sig from "./imgs/Black_Sig.png";
 import White_Sig from "./imgs/White_Sig.png";
-import Github from "./imgs/Github.png";
-import LinkedIn from "./imgs/LinkedIn.png";
+// import Github from "./imgs/Github.png";
+import GitHub from './imgs/github.svg';
+import LinkedIn from './imgs/linkedin.svg';
+// import LinkedIn from "./imgs/LinkedIn.png";
 import Postgresql from './imgs/PSQL.png';
 import nodejs from './imgs/nodejs.png';
 import html from './imgs/html.png';
@@ -90,7 +92,7 @@ function App() {
         <nav>
           <img src={Black_Sig} className='App-logo' alt='Black Signature' />
           {/* Add a UseState to change the light vs dark sig */}
-          {/* <img src={theme.value === 'light' ? Black_Sig : White_Sig} className="App-logo" alt="Signature" /> */}
+          <img src={theme.value === 'light' ? Black_Sig : White_Sig} className="App-logo" alt="Signature" />
           <section className='navFormat'>
             <SunAndMoon />
               <a href="#home">Home</a>
@@ -101,7 +103,7 @@ function App() {
         </nav>
       <div className='sideBar'>
         <a href='https://github.com/Carlie16604' target='_blank'>
-          <img src={Github} className='logo-setting' alt="Github"/>
+          <img src={GitHub} className='logo-setting' alt="Github"/>
         </a>
         <a href='https://www.linkedin.com/in/carlie-malone23/' target='_blank'>
           <img src={LinkedIn} className='logo-setting' alt="LinkedIn" />
@@ -113,7 +115,7 @@ function App() {
             <div className='port-main'>
               <div className='port-text'>
                 <Titles />
-                <p>Hey, I'm Carlie. I'm a software engineer / fullstack developer with an eye for style. I implement seemless applications and excellent user interface.</p>
+                <p>Hey, I'm Carlie. I'm a software engineer / fullstack developer with an eye for style. I implement seamless applications and excellent user interface.</p>
                 <p>📍 Denver, CO</p>
                 </div>
               <img className='selfie' src={selfie} alt='selfie'/>
