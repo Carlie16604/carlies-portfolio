@@ -1,7 +1,6 @@
 import React from 'react';
-import mail from './imgs/mail.png';
-import LinkedIn from './imgs/linkedin-cont.png';
-import GitHub from './imgs/github-cont.png';
+import mail from './imgs/mail.svg';
+import LinkedIn from './imgs/linkedin.svg';
 import './contact.scss';
 import './About.scss';
 
@@ -16,11 +15,11 @@ const Contact = () => {
                             <h3>Feel free to reach out to me!</h3>
                         </div>
                     <div className='cont-icons'>
-                        <img src={mail} className='cont-logo-setting' alt='Mail PNG' />
+                        <img src={mail} className='cont-logo-setting' alt='Mail svg' />
                             <div className='cont-info'>
                                 <a className='portal' href='mailto:carliemaloneco@gmail.com'>carliemaloneco@gmail.com</a>
                             </div>
-                        <img src={LinkedIn} className='cont-logo-setting' alt='LinkedIn PNG' />
+                        <img src={LinkedIn} className='cont-logo-setting' alt='LinkedIn svg' />
                             <div className='cont-info'>
                                 <a className='portal' href='https://www.linkedin.com/in/carlie-malone23/' target='_blank'>Carlie Malone</a>
                             </div>

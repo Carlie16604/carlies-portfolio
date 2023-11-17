@@ -1,8 +1,8 @@
 import React from 'react';
 import capstone from './imgs/capstone.png';
 import './Projects.scss';
-import github from './imgs/Github.png';
-import preview from './imgs/preview.png';
+import github from './imgs/github.svg';
+import rocketship from './imgs/RocketLaunch.svg';
 
 const Projects = () => {
     return (
@@ -35,7 +35,7 @@ const Projects = () => {
                                         <p>The Code</p>
                                     </a>
                                     <a href='https://black-market-50e6.onrender.com/' target='_blank'>
-                                        <img src={preview} className='pro-setting' title='View the Website' alt='preview icon'/>
+                                        <img src={rocketship} className='pro-setting' title='View the Website' alt='preview icon'/>
                                         <p>Live Demo</p>
                                     </a>
                                 </div>
