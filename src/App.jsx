@@ -75,7 +75,7 @@ function App() {
       theme.value = isDark ? 'dark' : 'light'
       setPreference()
     })
-    
+
   // function scrollToSection(id) {
   //   window.scroll({
   //     top: document.useRef(id),
@@ -88,7 +88,9 @@ function App() {
       <>
       <div id='root'>
         <nav>
-          <img src={theme.value === 'light' ? Black_Sig : White_Sig} className="App-logo" alt="Signature" />
+          <img src={Black_Sig} className='App-logo' alt='Black Signature' />
+          {/* Add a UseState to change the light vs dark sig */}
+          {/* <img src={theme.value === 'light' ? Black_Sig : White_Sig} className="App-logo" alt="Signature" /> */}
           <section className='navFormat'>
             <SunAndMoon />
               <a href="#home">Home</a>
