@@ -1,0 +1,135 @@
+.contact {
+    padding: 8rem;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 107rem;
+    padding: 0 4rem;
+}
+
+.cont-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-title p {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    /* text-transform: uppercase; */
+    color:rgb(49, 181, 225);
+}
+
+.cont-title h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.cont-icon-box{
+    padding-top: 0.5rem;
+}
+
+.cont-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.cont-icons-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cont-logo-setting {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
+
+.cont-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.portal {
+    justify-content: center;
+    text-decoration: none;
+    color: var(--text-color);
+    padding-top: 0.5rem;
+}
+
+.portal:hover {
+    color:rgb(49, 181, 225)
+}.contact {
+    padding: 8rem;
+  }
+  
+  .container {
+    margin: 0 auto;
+    max-width: 107rem;
+    padding: 0 4rem;
+  }
+  
+  .cont-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cont-title {
+    p {
+      font-size: 25px;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      /* text-transform: uppercase; */
+      color: rgb(49, 181, 225);
+    }
+  
+    h3 {
+      color: var(--text-color);
+      font-size: 1.5rem;
+    }
+  }
+  
+  .cont-icon-box {
+    padding-top: 0.5rem;
+  }
+  
+  .cont-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .cont-icons-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .cont-logo-setting {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+  }
+  
+  .cont-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .portal {
+    justify-content: center;
+    text-decoration: none;
+    color: var(--text-color);
+    padding-top: 0.5rem;
+  
+    &:hover {
+      color: rgb(49, 181, 225);
+    }
+  }

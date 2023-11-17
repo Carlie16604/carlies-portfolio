@@ -12,3 +12,6 @@ Welcome to the repository for my portfolio! This is where I'll be sharing the la
 # Coming Soon!
 - **Light & Dark Mode** will allow users to have more accessibility, choose a preference, and customization. 
 - **Interactive Contact Form** will give visitors an easy way to contact me directly.
+<!-- - add seemless transition between pages -->
+
+<!-- {color scheme, describe buttons, talk about what the features do} -->

@@ -1,12 +1,31 @@
 :root {
   --background-light: #ffffff;
-  --background-dark: #202020;
+  --background-light2: #f9f9f9;
   --text-light: #000000;
+
+  --background-dark: #2e2e2e;
+  --background-dark2: #4c4d51;
   --text-dark: #ffffff;
 }
 
+[data-theme="light"] {
+  --background: var(--background-light);
+  --background2: var(--background-light2);
+  --text-color: var(--text-light);
+  --border: #4c4d51;
+  --border2: #2d2e32;
+}
+
+[data-theme="dark"] {
+  --background: var(--background-dark);
+  --background2: var(--background-dark2);
+  --text-color: var(--text-dark);
+  --border: #2d2e32;
+  --border2: #4c4d51;
+}
+
 body {
-  background-color: var(--background-light);
+  background-color: var(--background);
   position: relative;
   font-family: poppins, sans-serif;
 }
@@ -17,6 +36,7 @@ body {
 }
 
 .container {
+  // background-color: var(--button-background);
   display: flex;
   margin: 0px auto 0px auto;
   max-width: 107rem;
@@ -32,8 +52,8 @@ body {
 
 nav {
   align-items: center;
-  background-color: var(--background-light);
-  box-shadow: 0 0 10px rgba(0,0,0,.09);
+  background-color: var(--background);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
   display: flex;
   font-size: 1.2rem;
   height: auto;
@@ -43,37 +63,36 @@ nav {
   top: 0;
   width: 100%;
   z-index: 100;
-}
 
-nav > section {
-  color:black;
-  display: flex;
-  margin-left: auto;
-  padding-right: 175px;
-}
+  > section {
+    display: flex;
+    margin-left: auto;
+    padding-right: 175px;
+  }
 
-.navFormat a {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
+  .navFormat a {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
 
-nav section a {
-  color: #2d2e32;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all .23s;
-  margin-left: 20px;
-}
+  section a {
+    color: var(--text-color);
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.23s;
+    margin-left: 20px;
 
-nav section a:hover {
-  color:rgb(49, 181, 225);
+    &:hover {
+      color: rgb(49, 181, 225);
+    }
+  }
 }
 
 .home {
-  background-color: #f9f9f9;
+  background-color: var(--background2);
   display: flex;
   flex-direction: column;
   height: 85vh;
@@ -91,7 +110,7 @@ nav section a:hover {
 }
 
 .port-main {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 10rem;
@@ -105,23 +124,23 @@ nav section a:hover {
   max-width: 50rem;
   position: relative;
   font-family: poppins, sans-serif;
+  color: var(--text-color);
 }
 
 .sideBar {
   display: flex;
   flex-direction: column;
-  /* background-color: var(--background-light); */
   position: fixed;
   left: 0;
   bottom: 0;
   padding: 0.5rem;
   align-items: center;
   z-index: 2;
-}
 
-.sideBar > a:hover {
-  transform: scale(1.2);
-  transition: all .23s;
+  > a:hover {
+    transform: scale(1.2);
+    transition: all 0.23s;
+  }
 }
 
 .logo-setting {
@@ -136,7 +155,7 @@ nav section a:hover {
 .logo-size {
   display: flex;
   justify-content: flex-end;
-  bottom:0;
+  bottom: 0;
   left: 0;
   width: 40rem;
   height: 40rem;
@@ -148,7 +167,7 @@ nav section a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem; 
+  padding: 1rem;
   width: 40px;
   height: 40px;
 }
@@ -156,13 +175,13 @@ nav section a:hover {
 .selfie {
   background-position: 50%;
   background-size: cover;
-  border: 3px solid #2d2e32;
+  border: 3px solid var(--border);
   border-radius: 50%;
   position: relative;
   height: 332px;
   width: 324px;
   top: 50px;
-  right: 150px; 
+  right: 150px;
   /* attempt wiggly border */
 }
 
@@ -171,17 +190,9 @@ nav section a:hover {
   font-family: poppins, sans-serif;
   align-items: center;
   bottom: 0;
-  color: #767676;
+  color: var(--text-color);
   font-size: 1.7rem;
   left: 0;
   position: absolute;
   padding-left: 5rem;
 }
-
-/* @media only screen and (max-width: 1000px) {
-  .text-about {
-    background-color: lightblue;
-    display: flex;
-    flex-direction: column;
-  }
-} */

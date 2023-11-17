@@ -1,7 +1,9 @@
 import React from "react";
-import './App.css';
-import './Projects.css';
+import './App.scss';
+import './Projects.scss';
+import './sun-and-moon.scss';
 import Black_Sig from "./imgs/Black_Sig.png";
+import White_Sig from "./imgs/White_Sig.png";
 import Github from "./imgs/Github.png";
 import LinkedIn from "./imgs/LinkedIn.png";
 import Postgresql from './imgs/PSQL.png';
@@ -11,22 +13,69 @@ import css from './imgs/css.png';
 import React_logo from './imgs/React-icon.svg.png';
 import selfie from './imgs/selfie.png';
 import JS from './imgs/JavaScript-logo.png';
+import Sass from './imgs/sass.png';
 import Titles from './Titles.jsx';
 import About from './AboutMe.jsx';
 import Projects from './Projects.jsx';
 import Contact from './Contact.jsx';
+import SunAndMoon from './sun-and-moon.jsx';
 
 function App() {
-  // const toggleButton = document.querySelector('#theme-toggle');
-  // const body = document.querySelector('body');
 
-  //  toggleButton.addEventListener('click', () => {
-  //   if (body.classList.contains('dark-mode')) {
-  //     body.classList.remove('dark-mode');
-  //   } else {
-  //     body.classList.add('dark-mode');
-  //   }
-  // });
+  const storageKey = 'theme-preference'
+
+  const onClick = () => {
+    theme.value = theme.value === 'light'
+      ? 'dark'
+      : 'light'
+  
+    setPreference()
+  }
+  
+  const getColorPreference = () => {
+    if (localStorage.getItem(storageKey))
+      return localStorage.getItem(storageKey)
+    else
+      return window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? 'dark'
+        : 'light'
+  }
+  
+  const setPreference = () => {
+    localStorage.setItem(storageKey, theme.value)
+    reflectPreference()
+  }
+  
+  const reflectPreference = () => {
+    document.firstElementChild
+      .setAttribute('data-theme', theme.value)
+  
+    document
+      .querySelector('#theme-toggle')
+      ?.setAttribute('aria-label', theme.value)
+  }
+  
+  const theme = {
+    value: getColorPreference(),
+  }
+  
+  reflectPreference()
+  
+  window.onload = () => {
+    reflectPreference()
+  
+    document
+      .querySelector('#theme-toggle')
+      .addEventListener('click', onClick)
+  }
+  
+  window
+    .matchMedia('(prefers-color-scheme: dark)')
+    .addEventListener('change', ({matches:isDark}) => {
+      theme.value = isDark ? 'dark' : 'light'
+      setPreference()
+    })
+    
   // function scrollToSection(id) {
   //   window.scroll({
   //     top: document.useRef(id),
@@ -39,8 +88,9 @@ function App() {
       <>
       <div id='root'>
         <nav>
-          <img src={Black_Sig} className="App-logo" alt="Black Signature" />
+          <img src={theme.value === 'light' ? Black_Sig : White_Sig} className="App-logo" alt="Signature" />
           <section className='navFormat'>
+            <SunAndMoon />
               <a href="#home">Home</a>
               <a href="#about">About</a>
               <a href="#projects">Projects</a>
@@ -56,7 +106,6 @@ function App() {
         </a>
       </div>
       <div id='home' className='home'>
-        {/* rename to className home */}
         <div className='container'>
           <div className='content'>
             <div className='port-main'>
@@ -75,6 +124,7 @@ function App() {
                 <img src={Postgresql} className='logo-space' title='Postgresql' alt='PostgresQL logo' />
                 <img src={React_logo} className='logo-space' title='React' alt='react logo' />
                 <img src={nodejs} className='logo-space' title='Node.js' alt='node.js logo' />
+                <img src={Sass} className='logo-space' title='Sass' alt='Sass logo' />
             </div>
           </div>
         </div>
@@ -86,38 +136,4 @@ function App() {
     </>
   ) 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//       <div className='grid'>
-//         <nav className='navBar'>
-//           <img src={Black_Sig} className="App-logo" alt="Black Signature" />
-//         {/* <button id="theme-toggle">Click Me!</button> */}
-          //  <img className='logo-size' src={Nav} alt="Nav" />
-//         </nav>
-//         <p className='contact'>CONTACT</p>
-//         <Home />
-//         <div className='about'>
-//           <br/>
-//         </div>
-//         <p className='techstack'>Tech Stack | 
-//           <img></img>
-//         </p>
-//         <img src={selfie} className='selfie' alt='selfie'/>
-//       </div>
-//       </>
-//     );
-//   };
-
 export default App;

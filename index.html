@@ -2,12 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/src/imgs/favicon.ico" />
+    <link rel="icon" id="favicon" href="/src/imgs/favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carlie's Portfolio</title>
+    <title>Carlie Malone | FullStack Developer</title>
+    <script src="theme-toggle.js"></script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      function changeFavicon() {
+        const favicon = document.getElementById('favicon');
+        if (theme.value === 'light') {
+          favicon.href = '/src/imgs/favicon.ico';
+        } else {
+          favicon.href = '/src/imgs/WhiteSig.ico';
+        }
+      }
+      window.onload = changeFavicon;
+    </script>
   </body>
 </html>

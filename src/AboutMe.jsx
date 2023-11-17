@@ -1,4 +1,4 @@
-import './About.css';
+import './About.scss';
 import Desktop from './imgs/desktop3.png'
 
 const About = () => {
