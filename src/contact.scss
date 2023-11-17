@@ -22,7 +22,7 @@
 }
 
 .cont-title h3 {
-    color: #2d2e32;
+    color: var(--text-color);
     font-size: 1.5rem;
 }
 
@@ -58,7 +58,7 @@
 .portal {
     justify-content: center;
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     padding-top: 0.5rem;
 }
 
@@ -89,7 +89,7 @@
     }
   
     h3 {
-      color: #2d2e32;
+      color: var(--text-color);
       font-size: 1.5rem;
     }
   }
@@ -126,7 +126,7 @@
   .portal {
     justify-content: center;
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     padding-top: 0.5rem;
   
     &:hover {

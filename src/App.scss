@@ -1,12 +1,31 @@
 :root {
   --background-light: #ffffff;
-  --background-dark: #202020;
+  --background-light2: #f9f9f9;
   --text-light: #000000;
+
+  --background-dark: #2e2e2e;
+  --background-dark2: #4c4d51;
   --text-dark: #ffffff;
 }
 
+[data-theme="light"] {
+  --background: var(--background-light);
+  --background2: var(--background-light2);
+  --text-color: var(--text-light);
+  --border: #4c4d51;
+  --border2: #2d2e32;
+}
+
+[data-theme="dark"] {
+  --background: var(--background-dark);
+  --background2: var(--background-dark2);
+  --text-color: var(--text-dark);
+  --border: #2d2e32;
+  --border2: #4c4d51;
+}
+
 body {
-  background-color: var(--background-light);
+  background-color: var(--background);
   position: relative;
   font-family: poppins, sans-serif;
 }
@@ -17,6 +36,7 @@ body {
 }
 
 .container {
+  // background-color: var(--button-background);
   display: flex;
   margin: 0px auto 0px auto;
   max-width: 107rem;
@@ -32,7 +52,7 @@ body {
 
 nav {
   align-items: center;
-  background-color: var(--background-light);
+  background-color: var(--background);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
   display: flex;
   font-size: 1.2rem;
@@ -45,7 +65,6 @@ nav {
   z-index: 100;
 
   > section {
-    color: black;
     display: flex;
     margin-left: auto;
     padding-right: 175px;
@@ -60,7 +79,7 @@ nav {
   }
 
   section a {
-    color: #2d2e32;
+    color: var(--text-color);
     font-weight: 500;
     text-decoration: none;
     transition: all 0.23s;
@@ -73,7 +92,7 @@ nav {
 }
 
 .home {
-  background-color: #f9f9f9;
+  background-color: var(--background2);
   display: flex;
   flex-direction: column;
   height: 85vh;
@@ -105,12 +124,12 @@ nav {
   max-width: 50rem;
   position: relative;
   font-family: poppins, sans-serif;
+  color: var(--text-color);
 }
 
 .sideBar {
   display: flex;
   flex-direction: column;
-  /* background-color: var(--background-light); */
   position: fixed;
   left: 0;
   bottom: 0;
@@ -156,7 +175,7 @@ nav {
 .selfie {
   background-position: 50%;
   background-size: cover;
-  border: 3px solid #2d2e32;
+  border: 3px solid var(--border);
   border-radius: 50%;
   position: relative;
   height: 332px;
@@ -171,7 +190,7 @@ nav {
   font-family: poppins, sans-serif;
   align-items: center;
   bottom: 0;
-  color: #767676;
+  color: var(--text-color);
   font-size: 1.7rem;
   left: 0;
   position: absolute;

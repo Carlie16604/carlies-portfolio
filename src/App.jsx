@@ -1,8 +1,9 @@
 import React from "react";
 import './App.scss';
 import './Projects.scss';
-import './Mode.scss';
+import './sun-and-moon.scss';
 import Black_Sig from "./imgs/Black_Sig.png";
+import White_Sig from "./imgs/White_Sig.png";
 import Github from "./imgs/Github.png";
 import LinkedIn from "./imgs/LinkedIn.png";
 import Postgresql from './imgs/PSQL.png';
@@ -12,24 +13,69 @@ import css from './imgs/css.png';
 import React_logo from './imgs/React-icon.svg.png';
 import selfie from './imgs/selfie.png';
 import JS from './imgs/JavaScript-logo.png';
+import Sass from './imgs/sass.png';
 import Titles from './Titles.jsx';
 import About from './AboutMe.jsx';
 import Projects from './Projects.jsx';
 import Contact from './Contact.jsx';
-import Mode from './Mode.jsx';
-import Sass from './imgs/sass.png';
+import SunAndMoon from './sun-and-moon.jsx';
 
 function App() {
-  // const toggleButton = document.querySelector('#theme-toggle');
-  // const body = document.querySelector('body');
 
-  //  toggleButton.addEventListener('click', () => {
-  //   if (body.classList.contains('dark-mode')) {
-  //     body.classList.remove('dark-mode');
-  //   } else {
-  //     body.classList.add('dark-mode');
-  //   }
-  // });
+  const storageKey = 'theme-preference'
+
+  const onClick = () => {
+    theme.value = theme.value === 'light'
+      ? 'dark'
+      : 'light'
+  
+    setPreference()
+  }
+  
+  const getColorPreference = () => {
+    if (localStorage.getItem(storageKey))
+      return localStorage.getItem(storageKey)
+    else
+      return window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? 'dark'
+        : 'light'
+  }
+  
+  const setPreference = () => {
+    localStorage.setItem(storageKey, theme.value)
+    reflectPreference()
+  }
+  
+  const reflectPreference = () => {
+    document.firstElementChild
+      .setAttribute('data-theme', theme.value)
+  
+    document
+      .querySelector('#theme-toggle')
+      ?.setAttribute('aria-label', theme.value)
+  }
+  
+  const theme = {
+    value: getColorPreference(),
+  }
+  
+  reflectPreference()
+  
+  window.onload = () => {
+    reflectPreference()
+  
+    document
+      .querySelector('#theme-toggle')
+      .addEventListener('click', onClick)
+  }
+  
+  window
+    .matchMedia('(prefers-color-scheme: dark)')
+    .addEventListener('change', ({matches:isDark}) => {
+      theme.value = isDark ? 'dark' : 'light'
+      setPreference()
+    })
+    
   // function scrollToSection(id) {
   //   window.scroll({
   //     top: document.useRef(id),
@@ -42,32 +88,13 @@ function App() {
       <>
       <div id='root'>
         <nav>
-          <img src={Black_Sig} className="App-logo" alt="Black Signature" />
+          <img src={theme.value === 'light' ? Black_Sig : White_Sig} className="App-logo" alt="Signature" />
           <section className='navFormat'>
+            <SunAndMoon />
               <a href="#home">Home</a>
               <a href="#about">About</a>
               <a href="#projects">Projects</a>
               <a href="#contact">Contact</a>
-              <Mode />
-              <button className="theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
-                <svg className="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
-                  <mask className="moon" id="moon-mask">
-                    <rect x="0" y="0" width="100%" height="100%" fill="white" />
-                    <circle cx="24" cy="10" r="6" fill="black" />
-                  </mask>
-                  <circle className="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
-                  <g className="sun-beams" stroke="currentColor">
-                    <line x1="12" y1="1" x2="12" y2="3" />
-                    <line x1="12" y1="21" x2="12" y2="23" />
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-                    <line x1="1" y1="12" x2="3" y2="12" />
-                    <line x1="21" y1="12" x2="23" y2="12" />
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-                  </g>
-                </svg>
-              </button>
           </section>
         </nav>
       <div className='sideBar'>
@@ -109,38 +136,4 @@ function App() {
     </>
   ) 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//       <div className='grid'>
-//         <nav className='navBar'>
-//           <img src={Black_Sig} className="App-logo" alt="Black Signature" />
-//         {/* <button id="theme-toggle">Click Me!</button> */}
-          //  <img className='logo-size' src={Nav} alt="Nav" />
-//         </nav>
-//         <p className='contact'>CONTACT</p>
-//         <Home />
-//         <div className='about'>
-//           <br/>
-//         </div>
-//         <p className='techstack'>Tech Stack | 
-//           <img></img>
-//         </p>
-//         <img src={selfie} className='selfie' alt='selfie'/>
-//       </div>
-//       </>
-//     );
-//   };
-
 export default App;

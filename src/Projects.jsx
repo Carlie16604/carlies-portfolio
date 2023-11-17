@@ -10,7 +10,7 @@ const Projects = () => {
             <div className='container'>
                 <div className='project-content'>
                     <p className='portfolio-title'>Portfolio</p>
-                    <h3>Here's a look at some of my work!</h3>
+                    <h3 className='port-intro'>Here's a look at some of my work!</h3>
                     <div className='projects-grid'>
                         <div className='pro pro__1'>
                             <a href='https://black-market-50e6.onrender.com' target='_blank'> 
@@ -29,9 +29,6 @@ const Projects = () => {
                                         <li>Played a pivotal role in building the platform, contributing to the frontend using React.js and backend utilizing Node.js, demonstrating proficiency in full-stack development.</li><br/>
                                         <li>Excelled in communication, database management, project board, tasks management, human-computer interactions.</li><br/>
                                     </p>
-                                {/* <div className='stack'>
-                                    <p>FullStack Application</p>
-                                </div> */}
                                 <div className='links'>
                                     <a href='https://github.com/team-black-market/Capstone-Project' target='_blank'>
                                         <img src={github} className='pro-setting' title='See the code' alt='github icon'/>
