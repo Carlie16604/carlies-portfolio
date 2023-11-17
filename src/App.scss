@@ -105,24 +105,23 @@ nav {
   align-items: center;
   display: flex;
   gap: 10rem;
-  height: 35rem;
+  height: 75vh;
   justify-content: center;
   position: relative;
 }
 
 .port-main {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 25vh;
   position: relative;
-  padding-left: 5rem;
+  padding-left: 5vh;
 }
 
 .port-text {
   display: flex;
   flex-direction: column;
-  max-width: 50rem;
+  // max-width: 50rem;
   position: relative;
   font-family: poppins, sans-serif;
   color: var(--text-color);
