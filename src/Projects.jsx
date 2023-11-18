@@ -1,5 +1,6 @@
 import React from 'react';
 import capstone from './imgs/capstone.png';
+import pro_selfie from './imgs/proselfie.png';
 import './Projects.scss';
 import github from './imgs/github.svg';
 import rocketship from './imgs/RocketLaunch.svg';
@@ -42,9 +43,37 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
+                    <div className='projects-grid'>
+                        <div className='pro pro__1'>
+                            <a href='https://carlie-malone.netlify.app/' target='_blank'>
+                                <img src={pro_selfie} className='pro__img' alt='capstone pro'/>
+                            </a>
+                            <div className='pro__text'>
+                            <h3>My Portfolio! 
+                                <span className='date-class'>(November 2023)</span>
+                            </h3>
+                                <p id='description'>
+                                    <p className='desc2'>Solo Developer</p>
+                                    <li>This project is focused on UX development in combination of both software development and psychology for excellent user experience</li><br/>
+                                    <li>Presents current & completed projects as well as demonstrating skills in developing a real world application for clients.</li><br/>
+                                    <li>Excelled & refined skills in design, React, Vite, SASS, and debugging.</li><br/>
+                                </p>
+                            <div className='links'>
+                                <a href='https://github.com/Carlie16604/carlies-portfolio' target='_blank'>
+                                    <img src={github} className='pro-setting' title='See the code' alt='github icon'/>
+                                    <p>The Code</p>
+                                </a>
+                                <a href='https://carlie-malone.netlify.app/' target='_blank'>
+                                    <img src={rocketship} className='pro-setting' title='View the Website' alt='preview icon'/>
+                                    <p>Live Website!</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     );
 }
 
