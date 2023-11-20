@@ -86,6 +86,7 @@ function App() {
   //     left: 0,
   //     behavior: 'smooth',
   //   });
+  // used for transitions between sections, come back to this
 
     return (
       <>
