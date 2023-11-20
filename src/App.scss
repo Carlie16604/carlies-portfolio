@@ -26,6 +26,10 @@
   --box-shadow: 0 0 10px rgba(255, 255, 255, 0.17);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--background);
   position: relative;
@@ -49,6 +53,10 @@ body {
     height: auto;
     text-align: center;
     padding: 0px 2rem;
+  }
+
+  @media (max-width: 460px) {
+    padding: 0 1.7rem;
   }
 }
 
@@ -116,6 +124,12 @@ nav {
   height: 75vh;
   justify-content: center;
   position: relative;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
 }
 
 .port-main {
@@ -124,6 +138,13 @@ nav {
   gap: 25vh;
   position: relative;
   padding-left: 5vh;
+
+  @media (max-width: 900px) {
+    flex-direction: column-reverse;
+    gap: 3rem;
+    height: auto;
+    text-align: center;
+  }
 }
 
 .port-text {
@@ -178,6 +199,13 @@ nav {
   padding: 1rem;
   width: 40px;
   height: 40px;
+  
+  @media (max-width: 900px) {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding: 0.5rem;
+  }
 }
 
 .selfie {
@@ -191,6 +219,13 @@ nav {
   top: 50px;
   right: 150px;
   /* attempt wiggly border */
+
+  @media (max-width:900px) {
+    height: 200px;
+    width: 200px;
+    top: 0;
+    right: 0;
+  }
 }
 
 .techStack {
@@ -205,16 +240,24 @@ nav {
   padding-left: 5rem;
 
   @media (max-width: 900px) {
-    
-    // position: relative;
-
-  .techStack p {
-    border-bottom: 2px solid rgba(45,46,50,.5);
-    border-right: none;
-    margin-bottom: 0;
-    margin-right: 0;
-    padding-bottom: 1rem;
-    padding-right: 0;
+    .techStack {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
     }
+
+    p {
+    font-size: 1.2rem;
+     margin-bottom: 0;
+     margin-right: 0;
+     padding-bottom: 1rem;
+     padding-right: 0;
+    }
+
+    // img {
+    //   flex-direction: row;
+    //   height: 2rem;
+    //   width: 2rem;
+    // }
   }
 }

@@ -56,7 +56,8 @@ const Projects = () => {
                                     <p className='desc2'>Solo Developer</p>
                                     <li>This project is focused on UX development in combination of both software development and psychology for excellent user experience</li><br/>
                                     <li>Presents current & completed projects as well as demonstrating skills in developing a real world application for clients.</li><br/>
-                                    <li>Excelled & refined skills in design, React, Vite, SASS, and debugging.</li><br/>
+                                    <li>Excelled with the art of prompt engineering & refined skills with design, React, Vite, and debugging.</li><br/>
+                                    <li>Learned new language SCSS</li><br/>
                                 </p>
                             <div className='links'>
                                 <a href='https://github.com/Carlie16604/carlies-portfolio' target='_blank'>

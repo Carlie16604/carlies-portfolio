@@ -25,7 +25,7 @@ import SunAndMoon from './sun-and-moon.jsx';
 
 function App() {
 // something to do with the storage key?
-  // const storageKey = 'theme-preference'
+  const storageKey = 'theme-preference'
 
   const onClick = () => {
     theme.value = theme.value === 'light'
@@ -36,9 +36,9 @@ function App() {
   }
   
   const getColorPreference = () => {
-    // if (localStorage.getItem(storageKey))
-    //   return localStorage.getItem(storageKey)
-    // else
+    if (localStorage.getItem(storageKey))
+      return localStorage.getItem(storageKey)
+    else
       return window.matchMedia('(prefers-color-scheme: dark)').matches
         ? 'dark'
         : 'light'
@@ -79,15 +79,6 @@ function App() {
       setPreference()
     })
 
-  // function scrollToSection(id) {
-  //   window.scroll({
-  //     top: document.useRef(id),
-  //     //fix this
-  //     left: 0,
-  //     behavior: 'smooth',
-  //   });
-  // used for transitions between sections, come back to this
-
     return (
       <>
       <div id='root'>
@@ -120,11 +111,11 @@ function App() {
                 <Titles />
                 <p>Hey, I'm Carlie. I'm a software engineer / fullstack developer with an eye for style. I implement seamless applications and excellent user interface.</p>
                 <p>📍 Denver, CO</p>
-                </div>
+              </div>
               <img className='selfie' src={selfie} alt='selfie'/>
             </div>
             <div className='techStack'>
-              <p>Tech Stack |</p>
+              <p>Tech Stack</p>
                 <img src={html} className='logo-space' title='HTML' alt='html logo' />
                 <img src={css} className='logo-space' title='CSS' alt='css logo' />
                 <img src={JS} className='logo-space' title='JavaScript' alt='JS logo' />
