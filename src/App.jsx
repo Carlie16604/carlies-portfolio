@@ -24,7 +24,7 @@ import Contact from './Contact.jsx';
 import SunAndMoon from './sun-and-moon.jsx';
 
 function App() {
-
+// something to do with the storage key?
   const storageKey = 'theme-preference'
 
   const onClick = () => {
@@ -36,9 +36,9 @@ function App() {
   }
   
   const getColorPreference = () => {
-    if (localStorage.getItem(storageKey))
-      return localStorage.getItem(storageKey)
-    else
+    // if (localStorage.getItem(storageKey))
+    //   return localStorage.getItem(storageKey)
+    // else
       return window.matchMedia('(prefers-color-scheme: dark)').matches
         ? 'dark'
         : 'light'
@@ -86,6 +86,7 @@ function App() {
   //     left: 0,
   //     behavior: 'smooth',
   //   });
+  // used for transitions between sections, come back to this
 
     return (
       <>
