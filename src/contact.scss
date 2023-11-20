@@ -5,7 +5,7 @@
 .container {
     margin: 0 auto;
     max-width: 107rem;
-    padding: 0 4rem;
+    // padding: 0 4rem;
 }
 
 .cont-content {
@@ -35,6 +35,10 @@
     flex-direction: row;
     gap: 2rem;
     margin-top: 2rem;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
 }
 
 .cont-icons-box {
@@ -71,7 +75,7 @@
   .container {
     margin: 0 auto;
     max-width: 107rem;
-    padding: 0 4rem;
+    // padding: 0 4rem;
   }
   
   .cont-content {

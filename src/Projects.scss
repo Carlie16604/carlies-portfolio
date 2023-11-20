@@ -144,4 +144,10 @@
       width: 40px;
       height: 40px;
     }
-  }  
+  }
+
+@media (max-width: 900px) {
+  .pro {
+    flex-direction: column;
+  }
+}
