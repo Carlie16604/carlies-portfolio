@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+//potentially used for a google map functionality
+
 class Map extends Component{
     componentDidMount(){
       const mapDiv = this.refs.map;

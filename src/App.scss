@@ -42,6 +42,14 @@ body {
   margin: 0px auto 0px auto;
   max-width: 107rem;
   padding: 0px 4rem;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 3rem;
+    height: auto;
+    text-align: center;
+    padding: 0px 2rem;
+  }
 }
 
 .App-logo {
@@ -195,4 +203,18 @@ nav {
   left: 0;
   position: absolute;
   padding-left: 5rem;
+
+  @media (max-width: 900px) {
+    
+    // position: relative;
+
+  .techStack p {
+    border-bottom: 2px solid rgba(45,46,50,.5);
+    border-right: none;
+    margin-bottom: 0;
+    margin-right: 0;
+    padding-bottom: 1rem;
+    padding-right: 0;
+    }
+  }
 }
