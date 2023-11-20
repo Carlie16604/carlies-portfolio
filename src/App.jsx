@@ -25,7 +25,7 @@ import SunAndMoon from './sun-and-moon.jsx';
 
 function App() {
 // something to do with the storage key?
-  const storageKey = 'theme-preference'
+  // const storageKey = 'theme-preference'
 
   const onClick = () => {
     theme.value = theme.value === 'light'

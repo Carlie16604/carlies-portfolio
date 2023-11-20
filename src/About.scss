@@ -53,3 +53,13 @@
     margin: 0 auto;
     animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
   } 
+
+  @media (max-width: 900px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .text-title {
+      padding-top: 0;
+    }
+  }
