@@ -14,6 +14,11 @@
       border-radius: 25%;
       height: 425px;
       width: 430px;
+
+      @media (max-width: 900px) {
+        height: 332px;
+        width: 324px;
+      }
     }
   
     .text-about {

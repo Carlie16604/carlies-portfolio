@@ -1,11 +1,9 @@
 .contact {
     padding: 8rem;
-}
 
-.container {
-    margin: 0 auto;
-    max-width: 107rem;
-    // padding: 0 4rem;
+    @media (max-width: 900px) {
+      padding: 2rem;
+    }
 }
 
 .cont-content {
@@ -68,13 +66,11 @@
 
 .portal:hover {
     color:rgb(49, 181, 225)
-}.contact {
-    padding: 8rem;
-  }
-  
+} 
+
   .container {
     margin: 0 auto;
-    max-width: 107rem;
+    width: 100%;
     // padding: 0 4rem;
   }
   
@@ -107,6 +103,12 @@
     flex-direction: row;
     gap: 2rem;
     margin-top: 2rem;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1;
+    }
   }
   
   .cont-icons-box {
@@ -119,6 +121,12 @@
     width: 40px;
     height: 40px;
     align-items: center;
+
+    @media (max-width: 900px) {
+      width: 30px;
+      height: 30px;
+      align-items: center;
+    }
   }
   
   .cont-info {

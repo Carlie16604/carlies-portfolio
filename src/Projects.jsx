@@ -8,7 +8,7 @@ import rocketship from './imgs/RocketLaunch.svg';
 const Projects = () => {
     return (
         <section id='projects' className='projects'>
-            <div className='container'>
+            <div className='container2'>
                 <div className='project-content'>
                     <p className='portfolio-title'>Portfolio</p>
                     <h3 className='port-intro'>Here's a look at some of my work!</h3>

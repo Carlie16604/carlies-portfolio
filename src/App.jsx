@@ -102,7 +102,7 @@ function App() {
         <a href='https://www.linkedin.com/in/carlie-malone23/' target='_blank'>
           <img src={LinkedIn} className='logo-setting' alt="LinkedIn" />
         </a>
-      </div>
+      </div> 
       <div id='home' className='home'>
         <div className='container'>
           <div className='content'>
