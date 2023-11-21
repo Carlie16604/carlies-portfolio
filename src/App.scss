@@ -110,7 +110,7 @@ nav {
   flex-direction: column;
   height: 85vh;
   position: relative;
-  max-width: 107rem;
+  width: 100%;
 
   @media (max-width: 900px) {
     height: 115vh;
