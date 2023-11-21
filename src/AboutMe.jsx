@@ -4,7 +4,7 @@ import Desktop from './imgs/desktop3.png'
 const About = () => {
     return (
     <section className='about' id='about'>
-        <div className='container'>
+        <div className='container3'>
           <div className='about-content'>
             <img className='img-about' src={Desktop} alt='Desktop img'/> 
                 <div>

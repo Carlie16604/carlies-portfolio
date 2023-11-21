@@ -6,6 +6,10 @@
     font-family: poppins, sans-serif;
     padding-bottom: 6vh;
     overflow: hidden;
+
+    @media (max-width: 900px) {
+      justify-content: center;
+    }
   }
   
   .titles span {
@@ -15,6 +19,10 @@
     opacity: 0;
     animation: animate2 15s linear infinite;
     text-align: center;
+
+    @media (max-width: 900px) {
+      font-size: 5vw;
+    }
   }
   
   .titles div {
