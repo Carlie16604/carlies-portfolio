@@ -115,14 +115,18 @@ function App() {
               <img className='selfie' src={selfie} alt='selfie'/>
             </div>
             <div className='techStack'>
-              <p>Tech Stack</p>
-                <img src={html} className='logo-space' title='HTML' alt='html logo' />
-                <img src={css} className='logo-space' title='CSS' alt='css logo' />
-                <img src={JS} className='logo-space' title='JavaScript' alt='JS logo' />
-                <img src={Postgresql} className='logo-space' title='Postgresql' alt='PostgresQL logo' />
-                <img src={React_logo} className='logo-space' title='React' alt='react logo' />
-                <img src={nodejs} className='logo-space' title='Node.js' alt='node.js logo' />
-                <img src={Sass} className='logo-space' title='Sass' alt='Sass logo' />
+              <div className='techStack-title'>
+                <p>Tech Stack</p>
+              </div>
+              <div className='logo-space'>
+                <img src={html} title='HTML' alt='html logo' />
+                <img src={css} title='CSS' alt='css logo' />
+                <img src={JS} title='JavaScript' alt='JS logo' />
+                <img src={Postgresql} title='Postgresql' alt='PostgresQL logo' />
+                <img src={React_logo} title='React' alt='react logo' />
+                <img src={nodejs} title='Node.js' alt='node.js logo' />
+                <img src={Sass} title='Sass' alt='Sass logo' />
+              </div>
             </div>
           </div>
         </div>
