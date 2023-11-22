@@ -51,7 +51,7 @@ body {
     gap: 3rem;
     height: auto;
     text-align: center;
-    padding: 5.5rem 0rem 0 0rem;
+    padding: 3rem 0rem 0 0rem;
   }
 
   // @media (max-width: 460px) {
@@ -64,6 +64,10 @@ body {
   pointer-events: none;
   position: fixed;
   left: 5rem;
+
+  @media (max-width: 900px) {
+    left: 1rem;
+  }
 }
 
 nav {
@@ -84,11 +88,20 @@ nav {
     display: flex;
     margin-left: auto;
     padding-right: 175px;
+
+    @media (max-width: 900px) {
+      padding-right: 15px;
+      gap: 0.3rem;
+    }
   }
 
   .navFormat a {
     margin: 1em 0;
     padding-left: 40px;
+
+    @media (max-width: 900px) {
+      padding-left: 0;
+    }
   }
 
   section a {
@@ -101,10 +114,15 @@ nav {
     &:hover {
       color: rgb(49, 181, 225);
     }
+
+    // @media (max-width: 900px) {
+    //   margin-left: 0;
+    // }
   }
 
   @media (max-width: 900px) {
-    
+   font-size: 2vh;
+   height: 8vh;
   }
 }
 
@@ -134,10 +152,10 @@ nav {
   transition: all .3s ease-in-out;
   width: 100%;
   z-index: 300;
+}
 
-  @media (max-width: 900px) {
-    display: flex;
-  }
+.closed-nav {
+  left: -100%!important;
 }
 
 .content {
@@ -197,6 +215,10 @@ nav {
   > a:hover {
     transform: scale(1.2);
     transition: all 0.23s;
+  }
+
+  @media (max-width: 900px) {
+    left: -100%!important;
   }
 }
 
@@ -284,7 +306,7 @@ nav {
       align-items: center;
       text-align: center;
       justify-content: center;
-      padding: 0;
+      padding-left: 0;
     }
 
     // p {
@@ -318,5 +340,23 @@ nav {
     padding: 0;
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    color: var(--background2)
+    // left: -100%!important;
   }
+}
+
+.mobile-menu {
+  align-items: center;
+  // background-color: #fff;
+  display: flex;
+  // height: 100vh;
+  justify-content: center;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  transition: all .3s ease-in-out;
+  width: 100%;
+  z-index: 300;
+  height: 40px;
+  width: 40px;
 }

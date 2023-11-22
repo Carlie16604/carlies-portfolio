@@ -17,6 +17,7 @@ import React_logo from './imgs/React-icon.svg.png';
 import selfie from './imgs/selfie.png';
 import JS from './imgs/JavaScript-logo.png';
 import Sass from './imgs/sass.png';
+import menu from './imgs/menu.svg';
 import Titles from './Titles.jsx';
 import About from './AboutMe.jsx';
 import Projects from './Projects.jsx';
@@ -94,7 +95,15 @@ function App() {
               <a href="#projects">Projects</a>
               <a href="#contact">Contact</a>
           </section>
+          <div>
+            <img src={menu} className='mobile-menu' alt='menu'/>
+          </div>
         </nav>
+        <div className='mobile-nav closed-nav'>
+          <span>
+
+          </span>
+        </div> 
       <div className='sideBar'>
         <a href='https://github.com/Carlie16604' target='_blank'>
           <img src={GitHub} className='logo-setting' alt="Github"/>
@@ -114,10 +123,10 @@ function App() {
               </div>
               <img className='selfie' src={selfie} alt='selfie'/>
             </div>
-            <div className='techStack'>
               <div className='techStack-title'>
                 <p>Tech Stack</p>
               </div>
+            <div className='techStack'>
               <div className='logo-space'>
                 <img src={html} title='HTML' alt='html logo' />
                 <img src={css} title='CSS' alt='css logo' />
