@@ -102,6 +102,10 @@ nav {
       color: rgb(49, 181, 225);
     }
   }
+
+  @media (max-width: 900px) {
+    
+  }
 }
 
 .home {
@@ -115,6 +119,24 @@ nav {
   @media (max-width: 900px) {
     height: 115vh;
     text-align: center;
+  }
+}
+
+.mobile-nav {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  transition: all .3s ease-in-out;
+  width: 100%;
+  z-index: 300;
+
+  @media (max-width: 900px) {
+    display: flex;
   }
 }
 
@@ -138,6 +160,7 @@ nav {
   gap: 25vh;
   position: relative;
   padding-left: 5vh;
+  padding-right: 25vh;
 
   @media (max-width: 900px) {
     flex-direction: column-reverse;
@@ -235,7 +258,7 @@ nav {
   height: 332px;
   width: 324px;
   top: 50px;
-  right: 150px;
+  right: 75px;
   /* attempt wiggly border */
 
   @media (max-width:900px) {

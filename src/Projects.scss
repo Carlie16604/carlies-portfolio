@@ -8,6 +8,26 @@
   }
 }
 
+.container2 {
+  display: flex;
+  margin: 0 auto;
+  padding: 5.5rem 4rem 0 4rem;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 3rem;
+    height: auto;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-content {
+    padding: 1.5rem;
+  }
+}
+
 .projects-grid {
   display: grid;
   grid-gap: 5rem;
@@ -169,18 +189,4 @@
 .pro {
   flex-direction: column;
 }
-}
-
-.container2 {
-  display: flex;
-  margin: 0 auto;
-  padding: 5.5rem 4rem 0 4rem;
-
-  @media (max-width: 900px) {
-    flex-direction: column;
-    gap: 3rem;
-    height: auto;
-    text-align: center;
-    padding: 0;
-  }
 }
