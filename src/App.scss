@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  background-color: var(--background);
+  background-color: var(--background2);
   position: relative;
   font-family: poppins, sans-serif;
 }
@@ -340,7 +340,7 @@ nav {
     padding: 0;
     margin-bottom: 1rem;
     font-size: 1.2rem;
-    color: var(--background-light2)
+    color: var(--background2)
     // left: -100%!important;
   }
 }
