@@ -38,32 +38,29 @@ body {
 
 .grid {
   display: grid;
-  grid-template: auto 1fr auto / auto 1fr auto;
+  // grid-template: auto 1fr auto / auto 1fr auto;
 }
 
 .container {
   display: flex;
   margin: 0 auto;
-  padding: 5.5rem 4rem 0 4rem;
+  // padding: 5.5rem 0 0 4rem;
+  padding: 5.5rem 0 0 0;
 
   @media (max-width: 900px) {
     flex-direction: column;
     gap: 3rem;
     height: auto;
     text-align: center;
-    padding: 3rem 0rem 0 0rem;
+    padding: 3rem 0 0 0;
   }
-
-  // @media (max-width: 460px) {
-  //   padding: 0 1.7rem;
-  // }
 }
 
 .App-logo {
   height: 4rem;
   pointer-events: none;
   position: fixed;
-  left: 5rem;
+  left: 4rem;
 
   @media (max-width: 900px) {
     left: 1rem;
@@ -87,7 +84,7 @@ nav {
   > section {
     display: flex;
     margin-left: auto;
-    padding-right: 175px;
+    padding-right: 4rem;
 
     @media (max-width: 900px) {
       padding-right: 15px;
@@ -114,10 +111,6 @@ nav {
     &:hover {
       color: rgb(49, 181, 225);
     }
-
-    // @media (max-width: 900px) {
-    //   margin-left: 0;
-    // }
   }
 
   @media (max-width: 900px) {
@@ -133,10 +126,12 @@ nav {
   height: 85vh;
   position: relative;
   width: 100%;
+  // padding: 0 4rem 0 4rem;
 
   @media (max-width: 900px) {
     height: 115vh;
     text-align: center;
+    padding-left: 0;
   }
 }
 
@@ -177,8 +172,8 @@ nav {
   align-items: center;
   gap: 25vh;
   position: relative;
-  padding-left: 5vh;
-  padding-right: 25vh;
+  padding-left: calc(5vh + 5.5rem);
+  padding-right: 20vh;
 
   @media (max-width: 900px) {
     flex-direction: column-reverse;
@@ -280,7 +275,7 @@ nav {
   height: 332px;
   width: 324px;
   top: 50px;
-  right: 75px;
+  // right: 20px;
   /* attempt wiggly border */
 
   @media (max-width:900px) {
@@ -331,7 +326,7 @@ nav {
   font-family: poppins, sans-serif;
   color: var(--text-color);
   font-size: 1.7rem;
-  padding-left: 2.5rem;
+  padding-left: 8.5rem;
 
   @media (max-width:900px) {
     flex-direction: column;

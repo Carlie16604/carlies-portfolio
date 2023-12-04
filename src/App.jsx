@@ -2,13 +2,9 @@ import React from "react";
 import './App.scss';
 import './Projects.scss';
 import './sun-and-moon.scss';
-import Black_Sig from "./imgs/Black_Sig.png";
-import White_Sig from "./imgs/White_Sig.png";
 import Gray_Sig from "./imgs/Gray_Sig.png";
-// import Github from "./imgs/Github.png";
 import GitHub from './imgs/github.svg';
 import LinkedIn from './imgs/linkedin.svg';
-// import LinkedIn from "./imgs/LinkedIn.png";
 import Postgresql from './imgs/PSQL.png';
 import nodejs from './imgs/nodejs.png';
 import html from './imgs/html.png';
@@ -84,9 +80,6 @@ function App() {
       <>
       <div id='root'>
         <nav>
-          {/* <img src={Black_Sig} className='App-logo' alt='Black Signature' /> */}
-          {/* Add a UseState to change the light vs dark sig */}
-          {/* <img src={theme.value === 'light' ? Black_Sig : White_Sig} className="App-logo" alt="Signature" /> */}
           <img src={Gray_Sig} className="App-logo" alt="Signature" />
           <section className='navFormat'>
             <SunAndMoon />
