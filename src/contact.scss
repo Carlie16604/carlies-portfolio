@@ -71,7 +71,6 @@
   .container {
     margin: 0 auto;
     width: 100%;
-    // padding: 0 4rem;
   }
   
   .cont-content {
@@ -140,6 +139,7 @@
     text-decoration: none;
     color: var(--text-color);
     padding-top: 0.5rem;
+    transition: all .23s;
   
     &:hover {
       color: rgb(49, 181, 225);
