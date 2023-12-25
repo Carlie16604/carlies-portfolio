@@ -117,7 +117,8 @@ function App() {
               <img className='selfie' src={selfie} alt='selfie'/>
             </div>
               <div className='techStack-title'>
-                <p>Tech Stack</p>
+                <p>Tech Stack</p> 
+                    {/* add rotating tech stack for mobile? or sliding images? */}
               </div>
             <div className='techStack'>
               <div className='logo-space'>
