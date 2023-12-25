@@ -12,6 +12,6 @@ Welcome to the repository for my portfolio! This is where I'll be sharing the la
 
 # Coming Soon!
 - **Interactive Contact Form** will give visitors an easy way to contact me directly.
-<!-- - add seemless transition between pages -->
 
 <!-- {color scheme, describe buttons, talk about what the features do} -->
+<!-- {add a sliding/rotating tech stack? Get rid of the spacing issue completely} -->
