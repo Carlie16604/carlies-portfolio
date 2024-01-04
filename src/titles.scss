@@ -7,7 +7,7 @@
     padding-bottom: 6vh;
     overflow: hidden;
 
-    @media (max-width: 900px) {
+    @media (max-width: 1200px) {
       justify-content: center;
     }
   }
@@ -20,7 +20,7 @@
     animation: animate2 15s linear infinite;
     text-align: center;
 
-    @media (max-width: 900px) {
+    @media (max-width: 1200px) {
       font-size: 6vw;
     }
   }

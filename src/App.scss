@@ -36,17 +36,12 @@ body {
   font-family: poppins, sans-serif;
 }
 
-.grid {
-  display: grid;
-  // grid-template: auto 1fr auto / auto 1fr auto;
-}
-
 .container {
   display: flex;
   margin: 0 auto;
   padding: 5.5rem 0 0 0;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
     gap: 3rem;
     height: auto;
@@ -61,7 +56,7 @@ body {
   position: fixed;
   left: 3.5rem;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
     left: 1rem;
   }
 }
@@ -85,7 +80,7 @@ nav {
     margin-left: auto;
     padding-right: 4rem;
 
-    @media (max-width: 900px) {
+    @media (max-width: 1200px) {
       padding-right: 15px;
       gap: 0.3rem;
     }
@@ -95,7 +90,7 @@ nav {
     margin: 1em 0;
     padding-left: 40px;
 
-    @media (max-width: 900px) {
+    @media (max-width: 1200px) {
       padding-left: 0;
     }
   }
@@ -112,7 +107,7 @@ nav {
     }
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
    font-size: 2vh;
    height: 8vh;
   }
@@ -125,9 +120,8 @@ nav {
   height: 85vh;
   position: relative;
   width: 100%;
-  // padding: 0 4rem 0 4rem;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
     height: 115vh;
     text-align: center;
     padding-left: 0;
@@ -155,11 +149,10 @@ nav {
 .content {
   display: flex;
   flex-wrap: wrap;
-  // gap: 10rem;
   height: 75vh;
   position: relative;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
     flex-direction: wrap;
     gap: 2rem;
     align-items: center;
@@ -174,7 +167,7 @@ nav {
   padding-left: calc(5vh + 5.5rem);
   padding-right: 20vh;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
     flex-direction: column-reverse;
     gap: 3rem;
     height: auto;
@@ -186,7 +179,6 @@ nav {
 .port-text {
   display: flex;
   flex-direction: column;
-  // max-width: 50rem;
   position: relative;
   font-family: poppins, sans-serif;
   color: var(--text-color);
@@ -211,7 +203,7 @@ nav {
     transition: all 0.23s;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
     left: -100%!important;
   }
 }
@@ -254,7 +246,7 @@ nav {
 //   padding: 0.5rem;
 //   padding-bottom: 3rem;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -293,7 +285,7 @@ nav {
   font-size: 1.7rem;
   padding-left: 2rem;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
     .techStack {
       display: flex;
       flex-direction: column;
@@ -327,14 +319,14 @@ nav {
   font-size: 1.7rem;
   padding-left: 8.5rem;
 
-  @media (max-width:900px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0;
     margin-bottom: 1rem;
     font-size: 1.2rem;
-    color: var(--background2)
+    color: var(--background2);
     // left: -100%!important;
   }
 }
