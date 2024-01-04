@@ -2,7 +2,7 @@
   background-color: var(--background2);
   padding: 4rem;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
     padding: 0rem;
     
   }
@@ -13,7 +13,7 @@
   margin: 0 auto;
   padding: 5.5rem 4rem 0 4rem;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
     gap: 3rem;
     height: auto;
@@ -22,7 +22,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .project-content {
     padding: 1.5rem;
   }
@@ -44,7 +44,7 @@
     object-fit: cover;
     overflow: hidden;
 
-    @media (max-width: 900px) {
+    @media (max-width: 1200px) {
       height: 15rem;
       width: 15rem;
     }
@@ -67,7 +67,7 @@
       background-color: var(--background);
       box-shadow: var(--box-shadow);
 
-      @media (max-width: 900px) {
+      @media (max-width: 1200px) {
         flex-direction: column;
       }
     }
@@ -84,7 +84,7 @@
         position: relative;
         text-transform: uppercase;
 
-        @media (max-width: 900px) {
+        @media (max-width: 1200px) {
           font-size: 1rem;
         }
       }
@@ -94,13 +94,13 @@
         font-size: 1.4rem;
         margin-left: 0.2rem;
 
-        @media (max-width: 900px) {
+        @media (max-width: 1200px) {
           font-size: 1rem;
         }
       }
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1200px) {
       flex-direction: column;
       padding: 1.5rem;
     }
@@ -193,7 +193,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
 .pro {
   flex-direction: column;
 }
