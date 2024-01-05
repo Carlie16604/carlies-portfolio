@@ -32,14 +32,14 @@ function App() {
     setPreference()
   }
   
-  // const getColorPreference = () => {
-  //   if (localStorage.getItem(storageKey))
-  //     return localStorage.getItem(storageKey)
-  //   else
-  //     return window.matchMedia('(prefers-color-scheme: dark)').matches
-  //       ? 'dark'
-  //       : 'light'
-  // }
+  const getColorPreference = () => {
+    if (localStorage.getItem(storageKey))
+      return localStorage.getItem(storageKey)
+    else
+      return window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? 'dark'
+        : 'light'
+  }
   
   const setPreference = () => {
     localStorage.setItem(storageKey, theme.value)
@@ -56,7 +56,7 @@ function App() {
   }
   
   const theme = {
-    value: 'light'
+    value: getColorPreference(),
   }
   
   reflectPreference()
