@@ -1,5 +1,5 @@
 .contact {
-    padding: 0 8rem 8rem 8rem;
+    padding: 0 8rem;
 
     @media (max-width: 1200px) {
       padding: 0 2rem;
@@ -9,13 +9,13 @@
 .cont-content {
     display: flex;
     flex-direction: column;
+    max-width: 30rem;
 }
 
 .cont-title p {
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 1rem;
-    /* text-transform: uppercase; */
     color:rgb(49, 181, 225);
 }
 
@@ -68,9 +68,16 @@
     color:rgb(49, 181, 225)
 } 
 
-  .container {
+  .containerContact {
+    display: flex;
     margin: 0 auto;
-    width: 100%;
+    padding: 5.5rem 0;
+    max-width: 83rem;
+    
+    @media (max-width: 1200px) {
+      text-align: center;
+    }
+    
   }
   
   .cont-content {

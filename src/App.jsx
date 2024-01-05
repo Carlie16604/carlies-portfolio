@@ -118,7 +118,7 @@ function App() {
             </div>
               <div className='techStack-title'>
                 <p>Tech Stack</p> 
-                    {/* add rotating tech stack for mobile? or sliding images? */}
+                    {/* add rotating tech stack for mobile? or sliding images? media scroller? */}
               </div>
             <div className='techStack'>
               <div className='logo-space'>
