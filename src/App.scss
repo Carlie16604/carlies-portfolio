@@ -126,7 +126,6 @@ nav {
     height: 85vh;
     text-align: center;
     justify-content: center;
-    padding-left: 0;
   }
 }
 
@@ -153,12 +152,6 @@ nav {
   flex-wrap: wrap;
   height: 74vh;
   position: relative;
-
-  @media (max-width: 1200px) {
-    flex-direction: wrap;
-    // gap: 2rem;
-    // align-items: center;
-  }
 }
 
 .port-main {
@@ -238,6 +231,7 @@ nav {
   gap: 1.5rem;
   width: 40px;
   height: 40px;
+  transition: all 0.5s;
   
 // .logo-setting,
 // .logo-size,
@@ -250,9 +244,28 @@ nav {
 //   padding-bottom: 3rem;
 
   @media (max-width: 1200px) {
-    width: 100%;
+    padding: 3.5vw 0.5vw 0 30.5vw;
+    transition: all 0.5s;
+  }
+
+  @media (max-width: 900px) {
+    padding: 3.5vw 0.5vw 0 20.5vw;
+    transition: all 0.5s;
+  }
+
+  @media (max-width: 800px) {
+    padding: 3.5vw 0.5vw 0 20.5vw;
+    transition: all 0.5s;
+  }
+
+  @media (max-width: 600px) {
+    padding: 3.5vw 0.5vw 0 12.5vw;
+    transition: all 0.5s;
+  }
+
+  @media (max-width: 500px) {
     padding: 3.5rem 0.5rem 1.5rem 0.5rem;
-    
+    transition: all 0.5s;
   }
 }
 
@@ -284,8 +297,7 @@ nav {
   @media (max-width: 1200px) {
     .techStack {
       display: flex;
-      flex-direction: column;
-      padding: 0;
+      flex-direction: column; 
     }
 
     img {
