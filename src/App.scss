@@ -123,7 +123,7 @@ nav {
   // width: 100%;
 
   @media (max-width: 1200px) {
-    height: 120vh;
+    height: 100vh;
     text-align: center;
     justify-content: center;
   }
@@ -244,12 +244,17 @@ nav {
 //   padding-bottom: 3rem;
 
   @media (max-width: 1200px) {
+    padding: 3.5vw 0.5vw 0 28.5vw;
+    transition: all 0.5s;
+  }
+
+  @media (max-width: 1050px) {
     padding: 3.5vw 0.5vw 0 30.5vw;
     transition: all 0.5s;
   }
 
   @media (max-width: 900px) {
-    padding: 3.5vw 0.5vw 0 20.5vw;
+    padding: 3.5vw 0.5vw 0 28.5vw;
     transition: all 0.5s;
   }
 
