@@ -10,6 +10,7 @@ const Titles = () => {
                     <span>UX / UI Developer</span>
                     <span>Problem Solver</span>
                 </h1>
+                {/* fix sizing when spacing out */}
             </div>
         </>
     );
