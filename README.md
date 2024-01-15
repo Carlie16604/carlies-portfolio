@@ -10,8 +10,7 @@ Welcome to the repository for my portfolio! This is where I'll be sharing the la
 - **Contact** Feel free to reach out on LinkedIn or email me.
 - **Light & Dark Mode** This allows users to have a visual preference.
 
-# Coming Soon!
-- **Interactive Contact Form** will give visitors an easy way to contact me directly.
+<!-- {# Coming Soon!
+- **Interactive Contact Form** will give visitors an easy way to contact me directly. } --!>
 
 <!-- {color scheme, describe buttons, talk about what the features do} -->
-<!-- {add a sliding/rotating tech stack? Get rid of the spacing issue completely} -->
