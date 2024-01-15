@@ -1,7 +1,7 @@
 import React from "react";
-import './App.scss';
-import './Projects.scss';
-import './sun-and-moon.scss';
+import './scss/App.scss';
+import './scss/Projects.scss';
+import './scss/sun-and-moon.scss';
 import Gray_Sig from "./imgs/Gray_Sig.png";
 import GitHub from './imgs/github.svg';
 import LinkedIn from './imgs/linkedin.svg';
@@ -10,6 +10,7 @@ import nodejs from './imgs/nodejs.png';
 import html from './imgs/html.png';
 import css from './imgs/css.png';
 import React_logo from './imgs/React-icon.svg.png';
+import vite from './imgs/viteeee.png';
 import selfie from './imgs/selfie.png';
 import JS from './imgs/JavaScript-logo.png';
 import Sass from './imgs/sass.png';
@@ -88,15 +89,7 @@ function App() {
               <a href="#projects">Projects</a>
               <a href="#contact">Contact</a>
           </section>
-          <div>
-            <img src={menu} className='mobile-menu' alt='menu'/>
-          </div>
         </nav>
-        <div className='mobile-nav closed-nav'>
-          <span>
-
-          </span>
-        </div> 
       <div className='sideBar'>
         <a href='https://github.com/Carlie16604' target='_blank'>
           <img src={GitHub} className='logo-setting' alt="Github"/>
@@ -116,10 +109,6 @@ function App() {
               </div>
               <img className='selfie' src={selfie} alt='selfie'/>
             </div>
-              {/* <div className='techStack-title'>
-                <p>Tech Stack</p> 
-                    add rotating tech stack for mobile? or sliding images? media scroller?
-              </div> */}
             <div className='techStack'>
               <div className='logo-space'>
                 <img src={html} title='HTML' alt='html logo' />
@@ -127,6 +116,7 @@ function App() {
                 <img src={JS} title='JavaScript' alt='JS logo' />
                 <img src={Postgresql} title='Postgresql' alt='PostgresQL logo' />
                 <img src={React_logo} title='React' alt='react logo' />
+                {/* <img src={vite} title='Vite' alt='vite logo' /> */}
                 <img src={nodejs} title='Node.js' alt='node.js logo' />
                 <img src={Sass} title='Sass' alt='Sass logo' />
               </div>
