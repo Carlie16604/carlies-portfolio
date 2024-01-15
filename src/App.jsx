@@ -89,15 +89,7 @@ function App() {
               <a href="#projects">Projects</a>
               <a href="#contact">Contact</a>
           </section>
-          <div>
-            <img src={menu} className='mobile-menu' alt='menu'/>
-          </div>
         </nav>
-        <div className='mobile-nav closed-nav'>
-          <span>
-
-          </span>
-        </div> 
       <div className='sideBar'>
         <a href='https://github.com/Carlie16604' target='_blank'>
           <img src={GitHub} className='logo-setting' alt="Github"/>
@@ -117,10 +109,6 @@ function App() {
               </div>
               <img className='selfie' src={selfie} alt='selfie'/>
             </div>
-              {/* <div className='techStack-title'>
-                <p>Tech Stack</p> 
-                    add rotating tech stack for mobile? or sliding images? media scroller?
-              </div> */}
             <div className='techStack'>
               <div className='logo-space'>
                 <img src={html} title='HTML' alt='html logo' />

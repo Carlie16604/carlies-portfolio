@@ -60,6 +60,11 @@ body {
   @media (max-width: 1200px) {
     left: 1rem;
   }
+
+  @media (max-width: 700px) {
+    transition: 5s;
+    left: -100%!important;
+  }
 }
 
 nav {
@@ -68,7 +73,7 @@ nav {
   box-shadow: var(--box-shadow);
   display: flex;
   font-size: 1.2rem;
-  height: auto;
+  // height: auto;
   padding: 5px 0;
   position: fixed;
   left: 0;
@@ -83,7 +88,7 @@ nav {
 
     @media (max-width: 1200px) {
       padding-right: 15px;
-      gap: 0.3rem;
+      gap: 2rem;
     }
   }
 
@@ -141,10 +146,6 @@ nav {
   transition: all .3s ease-in-out;
   width: 100%;
   z-index: 300;
-}
-
-.closed-nav {
-  left: -100%!important;
 }
 
 .content {
