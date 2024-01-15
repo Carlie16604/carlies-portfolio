@@ -1,7 +1,7 @@
 import React from "react";
-import './App.scss';
-import './Projects.scss';
-import './sun-and-moon.scss';
+import './scss/App.scss';
+import './scss/Projects.scss';
+import './scss/sun-and-moon.scss';
 import Gray_Sig from "./imgs/Gray_Sig.png";
 import GitHub from './imgs/github.svg';
 import LinkedIn from './imgs/linkedin.svg';
@@ -10,6 +10,7 @@ import nodejs from './imgs/nodejs.png';
 import html from './imgs/html.png';
 import css from './imgs/css.png';
 import React_logo from './imgs/React-icon.svg.png';
+import vite from './imgs/viteeee.png';
 import selfie from './imgs/selfie.png';
 import JS from './imgs/JavaScript-logo.png';
 import Sass from './imgs/sass.png';
@@ -127,6 +128,7 @@ function App() {
                 <img src={JS} title='JavaScript' alt='JS logo' />
                 <img src={Postgresql} title='Postgresql' alt='PostgresQL logo' />
                 <img src={React_logo} title='React' alt='react logo' />
+                {/* <img src={vite} title='Vite' alt='vite logo' /> */}
                 <img src={nodejs} title='Node.js' alt='node.js logo' />
                 <img src={Sass} title='Sass' alt='Sass logo' />
               </div>

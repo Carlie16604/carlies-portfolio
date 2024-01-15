@@ -1,7 +1,7 @@
 import React from 'react';
 import capstone from './imgs/capstone.png';
 import pro_selfie from './imgs/proselfie.png';
-import './Projects.scss';
+import './scss/Projects.scss';
 import github from './imgs/github.svg';
 import rocketship from './imgs/RocketLaunch.svg';
 

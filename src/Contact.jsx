@@ -1,8 +1,7 @@
 import React from 'react';
 import mail from './imgs/mail.svg';
 import LinkedIn from './imgs/linkedin.svg';
-import './contact.scss';
-import './About.scss';
+import './scss/contact.scss';
 
 const Contact = () => {
     return (
