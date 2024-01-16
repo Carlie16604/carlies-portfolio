@@ -12,5 +12,3 @@ Welcome to the repository for my portfolio! This is where I'll be sharing the la
 
 <!-- {# Coming Soon!
 - **Interactive Contact Form** will give visitors an easy way to contact me directly. } --!>
-
-<!-- {color scheme, describe buttons, talk about what the features do} -->
