@@ -12,7 +12,6 @@
   }
 
   .img-about {
-    // background-position: 50%;
     background-size: cover;
     border: 3px solid var(--border2);
     border-radius: 25%;
@@ -30,7 +29,6 @@
     flex-direction: column;
     font-family: poppins, sans-serif;
     color: var(--text-color);
-    // width: 100%;
 
     @keyframes typing {
       from {
@@ -69,7 +67,7 @@
   border-right: .15em solid;
   white-space: nowrap;
   margin: 0 auto;
-  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  animation: typing 5.5s steps(80, end), blink-caret .75s step-end infinite;
 }
 
 @media (max-width: 1200px) {
