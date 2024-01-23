@@ -64,10 +64,6 @@ const Projects = () => {
                                     <img src={github} className='pro-setting' title='See the code' alt='github icon'/>
                                     <p>The Code</p>
                                 </a>
-                                <a href='https://carlie-malone.netlify.app/' target='_blank'>
-                                    <img src={rocketship} className='pro-setting' title='View the Website' alt='preview icon'/>
-                                    <p>Live Website!</p>
-                                </a>
                             </div>
                         </div>
                     </div>

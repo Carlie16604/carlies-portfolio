@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import './scss/App.scss';
 import './scss/Projects.scss';
 import './scss/sun-and-moon.scss';

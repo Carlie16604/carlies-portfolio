@@ -4,13 +4,17 @@
     @media (max-width: 1200px) {
       padding: 0 2rem;
       justify-content: center;
+      flex-direction: column;
     }
 }
 
 .cont-content {
     display: flex;
     flex-direction: column;
-    max-width: 30rem;
+
+    @media (max-width: 1200px) {
+      align-items: center;
+    }
 }
 
 .cont-title p {
@@ -29,17 +33,6 @@
     padding-top: 0.5rem;
 }
 
-.cont-icons {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    margin-top: 2rem;
-
-    @media (max-width: 1200px) {
-      flex-direction: column;
-    }
-}
-
 .cont-icons-box {
     display: flex;
     flex-direction: row;
@@ -50,6 +43,11 @@
     width: 40px;
     height: 40px;
     align-items: center;
+
+    @media (max-width: 1200px) {
+      width: 30px;
+      height: 30px;
+    }
 }
 
 .cont-info {
@@ -63,11 +61,12 @@
     text-decoration: none;
     color: var(--text-color);
     padding-top: 0.5rem;
-}
+    transition: all .23s;
 
-.portal:hover {
-    color:rgb(49, 181, 225)
-} 
+    &:hover {
+      color:rgb(49, 181, 225);
+    }
+}
 
   .containerContact {
     display: flex;
@@ -76,14 +75,12 @@
     max-width: 83rem;
     
     @media (max-width: 1200px) {
+      flex-direction: column;
+      gap: 3rem;
+      height: auto;
       text-align: center;
     }
     
-  }
-  
-  .cont-content {
-    display: flex;
-    flex-direction: column;
   }
   
   .cont-title {
@@ -91,7 +88,6 @@
       font-size: 25px;
       font-weight: 500;
       margin-bottom: 1rem;
-      /* text-transform: uppercase; */
       color: rgb(49, 181, 225);
     }
   
@@ -124,31 +120,8 @@
     align-items: center;
   }
   
-  .cont-logo-setting {
-    width: 40px;
-    height: 40px;
-    align-items: center;
-
-    @media (max-width: 1200px) {
-      width: 30px;
-      height: 30px;
-    }
-  }
-  
   .cont-info {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-  }
-  
-  .portal {
-    justify-content: center;
-    text-decoration: none;
-    color: var(--text-color);
-    padding-top: 0.5rem;
-    transition: all .23s;
-  
-    &:hover {
-      color: rgb(49, 181, 225);
-    }
   }
