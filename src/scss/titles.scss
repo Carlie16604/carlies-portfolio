@@ -24,6 +24,10 @@
     @media (max-width: 1200px) {
       font-size: 6vw;
     }
+
+    @media (max-height: 500px) {
+      font-size: 6vh;
+    }
   }
   
   .titles div {
