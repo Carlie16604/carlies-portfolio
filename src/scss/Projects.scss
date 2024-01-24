@@ -21,7 +21,7 @@
     padding: 0;
   }
 
-  @media (max-height: 500px) {
+  @media (max-height: 700px) {
     padding: 0 4rem;
   }
 }
@@ -40,7 +40,7 @@
   height: auto;
   width: 100%;
 
-  @media (max-height: 500px) {
+  @media (max-height: 700px) {
     grid-gap: 2rem;
   }
 
@@ -139,7 +139,7 @@
     color: var(--text-color);
     padding-top: .8rem;
 
-    @media (max-height: 500px) {
+    @media (max-height: 700px) {
       padding: 0 2rem;
     }
   }
