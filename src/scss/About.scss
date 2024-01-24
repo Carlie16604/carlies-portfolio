@@ -1,5 +1,5 @@
 .about {
-  padding: 8rem;
+  padding: 8rem 7.80rem 8rem 8rem;
 
   .about-content {
     display: flex;
@@ -8,6 +8,10 @@
 
     @media (max-width: 1200px) {
       gap: 2rem;
+    }
+
+    @media (max-height: 500px) {
+      gap: 1rem;
     }
   }
 
@@ -22,6 +26,11 @@
       height: 332px;
       width: 324px;
     }
+
+    @media (max-height: 500px) {
+      height: 175px;
+      width: 175px;
+    }
   }
 
   .text-about {
@@ -29,6 +38,7 @@
     flex-direction: column;
     font-family: poppins, sans-serif;
     color: var(--text-color);
+    padding-top: 1rem;
 
     @keyframes typing {
       from {
@@ -71,6 +81,10 @@
 }
 
 @media (max-width: 1200px) {
+  .about {
+    padding: 8rem 2rem;
+  }
+
   .about-content {
     flex-direction: column;
     align-items: center;
@@ -94,8 +108,17 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-height: 500px) {
   .about {
-    padding: 8rem 2rem;
+   padding: 4rem 1rem; 
+  }
+
+  .container3 {
+    display: flex;
+    padding: 0 6rem;
+  }
+
+  .text-title {
+    padding: none;
   }
 }

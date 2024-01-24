@@ -25,10 +25,10 @@ const Projects = () => {
                                         <p className='desc1'>This project is a real world example of an e-commerce website. Feel free to login and explore the features!</p>
                                         <p className='desc2'>USERNAME: ethyl</p>
                                         <p className='desc2'>PASSWORD: 1234</p>
-                                        <li>Worked closely with a diverse team of 4, collaborating on all aspects of the project including project planning, design, development and deployment.</li><br/>
-                                        <li>Responsible for verification, importing & exporting, routes, front & backend debugging, etc.</li><br/>
-                                        <li>Played a pivotal role in building the platform, contributing to the frontend using React.js and backend utilizing Node.js, demonstrating proficiency in full-stack development.</li><br/>
-                                        <li>Excelled in communication, database management, project board, tasks management, human-computer interactions.</li><br/>
+                                        <li className='bullets'>Worked closely with a diverse team of 4 with a 2-week dealine, collaborating on all aspects of the project including project planning, design, development and deployment.</li><br/>
+                                        <li className='bullets'>Responsible for verification, importing & exporting, routes, front & backend debugging, etc.</li><br/>
+                                        <li className='bullets'>Played a pivotal role in building the platform, contributing to the frontend using React.js and backend utilizing Node.js, demonstrating proficiency in full-stack development.</li><br/>
+                                        <li className='bullets'>Excelled in communication, database management, project board, tasks management, human-computer interactions.</li><br/>
                                     </p>
                                 <div className='links'>
                                     <a href='https://github.com/team-black-market/Capstone-Project' target='_blank'>
@@ -54,10 +54,10 @@ const Projects = () => {
                             </h3>
                                 <p id='description'>
                                     <p className='desc2'>Solo Developer</p>
-                                    <li>This project is focused on UI development in combination of both software development and psychology for excellent user experience.</li><br/>
-                                    <li>Presents current & completed projects as well as demonstrating skills in developing a real world application for clients.</li><br/>
-                                    <li>Excelled with the art of prompt engineering & refined skills with design, React, Vite, and debugging.</li><br/>
-                                    <li>Learned new language, SCSS.</li><br/>
+                                    <li className='bullets'>This project is focused on UI development in combination of both software development and psychology for excellent user experience.</li><br/>
+                                    <li className='bullets'>Presents current & completed projects as well as demonstrating skills in developing a real world application for clients.</li><br/>
+                                    <li className='bullets'>Excelled with the art of prompt engineering & refined skills with design, React, Vite, and debugging.</li><br/>
+                                    <li className='bullets'>Learned new language, SCSS.</li><br/>
                                 </p>
                             <div className='links'>
                                 <a href='https://github.com/Carlie16604/carlies-portfolio' target='_blank'>

@@ -3,8 +3,7 @@
   padding: 0 4rem 4rem 4rem;
 
   @media (max-width: 1200px) {
-    padding: 0rem;
-    
+    padding: 0;
   }
 }
 
@@ -21,6 +20,10 @@
     text-align: center;
     padding: 0;
   }
+
+  @media (max-height: 500px) {
+    padding: 0 4rem;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -36,6 +39,10 @@
   grid-template-rows: auto auto;
   height: auto;
   width: 100%;
+
+  @media (max-height: 500px) {
+    grid-gap: 2rem;
+  }
 
   .pro__img {
     border-radius: 1.7rem;
@@ -123,13 +130,18 @@
 
   .desc1,
   .desc2 {
-    width: 100%;
+    // width: 100%;
     font-family: poppins, sans-serif;
   }
 
   .desc1 {
     text-align: center;
     color: var(--text-color);
+    padding-top: .8rem;
+
+    @media (max-height: 500px) {
+      padding: 0 2rem;
+    }
   }
 
   .desc2 {
@@ -143,6 +155,10 @@
     font-family: poppins, sans-serif;
     color: rgb(49, 181, 225);
   }
+}
+
+.bullets {
+  padding: 0 2rem;
 }
 
 .portfolio-title {

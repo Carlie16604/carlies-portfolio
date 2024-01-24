@@ -80,7 +80,10 @@
       height: auto;
       text-align: center;
     }
-    
+
+    @media (max-height: 500px) {
+      padding: 2rem 0;
+    }
   }
   
   .cont-title {
@@ -110,7 +113,11 @@
     @media (max-width: 1200px) {
       flex-direction: column;
       align-items: center;
-      gap: 1;
+    }
+
+    @media (max-height: 500px) {
+      gap: 1.5rem;
+      margin-top: .5rem;
     }
   }
   
