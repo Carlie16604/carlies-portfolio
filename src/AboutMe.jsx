@@ -1,5 +1,5 @@
 import './scss/About.scss';
-import Desktop from './imgs/desktop3.png'
+import Desktop from './imgs/Coffee2.jpg'
 
 const About = () => {
     return (
