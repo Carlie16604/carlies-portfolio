@@ -140,8 +140,12 @@ nav {
     justify-content: center;
   }
 
-  @media (max-height: 800px) {
-    height: 120vh;
+  @media (max-width: 800px) {
+    height: 95vh;
+  }
+
+  @media (max-height: 400px) {
+    height: 150vh;
   }
 }
 
