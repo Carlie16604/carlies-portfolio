@@ -114,7 +114,7 @@ function App() {
                 <img src={JS} title='JavaScript' alt='JS logo' />
                 <img src={Postgresql} title='Postgresql' alt='PostgresQL logo' />
                 <img src={React_logo} title='React' alt='react logo' />
-                {/* <img src={vite} title='Vite' alt='vite logo' /> */}
+                <img src={vite} title='Vite' alt='vite logo' />
                 <img src={nodejs} title='Node.js' alt='node.js logo' />
                 <img src={Sass} title='Sass' alt='Sass logo' />
               </div>
