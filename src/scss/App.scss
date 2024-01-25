@@ -140,8 +140,8 @@ nav {
     justify-content: center;
   }
 
-  @media (max-height: 750px) {
-    height: 120vh
+  @media (max-height: 800px) {
+    height: 120vh;
   }
 }
 
@@ -284,7 +284,8 @@ nav {
   }
 
   @media (max-width: 500px) {
-    padding: 3.5rem 0.5rem 1.5rem 0.5rem;
+    padding: .5rem 0 1.5rem 0.7rem;
+    gap: .8rem;
     transition: all 0.5s;
   }
 }
