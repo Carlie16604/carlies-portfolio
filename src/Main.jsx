@@ -1,5 +1,5 @@
 import React from 'react';
-import './scss/App.scss';
+import './scss/Main.scss';
 import './scss/sun-and-moon.scss';
 import Gray_Sig from "./imgs/Gray_Sig.png";
 import GitHub from './imgs/github.svg';
