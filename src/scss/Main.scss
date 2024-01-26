@@ -62,6 +62,10 @@ body {
   }
 
   @media (max-width: 900px) {
+    height: 3rem;
+  }
+
+  @media (max-width: 500px) {
     transition: 5s;
     left: -100%!important;
   }
