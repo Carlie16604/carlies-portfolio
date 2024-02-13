@@ -25,9 +25,20 @@
       font-size: 6vw;
     }
 
-    @media (max-height: 760px) {
-      font-size: 2.8vh;
+    @media (max-width: 1000px) {
+      font-size: 4vw;
+      overflow: visible;
     }
+ 
+    @media (max-width: 700px) {
+      font-size: 3vh;
+    }
+
+    @media (max-height: 500px) {
+      font-size: 3vw;
+      // overflow:visible;
+    }
+    // fix for sideways size cuz its too small
   }
   
   .titles div {

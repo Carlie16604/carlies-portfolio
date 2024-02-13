@@ -39,7 +39,7 @@ body {
 .container {
   display: flex;
   margin: 0 auto;
-  padding: 5.5rem 0 0 0;
+  padding: 5.5rem 0;
   max-width: 100rem;
 
   @media (max-width: 1200px) {
@@ -135,21 +135,20 @@ nav {
 .home {
   background-color: var(--background2);
   display: flex;
-  height: 85vh;
   position: relative;
 
   @media (max-width: 1200px) {
-    height: 80vh;
+    // padding:
     text-align: center;
     justify-content: center;
   }
 
   @media (max-width: 800px) {
-    height: 95vh;
+    // padding: 0 0 2rem 0;
   }
 
   @media (max-height: 400px) {
-    height: 150vh;
+    // height: 150vh;
   }
 }
 
@@ -181,6 +180,7 @@ nav {
   position: relative;
   padding-left: calc(5vh + 5.5rem);
   padding-right: 20vh;
+  //here
 
   @media (max-width: 1200px) {
     flex-direction: column-reverse;
@@ -205,6 +205,12 @@ nav {
   @media (max-height: 650px) {
     padding: 0 4rem;
   }
+
+  // @media (max-width: 1200px) {
+  //   p {
+  //     align-items: center;
+  //   }
+  // }
 }
 
 .sideBar {
