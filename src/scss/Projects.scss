@@ -46,16 +46,35 @@
 
 
   .pro__img {
+    display: flex;
     border-radius: 1.7rem;
     height: 35rem;
     width: 30rem;
     margin: auto;
     object-fit: cover;
     overflow: hidden;
+    background-color: var(--background2);
+    justify-content: space-around;
+    align-items: center;
 
     @media (max-width: 1200px) {
       height: 15rem;
       width: 15rem;
+    }
+  }
+
+  .pro_selfie {
+    background-position: 50%;
+    background-size: cover;
+    border: 3px solid var(--border);
+    border-radius: 50%;
+    position: absolute;
+    height: 332px;
+    width: 324px;
+  
+    @media (max-width: 1200px) {
+      height: 200px;
+      width: 200px;
     }
   }
 
