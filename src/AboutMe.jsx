@@ -4,6 +4,7 @@ import Desktop from './imgs/Coffee2.jpg'
 const About = () => {
     return (
     <section className='about' id='about'>
+        {/* add container min & max height */}
         <div className='container3'>
           <div className='about-content'>
             <img className='img-about' src={Desktop} alt='Desktop img'/> 

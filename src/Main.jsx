@@ -76,6 +76,9 @@ function App() {
       setPreference()
     })
 
+    //consider adding container for min & max height
+    //fix tech stack with skillicons
+
     return (
       <>
       <div id='root'>
