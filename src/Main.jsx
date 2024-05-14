@@ -11,7 +11,8 @@ import css from './imgs/css.png';
 import JS from './imgs/JavaScript-logo.png';
 import React_logo from './imgs/React-icon.svg.png';
 import Sass from './imgs/sass.png';
-import vite from './imgs/viteeee.png';
+import Figma from './imgs/figma.png';
+import CSharp from './imgs/CSharp.png';
 import selfie from './imgs/Carliee.jpg';
 import Titles from './Titles.jsx';
 import About from './AboutMe.jsx';
@@ -114,9 +115,10 @@ function App() {
                 <img src={JS} title='JavaScript' alt='JS logo' />
                 <img src={Postgresql} title='Postgresql' alt='PostgresQL logo' />
                 <img src={React_logo} title='React' alt='react logo' />
-                <img src={vite} title='Vite' alt='vite logo' />
                 <img src={nodejs} title='Node.js' alt='node.js logo' />
                 <img src={Sass} title='Sass' alt='Sass logo' />
+                <img src={Figma} title='Figma' alt='figma logo' />
+                {/* <img src={CSharp} title='C#' alt='C# logo' /> */}
               </div>
             </div>
           </div>
