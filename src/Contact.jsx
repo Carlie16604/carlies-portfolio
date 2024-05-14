@@ -20,7 +20,7 @@ const Contact = () => {
                                 </div>
                             <img src={LinkedIn} className='cont-logo-setting' alt='LinkedIn svg' />
                                 <div className='cont-info'>
-                                    <a className='portal' href='https://www.linkedin.com/in/carlie-malone23/' target='_blank'>Carlie Malone</a>
+                                    <a className='portal' href='https://www.linkedin.com/in/carlie-malone23/' target='_blank' rel='noreferrer'>Carlie Malone</a>
                                 </div>
                             {/* <img src={GitHub} className='cont-logo-setting' alt='GitHub PNG' /> */}
                     </div>

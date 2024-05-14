@@ -1,6 +1,7 @@
 import React from 'react';
 import capstone from './imgs/capstone.png';
 import pro_selfie from './imgs/proselfie.png';
+import selfie from './imgs/Carliee.jpg';
 import './scss/Projects.scss';
 import github from './imgs/github.svg';
 import rocketship from './imgs/RocketLaunch.svg';
@@ -11,10 +12,10 @@ const Projects = () => {
             <div className='container2'>
                 <div className='project-content'>
                     <p className='portfolio-title'>Portfolio</p>
-                    <h3 className='port-intro'>Here's a look at some of my work!</h3>
+                    <h3 className='port-intro'>Take a look at some of my work!</h3>
                     <div className='projects-grid'>
                         <div className='pro pro__1'>
-                            <a href='https://black-market-50e6.onrender.com' target='_blank'> 
+                            <a href='https://black-market-50e6.onrender.com' target='_blank' rel='noreferrer'> 
                                 <img src={capstone} className='pro__img' alt='capstone pro'/>
                             </a>
                             <div className='pro__text'>
@@ -31,11 +32,11 @@ const Projects = () => {
                                         <li className='bullets'>Excelled in communication, database management, project board, tasks management, human-computer interactions.</li><br/>
                                     </p>
                                 <div className='links'>
-                                    <a href='https://github.com/team-black-market/Capstone-Project' target='_blank'>
+                                    <a href='https://github.com/team-black-market/Capstone-Project' target='_blank' rel='noreferrer'>
                                         <img src={github} className='pro-setting' title='See the code' alt='github icon'/>
                                         <p>The Code</p>
                                     </a>
-                                    <a href='https://black-market-50e6.onrender.com/' target='_blank'>
+                                    <a href='https://black-market-50e6.onrender.com/' target='_blank' rel='noreferrer'>
                                         <img src={rocketship} className='pro-setting' title='View the Website' alt='preview icon'/>
                                         <p>Live Demo</p>
                                     </a>
@@ -45,8 +46,10 @@ const Projects = () => {
                     </div>
                     <div className='projects-grid'>
                         <div className='pro pro__1'>
-                            <a href='https://carlie-malone.netlify.app/' target='_blank'>
-                                <img src={pro_selfie} className='pro__img' alt='capstone pro'/>
+                            <a href='https://carlie-malone.netlify.app/' target='_blank' rel='noreferrer'>
+                                <div className='pro__img'>
+                                    <img className='pro_selfie' src={selfie} alt='selfie'/>
+                                </div>
                             </a>
                             <div className='pro__text'>
                             <h3>My Portfolio! 
@@ -60,7 +63,7 @@ const Projects = () => {
                                     <li className='bullets'>Learned new language, SCSS.</li><br/>
                                 </p>
                             <div className='links'>
-                                <a href='https://github.com/Carlie16604/carlies-portfolio' target='_blank'>
+                                <a href='https://github.com/Carlie16604/carlies-portfolio' target='_blank' rel='noreferrer'>
                                     <img src={github} className='pro-setting' title='See the code' alt='github icon'/>
                                     <p>The Code</p>
                                 </a>

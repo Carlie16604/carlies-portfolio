@@ -12,7 +12,7 @@ import JS from './imgs/JavaScript-logo.png';
 import React_logo from './imgs/React-icon.svg.png';
 import Sass from './imgs/sass.png';
 import vite from './imgs/viteeee.png';
-import selfie from './imgs/selfie.png';
+import selfie from './imgs/Carliee.jpg';
 import Titles from './Titles.jsx';
 import About from './AboutMe.jsx';
 import Projects from './Projects.jsx';
@@ -89,10 +89,10 @@ function App() {
           </section>
         </nav>
       <div className='sideBar'>
-        <a href='https://github.com/Carlie16604' target='_blank'>
+        <a href='https://github.com/Carlie16604' target='_blank' rel='noreferrer'>
           <img src={GitHub} className='logo-setting' alt="Github"/>
         </a>
-        <a href='https://www.linkedin.com/in/carlie-malone23/' target='_blank'>
+        <a href='https://www.linkedin.com/in/carlie-malone23/' target='_blank' rel='noreferrer'>
           <img src={LinkedIn} className='logo-setting' alt="LinkedIn" />
         </a>
       </div> 
