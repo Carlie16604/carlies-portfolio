@@ -203,6 +203,10 @@ nav {
 
   p {
     max-width: 50vw;
+
+    @media (max-width: 500px) {
+      max-width: 15rem;
+    }
   }
 
   @media (max-height: 750px) {
@@ -230,6 +234,7 @@ nav {
   padding: 0.5rem;
   align-items: center;
   z-index: 2;
+  transition: transform .23s ease;
 
   > a:hover {
     transform: scale(1.2);
@@ -252,7 +257,7 @@ nav {
 
   &:hover {
     transform: scale(1.02);
-    transition: all 0.23s;
+    // transition: all 0.23s;
   }
 }
 
@@ -335,22 +340,3 @@ nav {
     right: 0;
   }
 }
-
-// .techStack {
-//   display: flex;
-//   font-family: poppins, sans-serif;
-//   color: var(--text-color);
-//   font-size: 1.7rem;
-
-//   @media (max-width: 1200px) {
-//     .techStack {
-//       display: flex;
-//       flex-direction: column; 
-//     }
-
-//     img {
-//       height: 2rem;
-//       width: 2rem;
-//     }
-//   }
-// }
