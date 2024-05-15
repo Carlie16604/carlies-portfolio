@@ -76,9 +76,6 @@ function App() {
       setPreference()
     })
 
-    //consider adding container for min & max height
-    //fix tech stack with skillicons
-
     return (
       <>
       <div id='root'>
@@ -116,16 +113,16 @@ function App() {
             <div>
               <ul>
                 <li>
-                  <img src="https://skillicons.dev/icons?i=html,css,ts" alt='html & css' />
+                  <img src="https://skillicons.dev/icons?i=html,css,ts" alt='html & css' title='HTML, CSS, and TypeScript'/>
                 </li>
                 <li>
-                  <img src="https://skillicons.dev/icons?i=js,nodejs,postgres" alt='javacript' />
+                  <img src="https://skillicons.dev/icons?i=js,nodejs,postgres" alt='javacript, nodejs, and Postgres' title='Javascript, Node.js, and Postgres'/>
                 </li>
                 <li>
-                  <img src="https://skillicons.dev/icons?i=postman,sass,figma" alt='Postman & Sass logo' />
+                  <img src="https://skillicons.dev/icons?i=postman,sass,figma" alt='Postman, Figma & Sass logo' title='Postman, SASS, and Figma' />
                 </li>
                 <li>
-                  <img src="https://skillicons.dev/icons?i=react,dotnet" alt='react & dotnet logo' />
+                  <img src="https://skillicons.dev/icons?i=react,dotnet" alt='react & dotnet logo' title='React and DotNet' />
                 </li>
               </ul>
             </div>

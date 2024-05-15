@@ -28,7 +28,7 @@
 
 @media (max-width: 1200px) {
   .project-content {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 }
 
@@ -56,6 +56,11 @@
     background-color: var(--background2);
     justify-content: space-around;
     align-items: center;
+    transition: transform .5s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
 
     @media (max-width: 1200px) {
       height: 15rem;
@@ -130,7 +135,7 @@
 
     @media (max-width: 1200px) {
       flex-direction: column;
-      padding: 1.5rem;
+      padding: 1rem;
     }
   }
 
@@ -228,6 +233,7 @@
     margin: 0px 35px;
     width: 40px;
     height: 40px;
+    transition: transform .23s ease;
   }
 }
 

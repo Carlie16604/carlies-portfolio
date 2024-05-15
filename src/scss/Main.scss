@@ -40,15 +40,7 @@ body {
   display: flex;
   margin: 0 auto;
   padding: 5.5rem 0;
-  max-width: 80rem;
-
-  @media (max-width: 1200px) {
-    flex-direction: column;
-    gap: 3rem;
-    height: auto;
-    text-align: center;
-    padding: 3rem 0 0 0;
-  }
+  max-width: 70rem;
 }
 
 .App-logo {
@@ -170,6 +162,15 @@ nav {
   display: flex;
   flex-wrap: wrap;
   height: 64vh;
+  // padding-right: 5rem;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    gap: 3rem;
+    height: auto;
+    text-align: center;
+    // padding: 3rem 0 0 0;
+  }
 }
 
 .port-main {
@@ -240,6 +241,12 @@ nav {
   height: 40px;
   padding: 0.5rem;
   padding-bottom: 3rem;
+  transition: transform .23s ease;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.23s;
+  }
 }
 
 .logo-size {
@@ -257,16 +264,21 @@ nav {
   display: flex;
   align-items: center;
   bottom: 0;
-  // color:
   font-size: 1.7rem;
-  // left: 0;
-  // position: absolute;
+  font-family: poppins, sans-serif;
+  color: var(--text-color);
+  // transition: all 5s;
 
   ul {
     display: flex;
     flex-wrap: wrap;
     gap: 2.5rem;
     list-style: none;
+
+    @media (max-width: 1200px) {
+      justify-content: center;
+      padding: 0;
+    }
   }
 
   ul li {
@@ -275,6 +287,16 @@ nav {
   
   ul li img {
     transition: all .3s ease-in-out;
+
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    position: static;
+    align-content: center;
   }
 }
 
