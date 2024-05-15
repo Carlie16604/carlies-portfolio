@@ -39,8 +39,8 @@ body {
 .container {
   display: flex;
   margin: 0 auto;
-  padding: 5.5rem 0;
-  max-width: 100rem;
+  padding: 0 0 5.5rem 0;
+  max-width: 80rem;
 
   @media (max-width: 1200px) {
     flex-direction: column;
@@ -169,18 +169,13 @@ nav {
 .content {
   display: flex;
   flex-wrap: wrap;
-  height: 74vh;
-  position: relative;
+  height: 64vh;
 }
 
 .port-main {
   display: flex;
   align-items: center;
-  gap: 25vh;
-  position: relative;
-  padding-left: calc(5vh + 5.5rem);
-  padding-right: 20vh;
-  //here
+  gap: 8rem;
 
   @media (max-width: 1200px) {
     flex-direction: column-reverse;
@@ -196,6 +191,11 @@ nav {
   position: relative;
   font-family: poppins, sans-serif;
   color: var(--text-color);
+  max-width: 773px;
+
+  p {
+    max-width: 50vw;
+  }
 
   @media (max-height: 750px) {
     gap: .8rem;
@@ -253,55 +253,84 @@ nav {
   padding-bottom: 3rem;
 }
 
-.logo-space {
+// .logo-space {
+//   display: flex;
+//   flex-direction: row;
+//   padding: 1.5rem 1.5rem 1.5rem 8.5rem;
+//   gap: 1.3rem;
+//   width: 40px;
+//   height: 40px;
+//   transition: all 0.5s;
+
+//   @media (max-width: 1200px) {
+//     padding: 3.5vw 0.5vw 0 23.5vw;
+//     transition: all 0.5s;
+//   }
+
+//   @media (max-width: 1199px) {
+//     padding: 3.5vw 0.5vw 0 30.5vw;
+//     transition: all 0.5s;
+//   }
+
+//   @media (max-width: 1050px) {
+//     padding: 3.5vw 0.5vw 0 28.5vw;
+//     transition: all 0.5s;
+//   }
+
+//   @media (max-width: 900px) {
+//     padding: 3.5vw 0.5vw 0 23.5vw;
+//     transition: all 0.5s;
+//   }
+
+//   @media (max-width: 800px) {
+//     padding: 3.5vw 0.5vw 0 21.5vw;
+//     transition: all 0.5s;
+//   }
+
+//   @media (max-width: 700px) {
+//     padding: 3.5vw 0.5vw 0 18.5vw;
+//     transition: all 0.5s;
+//   }
+
+//   @media (max-width: 600px) {
+//     padding: 3.5vw 0.5vw 0 7.5vw;
+//     transition: all 0.5s;
+//   }
+
+//   @media (max-width: 500px) {
+//     padding: .5rem 0 1.5rem 0.7rem;
+//     gap: .8rem;
+//     transition: all 0.5s;
+//   }
+// }
+
+.skills {
   display: flex;
-  flex-direction: row;
-  padding: 1.5rem 1.5rem 1.5rem 8.5rem;
-  gap: 1.3rem;
-  width: 40px;
-  height: 40px;
-  transition: all 0.5s;
+  align-items: center;
+  bottom: 0;
+  // color:
+  font-size: 1.7rem;
+  // left: 0;
+  position: absolute;
 
-  @media (max-width: 1200px) {
-    padding: 3.5vw 0.5vw 0 23.5vw;
-    transition: all 0.5s;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    list-style: none;
   }
 
-  @media (max-width: 1199px) {
-    padding: 3.5vw 0.5vw 0 30.5vw;
-    transition: all 0.5s;
+  ul li {
+    cursor: pointer;
   }
+  
+  ul li img {
+    transition: all .3s ease-in-out;
+  }
+}
 
-  @media (max-width: 1050px) {
-    padding: 3.5vw 0.5vw 0 28.5vw;
-    transition: all 0.5s;
-  }
-
-  @media (max-width: 900px) {
-    padding: 3.5vw 0.5vw 0 23.5vw;
-    transition: all 0.5s;
-  }
-
-  @media (max-width: 800px) {
-    padding: 3.5vw 0.5vw 0 21.5vw;
-    transition: all 0.5s;
-  }
-
-  @media (max-width: 700px) {
-    padding: 3.5vw 0.5vw 0 18.5vw;
-    transition: all 0.5s;
-  }
-
-  @media (max-width: 600px) {
-    padding: 3.5vw 0.5vw 0 7.5vw;
-    transition: all 0.5s;
-  }
-
-  @media (max-width: 500px) {
-    padding: .5rem 0 1.5rem 0.7rem;
-    gap: .8rem;
-    transition: all 0.5s;
-  }
+.icon-size {
+  height: 48px;
 }
 
 .selfie {
@@ -329,21 +358,21 @@ nav {
   }
 }
 
-.techStack {
-  display: flex;
-  font-family: poppins, sans-serif;
-  color: var(--text-color);
-  font-size: 1.7rem;
+// .techStack {
+//   display: flex;
+//   font-family: poppins, sans-serif;
+//   color: var(--text-color);
+//   font-size: 1.7rem;
 
-  @media (max-width: 1200px) {
-    .techStack {
-      display: flex;
-      flex-direction: column; 
-    }
+//   @media (max-width: 1200px) {
+//     .techStack {
+//       display: flex;
+//       flex-direction: column; 
+//     }
 
-    img {
-      height: 2rem;
-      width: 2rem;
-    }
-  }
-}
+//     img {
+//       height: 2rem;
+//       width: 2rem;
+//     }
+//   }
+// }
