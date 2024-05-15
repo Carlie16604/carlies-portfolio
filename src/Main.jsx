@@ -108,7 +108,7 @@ function App() {
                 <Titles />
                 <p>Hey, I'm Carlie. I'm a software engineer / fullstack developer with an eye for style. I implement seamless applications and excellent user interface.</p>
                 <p>📍 Denver, CO</p>
-              </div> 30
+              </div> 
               <img className='selfie' src={selfie} alt='selfie'/>
             </div>
             <div className='skills'>
