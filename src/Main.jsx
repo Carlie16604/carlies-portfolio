@@ -76,9 +76,6 @@ function App() {
       setPreference()
     })
 
-    //consider adding container for min & max height
-    //fix tech stack with skillicons
-
     return (
       <>
       <div id='root'>
@@ -108,11 +105,28 @@ function App() {
                 <Titles />
                 <p>Hey, I'm Carlie. I'm a software engineer / fullstack developer with an eye for style. I implement seamless applications and excellent user interface.</p>
                 <p>📍 Denver, CO</p>
-              </div>
+              </div> 
               <img className='selfie' src={selfie} alt='selfie'/>
             </div>
-            <div className='techStack'>
-              <div className='logo-space'>
+            <div className='skills'>
+              <p>Tech Stack</p>
+            <div>
+              <ul>
+                <li>
+                  <img src="https://skillicons.dev/icons?i=html,css,ts" alt='html & css' title='HTML, CSS, and TypeScript'/>
+                </li>
+                <li>
+                  <img src="https://skillicons.dev/icons?i=js,nodejs,postgres" alt='javacript, nodejs, and Postgres' title='Javascript, Node.js, and Postgres'/>
+                </li>
+                <li>
+                  <img src="https://skillicons.dev/icons?i=postman,sass,figma" alt='Postman, Figma & Sass logo' title='Postman, SASS, and Figma' />
+                </li>
+                <li>
+                  <img src="https://skillicons.dev/icons?i=react,dotnet" alt='react & dotnet logo' title='React and DotNet' />
+                </li>
+              </ul>
+            </div>
+              {/* <div className='logo-space'>
                 <img src={html} title='HTML' alt='html logo' />
                 <img src={css} title='CSS' alt='css logo' />
                 <img src={JS} title='JavaScript' alt='JS logo' />
@@ -122,7 +136,6 @@ function App() {
                 <img src={Sass} title='Sass' alt='Sass logo' />
                 <img src={Figma} title='Figma' alt='figma logo' />
                 {/* <img src={CSharp} title='C#' alt='C# logo' /> */}
-              </div>
             </div>
           </div>
         </div>

@@ -22,23 +22,23 @@
     text-align: center;
 
     @media (max-width: 1200px) {
-      font-size: 6vw;
-    }
-
-    @media (max-width: 1000px) {
       font-size: 4vw;
-      overflow: visible;
-    }
- 
-    @media (max-width: 700px) {
-      font-size: 3vh;
     }
 
-    @media (max-height: 500px) {
-      font-size: 3vw;
-      // overflow:visible;
+    // @media (max-width: 1000px) {
+    //   font-size: 4vw;
+    //   overflow: visible;
+    // }
+ 
+    // @media (max-width: 700px) {
+    //   font-size: 3vh;
+    // }
+
+    @media (max-width: 600px) {
+      font-size: 3vh;
+      overflow:visible;
     }
-    // fix for sideways size cuz its too small
+  //   // fix for sideways size cuz its too small
   }
   
   .titles div {
