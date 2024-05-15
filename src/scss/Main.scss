@@ -162,14 +162,21 @@ nav {
   display: flex;
   flex-wrap: wrap;
   height: 64vh;
-  // padding-right: 5rem;
+  transition: transform .5s ease;
+
+  @media (max-width: 1350px) {
+    padding: 0 6rem;
+  }
 
   @media (max-width: 1200px) {
     flex-direction: column;
     gap: 3rem;
     height: auto;
     text-align: center;
-    // padding: 3rem 0 0 0;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 0;
   }
 }
 
