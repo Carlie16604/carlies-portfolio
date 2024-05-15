@@ -4,15 +4,6 @@ import './scss/sun-and-moon.scss';
 import Gray_Sig from "./imgs/Gray_Sig.png";
 import GitHub from './imgs/github.svg';
 import LinkedIn from './imgs/linkedin.svg';
-import Postgresql from './imgs/PSQL.png';
-import nodejs from './imgs/nodejs.png';
-import html from './imgs/html.png';
-import css from './imgs/css.png';
-import JS from './imgs/JavaScript-logo.png';
-import React_logo from './imgs/React-icon.svg.png';
-import Sass from './imgs/sass.png';
-import Figma from './imgs/figma.png';
-import CSharp from './imgs/CSharp.png';
 import selfie from './imgs/Carliee.jpg';
 import Titles from './Titles.jsx';
 import About from './AboutMe.jsx';
@@ -126,16 +117,6 @@ function App() {
                 </li>
               </ul>
             </div>
-              {/* <div className='logo-space'>
-                <img src={html} title='HTML' alt='html logo' />
-                <img src={css} title='CSS' alt='css logo' />
-                <img src={JS} title='JavaScript' alt='JS logo' />
-                <img src={Postgresql} title='Postgresql' alt='PostgresQL logo' />
-                <img src={React_logo} title='React' alt='react logo' />
-                <img src={nodejs} title='Node.js' alt='node.js logo' />
-                <img src={Sass} title='Sass' alt='Sass logo' />
-                <img src={Figma} title='Figma' alt='figma logo' />
-                {/* <img src={CSharp} title='C#' alt='C# logo' /> */}
             </div>
           </div>
         </div>
