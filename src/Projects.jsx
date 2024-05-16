@@ -1,6 +1,5 @@
 import React from 'react';
 import capstone from './imgs/capstone.png';
-import pro_selfie from './imgs/proselfie.png';
 import selfie from './imgs/Carliee.jpg';
 import './scss/Projects.scss';
 import github from './imgs/github.svg';
