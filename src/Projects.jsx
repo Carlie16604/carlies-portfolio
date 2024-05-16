@@ -1,6 +1,7 @@
 import React from 'react';
 import capstone from './imgs/capstone.png';
 import selfie from './imgs/Carliee.jpg';
+import lightbulb from './imgs/lightbulbb.png';
 import './scss/Projects.scss';
 import github from './imgs/github.svg';
 import rocketship from './imgs/RocketLaunch.svg';
@@ -68,6 +69,28 @@ const Projects = () => {
                                 </a>
                             </div>
                         </div>
+                    </div>
+                    <div className='projects-grid'>
+                        <div className='pro pro__1'>
+                            <a href='https://github.com/Carlie16604/' target='_blank' rel='noreferrer'>
+                                <div className='pro__img'>
+                                    <img className='pro_selfie' style={{border: 'transparent'}} src={lightbulb} alt='lightbulb'/>
+                                </div>
+                            </a>
+                            <div className='pro__text' style={{width: '-webkit-fill-available'}}>
+                            <h3>Coming Soon! 
+                                <span className='date-class'>(2024)</span>
+                            </h3>
+                                <p id='description'>
+                                    <p className='desc2'>Solo Developer</p>
+                                    <li className='bullets'>More projects coming soon!</li><br/>
+                                </p>
+                            <div className='links'>
+                                <a href='https://github.com/Carlie16604/' target='_blank' rel='noreferrer'>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
