@@ -12,7 +12,6 @@ import Contact from './Contact.jsx';
 import SunAndMoon from './sun-and-moon.jsx';
 
 function App() {
-// something to do with the storage key?
   const storageKey = 'theme-preference'
 
   const onClick = () => {
