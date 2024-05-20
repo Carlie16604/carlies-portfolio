@@ -83,7 +83,7 @@ const Projects = () => {
                             </h3>
                                 <p id='description'>
                                     <p className='desc2'>Solo Developer</p>
-                                    <li className='bullets'>More projects coming soon!</li><br/>
+                                    {/* <li className='bullets'>More projects coming soon!</li><br/> */}
                                 </p>
                             <div className='links'>
                                 <a href='https://github.com/Carlie16604/' target='_blank' rel='noreferrer'>
