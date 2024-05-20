@@ -131,17 +131,8 @@ nav {
   position: relative;
 
   @media (max-width: 1200px) {
-    // padding:
     text-align: center;
     justify-content: center;
-  }
-
-  @media (max-width: 800px) {
-    // padding: 0 0 2rem 0;
-  }
-
-  @media (max-height: 400px) {
-    // height: 150vh;
   }
 }
 
@@ -321,11 +312,13 @@ nav {
   background-position: 50%;
   background-size: cover;
   border: 3px solid var(--border);
-  border-radius: 50%;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   position: relative;
   height: 332px;
   width: 324px;
   top: 50px;
+  animation: borderAnimation 8s ease-in-out infinite;
+  // animation: rotateAnimation 8s linear infinite;
 
   @media (max-width: 900px) {
     height: 200px;
@@ -341,3 +334,25 @@ nav {
     right: 0;
   }
 }
+
+@keyframes borderAnimation {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+// @keyframes rotateAnimation {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
+// add to About Me?

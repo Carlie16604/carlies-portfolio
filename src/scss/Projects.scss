@@ -76,6 +76,7 @@
     position: absolute;
     height: 332px;
     width: 324px;
+    animation: borderAnimation 8s ease-in-out infinite;
   
     @media (max-width: 1200px) {
       height: 200px;
@@ -179,6 +180,18 @@
     font-weight: 500;
     font-family: poppins, sans-serif;
     color: rgb(49, 181, 225);
+  }
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
 }
 
