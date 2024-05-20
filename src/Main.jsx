@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './scss/Main.scss';
 import './scss/sun-and-moon.scss';
 import Gray_Sig from "./imgs/Gray_Sig.png";
@@ -10,8 +11,10 @@ import About from './AboutMe.jsx';
 import Projects from './Projects.jsx';
 import Contact from './Contact.jsx';
 import SunAndMoon from './sun-and-moon.jsx';
+import { IconX } from "@tabler/icons-react";
 
 function App() {
+  const [mobileNav, setMobileNav] = useState(false);
   const storageKey = 'theme-preference'
 
   const onClick = () => {
@@ -69,16 +72,33 @@ function App() {
     return (
       <>
       <div id='root'>
-        <nav>
-          <img src={Gray_Sig} className="App-logo" alt="Signature" />
-          <section className='navFormat'>
-            <SunAndMoon />
-              <a href="#home">Home</a>
-              <a href="#about">About</a>
-              <a href="#projects">Projects</a>
-              <a href="#contact">Contact</a>
-          </section>
-        </nav>
+      <nav>
+        <img src={Gray_Sig} className="App-logo" alt="Signature" />
+        <div className={`mobile-nav-full ${mobileNav ? "open-flex" : "closed-flex"}`}>
+          <IconX onClick={setMobileNav} className="x-mobile" />
+          <div className="mobile-links">
+            <Link onClick={setMobileNav} to="#home">
+              Home
+            </Link>
+            <Link onClick={setMobileNav} to="#about">
+              About
+            </Link>
+            <Link onClick={setMobileNav} to="#projects">
+              Projects
+            </Link>
+            <Link onClick={setMobileNav} to="#contact">
+              Contact
+            </Link>
+          </div>
+        </div>
+        <section className='navFormat'>
+          <SunAndMoon />
+          <Link to="#home">Home</Link>
+          <Link to="#about">About</Link>
+          <Link to="#projects">Projects</Link>
+          <Link to="#contact">Contact</Link>
+        </section>
+      </nav>
       <div className='sideBar'>
         <a href='https://github.com/Carlie16604' target='_blank' rel='noreferrer'>
           <img src={GitHub} className='logo-setting' alt="Github"/>
