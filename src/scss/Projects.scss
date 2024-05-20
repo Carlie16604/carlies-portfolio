@@ -57,11 +57,9 @@
     justify-content: space-around;
     align-items: center;
     transition: transform .5s ease;
-    filter: grayscale(30%);
     transition: .3s;
 
     &:hover {
-      filter: grayscale(0%);
       transform: scale(1.05);
     }
 
