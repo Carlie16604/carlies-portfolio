@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
+// import { Link } from 'react-router-dom';
 import './scss/Main.scss';
 import './scss/sun-and-moon.scss';
-import Gray_Sig from "./imgs/Gray_Sig.png";
+// import Gray_Sig from "./imgs/Gray_Sig.png";
 import GitHub from './imgs/github.svg';
 import LinkedIn from './imgs/linkedin.svg';
 import selfie from './imgs/Carliee.jpg';
@@ -9,76 +10,98 @@ import Titles from './Titles.jsx';
 import About from './AboutMe.jsx';
 import Projects from './Projects.jsx';
 import Contact from './Contact.jsx';
-import SunAndMoon from './sun-and-moon.jsx';
+// import SunAndMoon from './sun-and-moon.jsx';
+// import { IconX } from "@tabler/icons-react";
+import NavBar from './NavBar.jsx';
 
 function App() {
-  const storageKey = 'theme-preference'
+  // const [mobileNav, setMobileNav] = useState(false);
 
-  const onClick = () => {
-    theme.value = theme.value === 'light'
-      ? 'dark'
-      : 'light'
+  //this stopped working
+  // const storageKey = 'theme-preference'
+
+  // const onClick = () => {
+  //   theme.value = theme.value === 'light'
+  //     ? 'dark'
+  //     : 'light'
   
-    setPreference()
-  }
+  //   setPreference()
+  // }
   
-  const getColorPreference = () => {
-    if (localStorage.getItem(storageKey))
-      return localStorage.getItem(storageKey)
-    else
-      return window.matchMedia('(prefers-color-scheme: dark)').matches
-        ? 'dark'
-        : 'light'
-  }
+  // const getColorPreference = () => {
+  //   if (localStorage.getItem(storageKey))
+  //     return localStorage.getItem(storageKey)
+  //   else
+  //     return window.matchMedia('(prefers-color-scheme: dark)').matches
+  //       ? 'dark'
+  //       : 'light'
+  // }
   
-  const setPreference = () => {
-    localStorage.setItem(storageKey, theme.value)
-    reflectPreference()
-  }
+  // const setPreference = () => {
+  //   localStorage.setItem(storageKey, theme.value)
+  //   reflectPreference()
+  // }
   
-  const reflectPreference = () => {
-    document.firstElementChild
-      .setAttribute('data-theme', theme.value)
+  // const reflectPreference = () => {
+  //   document.firstElementChild
+  //     .setAttribute('data-theme', theme.value)
   
-    document
-      .querySelector('#theme-toggle')
-      ?.setAttribute('aria-label', theme.value)
-  }
+  //   document
+  //     .querySelector('#theme-toggle')
+  //     ?.setAttribute('aria-label', theme.value)
+  // }
   
-  const theme = {
-    value: getColorPreference(),
-  }
+  // const theme = {
+  //   value: getColorPreference(),
+  // }
   
-  reflectPreference()
+  // reflectPreference()
   
-  window.onload = () => {
-    reflectPreference()
+  // window.onload = () => {
+  //   reflectPreference()
   
-    document
-      .querySelector('#theme-toggle')
-      .addEventListener('click', onClick)
-  }
+  //   document
+  //     .querySelector('#theme-toggle')
+  //     .addEventListener('click', onClick)
+  // }
   
-  window
-    .matchMedia('(prefers-color-scheme: dark)')
-    .addEventListener('change', ({matches:isDark}) => {
-      theme.value = isDark ? 'dark' : 'light'
-      setPreference()
-    })
+  // window
+  //   .matchMedia('(prefers-color-scheme: dark)')
+  //   .addEventListener('change', ({matches:isDark}) => {
+  //     theme.value = isDark ? 'dark' : 'light'
+  //     setPreference()
+  //   })
 
     return (
       <>
-      <div id='root'>
-        <nav>
-          <img src={Gray_Sig} className="App-logo" alt="Signature" />
-          <section className='navFormat'>
-            <SunAndMoon />
-              <a href="#home">Home</a>
-              <a href="#about">About</a>
-              <a href="#projects">Projects</a>
-              <a href="#contact">Contact</a>
-          </section>
-        </nav>
+        {/* <div className={`mobile-nav-full ${mobileNav ? "open-flex" : "closed-flex"}`}>
+          <IconX onClick={setMobileNav} className="x-mobile" />
+          <div className="mobile-links">
+            <Link onClick={setMobileNav} to="#home">
+              Home
+            </Link>
+            <Link onClick={setMobileNav} to="#about">
+              About
+            </Link>
+            <Link onClick={setMobileNav} to="#projects">
+              Projects
+            </Link>
+            <Link onClick={setMobileNav} to="#contact">
+              Contact
+            </Link>
+          </div>
+        </div>
+      <nav className='nav'>
+        <img src={Gray_Sig} className="App-logo" alt="Signature" />
+        <section className='navFormat'>
+          <SunAndMoon />
+          <Link to="#home">Home</Link>
+          <Link to="#about">About</Link>
+          <Link to="#projects">Projects</Link>
+          <Link to="#contact">Contact</Link>
+        </section>
+      </nav> */}
+      <NavBar />
       <div className='sideBar'>
         <a href='https://github.com/Carlie16604' target='_blank' rel='noreferrer'>
           <img src={GitHub} className='logo-setting' alt="Github"/>
@@ -123,7 +146,7 @@ function App() {
       <About />
       <Projects />
       <Contact />
-    </div>
+    {/* </div> */}
     </>
   ) 
 }
