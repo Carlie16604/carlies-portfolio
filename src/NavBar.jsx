@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
 import './scss/NavBar.scss';
 import SunAndMoon from './sun-and-moon.jsx';
 import Gray_Sig from "./imgs/Gray_Sig.png";
-import IconX from "./imgs/lines.png";
 
 function NavBar() {
     const [mobileNav, setMobileNav] = useState(false);
