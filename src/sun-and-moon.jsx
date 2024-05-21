@@ -1,7 +1,7 @@
 const SunAndMoon = () => {
 
     return (
-    <button class="theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
+    <button class="theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite" style={{padding:'4px 0 0 0'}}>
       <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
         <mask class="moon" id="moon-mask">
           <rect x="0" y="0" width="100%" height="100%" fill="white" />
