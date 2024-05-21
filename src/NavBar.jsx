@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './scss/NavBar.scss';
 import SunAndMoon from './sun-and-moon.jsx';
 import Gray_Sig from "./imgs/Gray_Sig.png";
@@ -8,6 +8,10 @@ import IconX from "./imgs/lines.png";
 function NavBar() {
     const [mobileNav, setMobileNav] = useState(false);
     const [sticky, setSticky] = useState(false);
+
+    const toggleMobileNav = () => {
+        setMobileNav(!mobileNav);
+      };
 
     const handleScroll = () => {
         if (window.scrollY > 10) {
@@ -81,53 +85,36 @@ function NavBar() {
     })
 
     return (
-      <>
-          <img src={IconX} onClick={() => setMobileNav(!mobileNav)} className="x-mobile" />
-          <div className={`mobile-nav-full ${mobileNav ? "open-flex" : "closed-flex"}`}>
-            <div className="mobile-links">
-                <a href="#home">Home</a>
-                <a href="#about">
-                About
-                </a>
-                <a onClick={setMobileNav} href="#projects">
-                Projects
-                </a>
-                <a onClick={setMobileNav} href="#contact">
-                Contact
-                </a>
-                {/* <Link onClick={setMobileNav} to="#contact">
-                Contact
-                </Link> */}
-            </div>
-          </div>
-
-
+        <>
         <nav className='navbar'>
-        <Link href='#home'>
-            <img onClick={scrollToTop} src={Gray_Sig} className="logo-img" alt="Signature" />
-        </Link>
+          <img onClick={scrollToTop} src={Gray_Sig} className="logo-img" alt="Signature" />
           <div className='nav-space'>
             <div className={`nav-container ${sticky ? "cont-sticky" : ""}`}>
-            <div className='nav-links'>
+              <div className='nav-links'>
                 <SunAndMoon />
                 <a href='#home'>Home</a>
                 <a href='#about'>About</a>
                 <a href='#projects'>Projects</a>
                 <a href='#contact'>Contact</a>
-                {/* <Link onClick={() => window.scrollTo(0, 0)} href='#contact'>
-                    Contact
-                </Link> */}
-            </div>
-            <div className='hamburger-menu'>
-                <i onClick={() => setMobileNav(!mobileNav)} className="hamburger-hamb">
-                </i>
-            </div>
+              </div>
+              <div className='hamburger-menu'>
+                <span onClick={toggleMobileNav} className="hamburger-hamb">☰</span>
+              </div>
             </div>
           </div>
         </nav>
+        <div className={`mobile-nav-full ${mobileNav ? "open-flex" : "closed-flex"}`}>
+          <span onClick={toggleMobileNav} className="x-mobile" alt="Close">x</span>
+          <div className="mobile-links">
+            <a onClick={toggleMobileNav} href="#home">Home</a>
+            <a onClick={toggleMobileNav} href="#about">About</a>
+            <a onClick={toggleMobileNav} href="#projects">Projects</a>
+            <a onClick={toggleMobileNav} href="#contact">Contact</a>
+          </div>
+        </div>
       </>
     );
-}
+  };
 
 
 {/* <section className='navFormat'>
