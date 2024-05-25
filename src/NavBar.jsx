@@ -28,7 +28,7 @@ function NavBar() {
       });
     };
 
-    const storageKey = 'theme-preference'
+  const storageKey = 'theme-preference'
 
   const onClick = () => {
     theme.value = theme.value === 'light'
@@ -114,14 +114,4 @@ function NavBar() {
     );
   };
 
-
-{/* <section className='navFormat'>
-    <SunAndMoon />
-    <Link to="#home">Home</Link>
-    <Link to="#about">About</Link>
-    <Link to="#projects">Projects</Link>
-    <Link to="#contact">Contact</Link>
-</section> */}
-
 export default NavBar;
-

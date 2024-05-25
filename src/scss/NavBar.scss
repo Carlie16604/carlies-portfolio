@@ -48,14 +48,6 @@
   @media (max-width: 1200px) {
     padding-left: 1rem;
   }
-
-//   @media (max-width: 900px) {
-//     height: 3rem;
-//   }
-
-//   @media (max-height: 650px) {
-//     height: 2.5rem;
-//   }
 }
 
 .nav-links {
@@ -64,7 +56,7 @@
     gap: 40px;
     width: 100%;
     align-items: center;
-    // scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 .nav-links a {
@@ -81,8 +73,6 @@
 .nav-links i {
     cursor: pointer;
 }
-
-/* hamburger menu */
 
 .hamburger-menu {
     display: none;
@@ -178,6 +168,7 @@
     cursor: pointer;
     z-index: 300;
     color: var(--text-color);
+    scroll-behavior: smooth;
 
     @media (min-width: 600px) {
         display: none;
