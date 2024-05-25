@@ -48,15 +48,7 @@ function App() {
                   <img src="https://skillicons.dev/icons?i=postman,sass,figma" alt='Postman, Figma & Sass logo' title='Postman, SASS, and Figma' />
                 </li>
                 <li>
-                  <img
-                    src={
-                      theme === 'light'
-                        ? 'https://skillicons.dev/icons?i=react,dotnet&theme=light'
-                        : 'https://skillicons.dev/icons?i=react,dotnet'
-                    }
-                    alt='react & dotnet logo'
-                    title='React and DotNet'
-                  />
+                  <img src='https://skillicons.dev/icons?i=react,dotnet' alt='react & dotnet logo' title='React and DotNet' />
                 </li>
               </ul>
             </div>
