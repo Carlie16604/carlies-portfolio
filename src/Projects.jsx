@@ -5,6 +5,7 @@ import lightbulb from './imgs/lightbulbb.png';
 import './scss/Projects.scss';
 import github from './imgs/github.svg';
 import rocketship from './imgs/RocketLaunch.svg';
+import Figma from './imgs/Figma.png'
 
 const Projects = () => {
     return (
@@ -13,6 +14,27 @@ const Projects = () => {
                 <div className='project-content'>
                     <p className='portfolio-title'>Portfolio</p>
                     <h3 className='port-intro'>Take a look at some of my work!</h3>
+                    <div className='projects-grid'>
+                        <div className='pro pro__1'>
+                            <a href='https://github.com/Carlie16604/' target='_blank' rel='noreferrer'>
+                                <div className='pro__img'>
+                                    <img style={{border: 'transparent'}} src={Figma} alt='Figma'/>
+                                </div>
+                            </a>
+                            <div className='pro__text' style={{width: '-webkit-fill-available'}}>
+                            <h3>In Progress! 
+                                <span className='date-class'>(2024)</span>
+                            </h3>
+                                <p id='description'>
+                                    <p className='desc2'>Solo Developer</p>
+                                    {/* <li className='bullets'>More projects coming soon!</li><br/> */}
+                                </p>
+                            <div className='links'>
+                                <a href='https://github.com/Carlie16604/' target='_blank' rel='noreferrer'>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div className='projects-grid'>
                         <div className='pro pro__1'>
                             <a href='https://black-market-50e6.onrender.com' target='_blank' rel='noreferrer'> 
@@ -66,27 +88,6 @@ const Projects = () => {
                                 <a href='https://github.com/Carlie16604/carlies-portfolio' target='_blank' rel='noreferrer'>
                                     <img src={github} className='pro-setting' title='See the code' alt='github icon'/>
                                     <p>The Code</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='projects-grid'>
-                        <div className='pro pro__1'>
-                            <a href='https://github.com/Carlie16604/' target='_blank' rel='noreferrer'>
-                                <div className='pro__img'>
-                                    <img className='pro_selfie' style={{border: 'transparent'}} src={lightbulb} alt='lightbulb'/>
-                                </div>
-                            </a>
-                            <div className='pro__text' style={{width: '-webkit-fill-available'}}>
-                            <h3>Coming Soon! 
-                                <span className='date-class'>(2024)</span>
-                            </h3>
-                                <p id='description'>
-                                    <p className='desc2'>Solo Developer</p>
-                                    {/* <li className='bullets'>More projects coming soon!</li><br/> */}
-                                </p>
-                            <div className='links'>
-                                <a href='https://github.com/Carlie16604/' target='_blank' rel='noreferrer'>
                                 </a>
                             </div>
                         </div>
