@@ -21,14 +21,14 @@ const Projects = () => {
                                     <img style={{border: 'transparent'}} src={Figma} alt='Figma'/>
                                 </div>
                             </a>
-                            <div className='pro__text' style={{width: '-webkit-fill-available'}}>
-                            <h3>In Progress! 
+                            <div className='pro__text' style={{width: '-webkit-fill-available', alignContent:'center'}}>
+                            <h3 style={{fontSize:'2.5rem'}}>In Progress! 
                                 <span className='date-class'>(2024)</span>
                             </h3>
-                                <p id='description'>
+                                {/* <p id='description'> */}
                                     <p className='desc2'>Solo Developer</p>
                                     {/* <li className='bullets'>More projects coming soon!</li><br/> */}
-                                </p>
+                                {/* </p> */}
                             <div className='links'>
                                 <a href='https://github.com/Carlie16604/' target='_blank' rel='noreferrer'>
                                 </a>
