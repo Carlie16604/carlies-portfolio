@@ -1,7 +1,6 @@
 import React from 'react';
 import capstone from './imgs/capstone.png';
 import selfie from './imgs/Carliee.jpg';
-import lightbulb from './imgs/lightbulbb.png';
 import './scss/Projects.scss';
 import github from './imgs/github.svg';
 import rocketship from './imgs/RocketLaunch.svg';
