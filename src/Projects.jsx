@@ -4,6 +4,7 @@ import selfie from './imgs/Carliee.jpg';
 import './scss/Projects.scss';
 import github from './imgs/github.svg';
 import rocketship from './imgs/RocketLaunch.svg';
+import figma from './imgs/figma.svg';
 import Elevate from './imgs/Elevate.png'
 
 const Projects = () => {
@@ -22,17 +23,30 @@ const Projects = () => {
                             </a>
                             <div className='pro__text' style={{width: '-webkit-fill-available', alignContent:'center'}}>
                             <h3 style={{fontSize:'2.5rem'}}>Elevate 
-                                <span className='date-class'>(Aug 2024)</span>
+                                <span className='date-class'>(August 2024)</span>
                             </h3>
                                 <p id='description'>
                                     <p className='desc2'>Solo Developer</p>
-                                    <p className='desc1'>Elevate is a website sample that focuses on design and user experience that is inspired by a real world Pilates studio located in Boulder, CO..</p><br/>
-                                    <li className='bullets'></li>All original design done in <a href='https://www.figma.com/design/QBaaWmJwpHgEG38mw4zpqD/Pilates?node-id=0-1&t=JC7YWsUjIGIdRU2K-0' className='figma'>Figma</a><br/>
-                                    <li className='bullets'></li><br/>
-                                    <li className='bullets'>Elevate is being updated and worked on.</li><br/>
+                                    <p className='desc1'>Elevate is a website sample that focuses on design and user experience.</p>
+                                    <p className='desc1'>Inspired by a real world pilates studio located in Boulder, CO.</p><br/>
+                                    <li className='bullets'>Elevate will be a continuous project, evolving with new features and enhancements over time.</li><br/>
+                                    <li className='bullets'>The goal is to consistently improve the user experience, integrate advanced functionalities, 
+                                    and stay updated with the latest trends in Pilates and wellness to provide a comprehensive and engaging platform for users.</li><br/>
+                                    <li className='bullets'>All original design done in Figma.</li><br/>
+                                    <li className='bullets'>Utilized Tailwind for frontend development while optimizing performance and user interface design.</li><br/>
                                 </p>
                             <div className='links'>
-                                <a href='https://github.com/Carlie16604/' target='_blank' rel='noreferrer'>
+                                <a href='https://github.com/Carlie16604/Elevate' target='_blank' rel='noreferrer'>
+                                    <img src={github} className='pro-setting' title='See the code' alt='github icon'/>
+                                    <p>The Code</p>
+                                </a>
+                                <a href='https://github.com/Carlie16604/Elevate' target='_blank' rel='noreferrer'>
+                                    <img src={rocketship} className='pro-setting' title='View the Website' alt='preview icon'/>
+                                    <p>Live Demo</p>
+                                </a>
+                                <a href='https://github.com/Carlie16604/Elevate' target='_blank' rel='noreferrer'>
+                                    <img src={figma} className='pro-setting' title='View the Website' alt='Figma icon'/>
+                                    <p>Design</p>
                                 </a>
                             </div>
                         </div>
