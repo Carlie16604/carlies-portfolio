@@ -29,7 +29,7 @@ const Projects = () => {
                                     <p className='desc2'>Solo Developer</p>
                                     <p className='desc1'>Elevate is a website sample that focuses on design and user experience.</p>
                                     <p className='desc1'>Inspired by a real world pilates studio located in Boulder, CO.</p><br/>
-                                    <li className='bullets'>Elevate will be a continuous project, evolving with new features and enhancements over time.</li><br/>
+                                    <li className='bullets'>Elevate will be a continuous project, evolving with new features and enhancements over time. It's not currently available for Mobile</li><br/>
                                     <li className='bullets'>The goal is to consistently improve the user experience, integrate advanced functionalities, 
                                     and stay updated with the latest trends in Pilates and wellness to provide a comprehensive and engaging platform for users.</li><br/>
                                     <li className='bullets'>All original design done in Figma.</li><br/>
