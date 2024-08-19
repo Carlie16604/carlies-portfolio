@@ -156,7 +156,6 @@
 
   .desc1,
   .desc2 {
-    // width: 100%;
     font-family: poppins, sans-serif;
   }
 
@@ -222,8 +221,9 @@
   p {
     text-align: center;
     margin: 0;
-    font-size: 15px;
+    font-size: 13px;
     color: var(--text-color);
+    text-transform: uppercase;
 
     &:hover {
       color: rgb(49, 181, 225);
