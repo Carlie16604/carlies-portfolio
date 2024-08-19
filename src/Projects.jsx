@@ -4,7 +4,7 @@ import selfie from './imgs/Carliee.jpg';
 import './scss/Projects.scss';
 import github from './imgs/github.svg';
 import rocketship from './imgs/RocketLaunch.svg';
-import Figma from './imgs/Figma.png'
+import Elevate from './imgs/Elevate.png'
 
 const Projects = () => {
     return (
@@ -15,19 +15,19 @@ const Projects = () => {
                     <h3 className='port-intro'>Take a look at some of my work!</h3>
                     <div className='projects-grid'>
                         <div className='pro pro__1'>
-                            <a href='https://github.com/Carlie16604/' target='_blank' rel='noreferrer'>
-                                <div className='pro__img'>
-                                    <img style={{border: 'transparent'}} src={Figma} alt='Figma'/>
+                            <a href='https://elevate-pilates.netlify.app/' target='_blank' rel='noreferrer'>
+                                <div className='pro__img' style={{backgroundColor: '#DBD8D5'}}>
+                                    <img style={{border: 'transparent', overflow: 'auto', position: 'relative', top: '-20px'}} src={Elevate} alt='Elevate snapshot'/>
                                 </div>
                             </a>
                             <div className='pro__text' style={{width: '-webkit-fill-available', alignContent:'center'}}>
-                            <h3 style={{fontSize:'2.5rem'}}>In Progress! 
-                                <span className='date-class'>(2024)</span>
+                            <h3 style={{fontSize:'2.5rem'}}>Elevate 
+                                <span className='date-class'>(Aug 2024)</span>
                             </h3>
-                                {/* <p id='description'> */}
+                                <p id='description'>
                                     <p className='desc2'>Solo Developer</p>
-                                    {/* <li className='bullets'>More projects coming soon!</li><br/> */}
-                                {/* </p> */}
+                                    <li className='bullets'>More projects coming soon!</li><br/>
+                                </p>
                             <div className='links'>
                                 <a href='https://github.com/Carlie16604/' target='_blank' rel='noreferrer'>
                                 </a>
