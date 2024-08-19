@@ -26,36 +26,13 @@ const Projects = () => {
                             </h3>
                                 <p id='description'>
                                     <p className='desc2'>Solo Developer</p>
-                                    <li className='bullets'>More projects coming soon!</li><br/>
+                                    <p className='desc1'>Elevate is a website sample that focuses on design and user experience that is inspired by a real world Pilates studio located in Boulder, CO..</p><br/>
+                                    <li className='bullets'></li>All original design done in <a href='https://www.figma.com/design/QBaaWmJwpHgEG38mw4zpqD/Pilates?node-id=0-1&t=JC7YWsUjIGIdRU2K-0' className='figma'>Figma</a><br/>
+                                    <li className='bullets'></li><br/>
+                                    <li className='bullets'>Elevate is being updated and worked on.</li><br/>
                                 </p>
                             <div className='links'>
                                 <a href='https://github.com/Carlie16604/' target='_blank' rel='noreferrer'>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='projects-grid'>
-                        <div className='pro pro__1'>
-                            <a href='https://carlie-malone.netlify.app/' target='_blank' rel='noreferrer'>
-                                <div className='pro__img'>
-                                    <img className='pro_selfie' src={selfie} alt='selfie'/>
-                                </div>
-                            </a>
-                            <div className='pro__text'>
-                            <h3>My Portfolio! 
-                                <span className='date-class'>(November 2023)</span>
-                            </h3>
-                                <p id='description'>
-                                    <p className='desc2'>Solo Developer</p>
-                                    <li className='bullets'>This project is focused on UI development in combination of both software development and psychology for excellent user experience.</li><br/>
-                                    <li className='bullets'>Presents current & completed projects as well as demonstrating skills in developing a real world application for clients.</li><br/>
-                                    <li className='bullets'>Excelled with the art of prompt engineering & refined skills with design, React, Vite, and debugging.</li><br/>
-                                    {/* <li className='bullets'>Learned new language, SCSS.</li><br/> */}
-                                </p>
-                            <div className='links'>
-                                <a href='https://github.com/Carlie16604/carlies-portfolio' target='_blank' rel='noreferrer'>
-                                    <img src={github} className='pro-setting' title='See the code' alt='github icon'/>
-                                    <p>The Code</p>
                                 </a>
                             </div>
                         </div>
@@ -88,6 +65,32 @@ const Projects = () => {
                                         <p>Live Demo</p>
                                     </a>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='projects-grid'>
+                        <div className='pro pro__1'>
+                            <a href='https://carlie-malone.netlify.app/' target='_blank' rel='noreferrer'>
+                                <div className='pro__img'>
+                                    <img className='pro_selfie' src={selfie} alt='selfie'/>
+                                </div>
+                            </a>
+                            <div className='pro__text'>
+                            <h3>My Portfolio! 
+                                <span className='date-class'>(November 2023)</span>
+                            </h3>
+                                <p id='description'>
+                                    <p className='desc2'>Solo Developer</p>
+                                    <li className='bullets'>This project is focused on UI development in combination of both software development and psychology for excellent user experience.</li><br/>
+                                    <li className='bullets'>Presents current & completed projects as well as demonstrating skills in developing a real world application for clients.</li><br/>
+                                    <li className='bullets'>Excelled with the art of prompt engineering & refined skills with design, React, Vite, and debugging.</li><br/>
+                                    {/* <li className='bullets'>Learned new language, SCSS.</li><br/> */}
+                                </p>
+                            <div className='links'>
+                                <a href='https://github.com/Carlie16604/carlies-portfolio' target='_blank' rel='noreferrer'>
+                                    <img src={github} className='pro-setting' title='See the code' alt='github icon'/>
+                                    <p>The Code</p>
+                                </a>
                             </div>
                         </div>
                     </div>
