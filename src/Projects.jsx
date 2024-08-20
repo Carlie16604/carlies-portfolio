@@ -32,7 +32,7 @@ const Projects = () => {
                                     <li className='bullets'>Elevate will be a continuous project, evolving with new features and enhancements over time. It's not currently available for Mobile</li><br/>
                                     <li className='bullets'>The goal is to consistently improve the user experience, integrate advanced functionalities, 
                                     and stay updated with the latest trends in Pilates and wellness to provide a comprehensive and engaging platform for users.</li><br/>
-                                    <li className='bullets'>All original design done in Figma.</li><br/>
+                                    <li className='bullets'>Design done in Figma.</li><br/>
                                     <li className='bullets'>Utilized Tailwind for frontend development while optimizing performance and user interface design.</li><br/>
                                 </p>
                             <div className='links'>
