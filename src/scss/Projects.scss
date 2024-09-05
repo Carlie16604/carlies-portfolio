@@ -28,7 +28,7 @@
 
 @media (max-width: 1200px) {
   .project-content {
-    padding: 1rem;
+    padding: 1rem 1rem 5rem 1rem;
   }
 }
 
@@ -36,10 +36,10 @@
   display: grid;
   grid-gap: 5rem;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
+  // grid-template-rows: auto auto;
   height: auto;
   width: 100%;
-
+  
   @media (max-height: 600px) {
     grid-gap: 2rem;
   }
