@@ -8,6 +8,8 @@ import figma from './imgs/figma.svg';
 import Elevate from './imgs/Elevate.png'
 
 const Projects = () => {
+    // https://www.google.com/search?q=scroll+animation+when+hovering+over+image&oq=scroll+animation+when+govering+&gs_lcrp=EgZjaHJvbWUqCQgDECEYChigATIGCAAQRRg5MgkIARAhGAoYoAEyCQgCECEYChigATIJCAMQIRgKGKABMgcIBBAhGJ8FMgcIBRAhGJ8FMgcIBhAhGJ8FMgcIBxAhGJ8FMgcICBAhGJ8FMgcICRAhGJ8F0gEINzE2MGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:58aa8753,vid:hkZUbOQaa9g,st:0
+    // Add hovering effect + layout change
     return (
         <section id='projects' className='projects'>
             <div className='container2'>
