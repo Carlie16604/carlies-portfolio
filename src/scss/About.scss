@@ -38,6 +38,12 @@
     }
   }
 
+  .aboutInfo {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40rem;
+  }
+
   .text-about {
     display: flex;
     flex-direction: column;
@@ -69,6 +75,7 @@
   display: flex;
   margin: 0 auto;
   max-width: 70rem;
+  justify-content: center;
 }
 
 .text-title {
