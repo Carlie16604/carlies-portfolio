@@ -32,11 +32,18 @@
   flex-direction: column;
   
   @media (max-width: 1200px) {
-    & p {
+    padding: 3rem 8rem 8rem 8rem;
+      & p {
       justify-content: center;
     }
-    
-    padding: 1rem 1rem 5rem 1rem;
+  }
+
+  @media (max-width: 700px) {
+    padding: 3rem 3rem 5rem 3rem;
+  }
+  
+  @media (max-width: 500px) {
+    padding: 1rem 1rem 3rem 1rem;
   }
 
 }
