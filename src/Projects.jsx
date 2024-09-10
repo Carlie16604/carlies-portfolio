@@ -65,9 +65,9 @@ const Projects = () => {
                                         <p className='desc2'>USERNAME: ethyl</p>
                                         <p className='desc2'>PASSWORD: 1234</p>
                                         <li className='bullets'>Worked closely with a diverse team of 4 with a 2-week dealine, collaborating on all aspects of the project including project planning, design, development and deployment.</li><br/>
-                                        <li className='bullets'>Responsible for verification, importing & exporting, routes, front & backend debugging, etc.</li><br/>
-                                        <li className='bullets'>Played a pivotal role in building the platform, contributing to the frontend using React.js and backend utilizing Node.js, demonstrating proficiency in full-stack development.</li><br/>
-                                        <li className='bullets'>Excelled in communication, database management, project board, tasks management, human-computer interactions.</li><br/>
+                                        <li className='bullets'>Responsible for verification, importing & exporting, routes, front & backend debugging, database management, etc.</li><br/>
+                                        {/* <li className='bullets'>Played a pivotal role in building the platform, contributing to the frontend using React.js and backend utilizing Node.js, demonstrating proficiency in full-stack development.</li><br/> */}
+                                        {/* <li className='bullets'>Excelled in communication, database management, project board, tasks management, human-computer interactions.</li><br/> */}
                                     </p>
                                 <div className='links'>
                                     <a href='https://github.com/team-black-market/Capstone-Project' target='_blank' rel='noreferrer'>

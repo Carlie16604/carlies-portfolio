@@ -166,9 +166,15 @@
     }
   }
 
+  .description {
+    align-content: center;
+  }
+
   .desc1,
   .desc2 {
     font-family: poppins, sans-serif;
+    // max-width: 40rem;
+    justify-content: center;
   }
 
   .desc1 {
@@ -245,6 +251,8 @@
 
   a {
     text-decoration: none;
+    width: fit-content;
+    align-self: center;
 
     &:hover {
       .pro-setting {
