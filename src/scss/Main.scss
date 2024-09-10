@@ -180,13 +180,13 @@ body {
   background-color: var(--background2);
   display: flex;
   position: relative;
-  padding: 5.5rem 0; 
+  // padding: 5.5rem 0 0 0; 
 
 
   @media (max-width: 1200px) {
     text-align: center;
     justify-content: center;
-    padding: 3rem 0;
+    padding: 4rem 0;
   }
 }
 
@@ -195,19 +195,21 @@ body {
   flex-wrap: wrap;
   height: 35rem;
   transition: transform .5s ease;
+  padding: 5.5rem 0 0 0;
 
   @media (max-width: 1350px) {
-    padding: 0 6rem;
+    padding: 3rem 6rem;
   }
 
   @media (max-width: 1200px) {
     flex-direction: column;
+    padding: 3rem 0 0 0;
     gap: 3rem;
     height: auto;
     text-align: center;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 900px) {
     padding: 0;
   }
 }
