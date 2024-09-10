@@ -18,7 +18,7 @@ const Projects = () => {
                     <h3 className='port-intro'>Take a look at some of my work!</h3>
                     <div className='projects-grid'>
                         <div className='pro pro__1'>
-                            <a href='https://elevate-pilates.netlify.app/' target='_blank' rel='noreferrer'>
+                            <a className='imgLink' href='https://elevate-pilates.netlify.app/' target='_blank' rel='noreferrer'>
                                 <div className='pro__img' style={{backgroundColor: '#DBD8D5'}}>
                                     <img style={{border: 'transparent', overflow: 'auto', position: 'relative', top: '-20px'}} src={Elevate} alt='Elevate snapshot'/>
                                 </div>
@@ -53,7 +53,7 @@ const Projects = () => {
                     </div>
                     <div className='projects-grid'>
                         <div className='pro pro__2'>
-                            <a href='https://black-market-50e6.onrender.com' target='_blank' rel='noreferrer'> 
+                            <a className='imgLink' href='https://black-market-50e6.onrender.com' target='_blank' rel='noreferrer'> 
                                 <img src={capstone} className='pro__img' alt='capstone pro'/>
                             </a>
                             <div className='pro__text'>
@@ -84,7 +84,7 @@ const Projects = () => {
                     </div>
                     <div className='projects-grid'>
                         <div className='pro pro__1'>
-                            <a href='https://carlie-malone.netlify.app/' target='_blank' rel='noreferrer'>
+                            <a className='imgLink' href='https://carlie-malone.netlify.app/' target='_blank' rel='noreferrer'>
                                 <div className='pro__img'>
                                     <img className='pro_selfie' src={selfie} alt='selfie'/>
                                 </div>

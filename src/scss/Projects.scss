@@ -251,8 +251,6 @@
 
   a {
     text-decoration: none;
-    width: fit-content;
-    align-self: center;
 
     &:hover {
       .pro-setting {
@@ -268,6 +266,11 @@
     height: 40px;
     transition: transform .23s ease;
   }
+}
+
+.imgLink {
+  width: fit-content;
+  align-self: center;
 }
 
 @media (max-width: 1200px) {
