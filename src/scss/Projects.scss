@@ -119,6 +119,10 @@
     }
 
     &__text {
+      width: fit-content;
+      max-width: 40rem;
+      align-self: center;
+
       h3 {
         align-items: center;
         color: var(--text-color);
