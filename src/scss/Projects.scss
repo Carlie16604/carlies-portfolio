@@ -106,6 +106,18 @@
       }
     }
 
+    &__2 {
+      flex-direction: row-reverse;
+      gap: 2rem;
+      padding: 2rem;
+      background-color: var(--background);
+      box-shadow: var(--box-shadow);
+
+      @media (max-width: 1200px) {
+        flex-direction: column;
+      }
+    }
+
     &__text {
       h3 {
         align-items: center;
@@ -195,7 +207,7 @@
 }
 
 .bullets {
-  padding: 0 2rem;
+  padding: .5rem 2rem;
 }
 
 .portfolio-title {

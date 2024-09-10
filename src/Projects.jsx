@@ -29,13 +29,11 @@ const Projects = () => {
                             </h3>
                                 <p id='description'>
                                     <p className='desc2'>Solo Developer</p>
-                                    <p className='desc1'>Elevate is a website sample that focuses on design and user experience.</p>
-                                    <p className='desc1'>Inspired by a real world pilates studio located in Boulder, CO.</p><br/>
-                                    <li className='bullets'>Elevate will be a continuous project, evolving with new features and enhancements over time. It's not currently available for Mobile</li><br/>
-                                    <li className='bullets'>The goal is to consistently improve the user experience, integrate advanced functionalities, 
-                                    and stay updated with the latest trends in Pilates and wellness to provide a comprehensive and engaging platform for users.</li><br/>
-                                    <li className='bullets'>Design done in Figma.</li><br/>
-                                    <li className='bullets'>Utilized Tailwind for frontend development while optimizing performance and user interface design.</li><br/>
+                                    <p className='desc1'>Inspired by a real world pilates studio located in Boulder, CO.</p>
+                                    {/* <li className='bullets'>The goal is to consistently improve the user experience, integrate advanced functionalities, 
+                                    and stay updated with the latest trends in Pilates and wellness to provide a comprehensive and engaging platform for users.</li> */}
+                                    <p className='desc1'>Elevate is a website that allows for users to sign up for different Pilates classes with specialized instructors.</p>
+                                    <p className='desc1'>Utilized Tailwind for frontend development while optimizing performance and user interface design.</p>
                                 </p>
                             <div className='links'>
                                 <a href='https://github.com/Carlie16604/Elevate' target='_blank' rel='noreferrer'>
@@ -54,7 +52,7 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className='projects-grid'>
-                        <div className='pro pro__1'>
+                        <div className='pro pro__2'>
                             <a href='https://black-market-50e6.onrender.com' target='_blank' rel='noreferrer'> 
                                 <img src={capstone} className='pro__img' alt='capstone pro'/>
                             </a>

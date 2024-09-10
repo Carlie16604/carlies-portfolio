@@ -192,7 +192,7 @@ body {
 .content {
   display: flex;
   flex-wrap: wrap;
-  height: 40.86rem;
+  height: 35rem;
   transition: transform .5s ease;
 
   @media (max-width: 1350px) {
@@ -233,7 +233,7 @@ body {
   max-width: 773px;
 
   p {
-    max-width: 80vw;
+    max-width: 50vw;
 
     @media (max-width: 500px) {
       max-width: 20rem;
@@ -298,16 +298,22 @@ body {
 
 .skills {
   display: flex;
-  align-items: center;
+  // align-items: center;
   bottom: 0;
-  font-size: 1.7rem;
-  font-family: poppins, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: poppins, sans-serif, bold;
   color: var(--text-color);
+
+  // p {
+  //   display: flex;
+  //   align-items: center;
+  // }
 
   ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 2.5rem;
+    gap: 2rem;
     list-style: none;
 
     @media (max-width: 1200px) {
@@ -347,7 +353,6 @@ body {
   position: relative;
   height: 332px;
   width: 324px;
-  top: 50px;
   animation: borderAnimation 8s ease-in-out infinite;
 
   @media (max-width: 900px) {
