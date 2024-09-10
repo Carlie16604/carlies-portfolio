@@ -33,10 +33,8 @@ function App() {
                 <p>📍 Denver, CO</p>
               </div> 
               <img className='selfie' src={selfie} alt='selfie'/>
-            </div>
             <div className='skills'>
               <p>Tech Stack</p>
-            {/* <div> */}
               <ul>
                 <li>
                   <img src="https://skillicons.dev/icons?i=html,css,ts" alt='html & css' title='HTML, CSS, and TypeScript'/>
@@ -51,7 +49,7 @@ function App() {
                   <img src="https://skillicons.dev/icons?i=figma,sass,postman" alt='Postman, Figma, & Sass logo' title='Postman, SASS, and Figma' />
                 </li>
               </ul>
-            {/* </div> */}
+            </div>
             </div>
           </div>
         </div>

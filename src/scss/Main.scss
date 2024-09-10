@@ -180,6 +180,7 @@ body {
   display: flex;
   position: relative;
   padding: 5.5rem 0; 
+  height: 100vh;
 
 
   @media (max-width: 1200px) {
@@ -192,7 +193,7 @@ body {
 .content {
   display: flex;
   flex-wrap: wrap;
-  height: 35rem;
+  height: 45rem;
   transition: transform .5s ease;
 
   @media (max-width: 1350px) {
@@ -298,10 +299,11 @@ body {
 
 .skills {
   display: flex;
-  // align-items: center;
-  bottom: 0;
+  align-items: center;
+  // bottom: 0;
   font-size: 1.3rem;
   font-weight: 600;
+  position: absolute;
   font-family: poppins, sans-serif, bold;
   color: var(--text-color);
 
