@@ -10,7 +10,7 @@
 .container2 {
   display: flex;
   margin: 0 auto;
-  padding: 5.5rem 4rem 0 4rem;
+  padding: 2rem 4rem 0 4rem;
   max-width: 87rem;
 
   @media (max-width: 1200px) {
@@ -26,11 +26,21 @@
   }
 }
 
-@media (max-width: 1200px) {
-  .project-content {
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
+  @media (max-width: 1200px) {
+    & p {
+      justify-content: center;
+    }
+    
     padding: 1rem 1rem 5rem 1rem;
   }
+
 }
+
 
 .projects-grid {
   display: grid;
@@ -220,11 +230,25 @@
   padding: .5rem 2rem;
 }
 
+.titleContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 .portfolio-title {
     font-family: poppins, sans-serif;
     color: rgb(49, 181, 225);
     font-size: 25px;
     font-weight: 500;
+    width: fit-content;
+    // padding: 0;
+    // position: relative;
+
+    @media (max-width: 1200px) {
+      display: flex;
+      align-self: center;
+    }
 }
 
 .port-intro {

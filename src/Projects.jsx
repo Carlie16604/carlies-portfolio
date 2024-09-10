@@ -14,8 +14,10 @@ const Projects = () => {
         <section id='projects' className='projects'>
             <div className='container2'>
                 <div className='project-content'>
-                    <p className='portfolio-title'>Portfolio</p>
-                    <h3 className='port-intro'>Take a look at some of my work!</h3>
+                    <div className='titleContainer'>
+                        <p className='portfolio-title'>Portfolio</p>
+                        <h3 className='port-intro'>Take a look at some of my work!</h3>
+                    </div>
                     <div className='projects-grid'>
                         <div className='pro pro__1'>
                             <a className='imgLink' href='https://elevate-pilates.netlify.app/' target='_blank' rel='noreferrer'>
