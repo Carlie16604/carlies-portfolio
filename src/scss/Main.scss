@@ -327,6 +327,10 @@ body {
   font-family: poppins, sans-serif, bold;
   color: var(--text-color);
 
+  @media (max-width: 600px) {
+    padding: 3rem 0 0 0;
+  }
+
   // p {
   //   display: flex;
   //   align-items: center;
