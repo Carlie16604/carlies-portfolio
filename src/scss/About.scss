@@ -27,10 +27,10 @@
       width: 324px;
     }
 
-    @media (max-height: 800px) {
-      height: 175px;
-      width: 175px;
-    }
+    // @media (max-height: 800px) {
+    //   height: 300px;
+    //   width: 300px;
+    // }
 
     @media (max-width: 400px) {
       height: 225px;
@@ -39,7 +39,7 @@
   }
 
   .aboutInfo {
-    display: flex;
+    // display: flex;
     flex-wrap: wrap;
     max-width: 40rem;
   }
@@ -80,7 +80,7 @@
 
 .text-title {
   font-size: 25px;
-  font-weight: 500;
+  // font-weight: 500;
   text-decoration: none;
   font-family: poppins, sans-serif;
   color: rgb(49, 181, 225);

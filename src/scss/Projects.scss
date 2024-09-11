@@ -24,6 +24,10 @@
   @media (max-height: 600px) {
     padding: 0 4rem;
   }
+  
+  @media (max-width: 600px) {
+    padding: 0;
+  }
 }
 
 .project-content {

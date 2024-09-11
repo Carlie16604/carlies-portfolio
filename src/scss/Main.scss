@@ -224,9 +224,24 @@ body {
 
   @media (max-width: 1200px) {
     flex-direction: column-reverse;
-    gap: 3rem;
+    gap: 1rem;
     text-align: center;
     padding: 8vh 0 0 0;
+  }
+
+  @media (max-width: 1000px) {
+    // gap: 6rem;
+    padding: 8rem 0 0 0;
+  }
+
+  @media (max-width: 600px) {
+    padding: 2rem 0 0 0;
+    gap: 8rem;
+  }
+  
+  @media (max-height: 700px) {
+    // gap: 8rem;
+    padding: 2rem 0 0 0; 
   }
 }
 
@@ -248,12 +263,12 @@ body {
 
   @media (max-height: 750px) {
     gap: .8rem;
-    padding: 0 2rem;
-  }
-
-  @media (max-height: 650px) {
     padding: 0 4rem;
   }
+
+  // @media (max-height: 650px) {
+  //   padding: 0 4rem;
+  // }
 }
 
 .sideBar {
@@ -376,20 +391,21 @@ body {
   @media (max-width: 900px) {
     height: 300px;
     width: 300px;
-    top: 60px;
+    // top: 60px;
     right: 0;
   }
 
   @media (max-width: 600px) {
     height: 200px;
     width: 200px;
+    top:6rem;
   }
 
-  @media (max-height: 750px) {
-    height: 150px;
-    width: 150px;
-    top: 20px;
-    right: 0;
+  @media (max-height: 650px) {
+    // height: 150px;
+    // width: 150px;
+    // top: 6rem;
+    // right: 0;
   }
 }
 
