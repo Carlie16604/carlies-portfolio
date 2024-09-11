@@ -198,7 +198,6 @@
   .desc1,
   .desc2 {
     font-family: poppins, sans-serif;
-    // max-width: 40rem;
     justify-content: center;
   }
 
@@ -219,7 +218,7 @@
     text-align: center;
     color: var(--text-color);
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: poppins, sans-serif;
     color: rgb(49, 181, 225);
   }
@@ -241,20 +240,11 @@
   padding: .5rem 2rem;
 }
 
-.titleContainer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
 .portfolio-title {
     font-family: poppins, sans-serif;
     color: rgb(49, 181, 225);
     font-size: 25px;
-    font-weight: 500;
-    width: fit-content;
-    // padding: 0;
-    // position: relative;
+    font-weight: 600;
 
     @media (max-width: 1200px) {
       display: flex;

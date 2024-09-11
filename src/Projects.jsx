@@ -14,7 +14,7 @@ const Projects = () => {
         <section id='projects' className='projects'>
             <div className='container2'>
                 <div className='project-content'>
-                    <div className='titleContainer'>
+                    <div>
                         <p className='portfolio-title'>Portfolio</p>
                         <h3 className='port-intro'>Take a look at some of my work!</h3>
                     </div>
