@@ -180,7 +180,7 @@ body {
   background-color: var(--background2);
   display: flex;
   position: relative;
-  // padding: 5.5rem 0 0 0; 
+  min-height: 900px;
 
 
   @media (max-width: 1200px) {
@@ -263,7 +263,7 @@ body {
 
   @media (max-height: 750px) {
     gap: .8rem;
-    padding: 0 4rem;
+    // padding: 0 4rem;
   }
 
   // @media (max-height: 650px) {
@@ -347,9 +347,7 @@ body {
 
     @media (max-height: 600px) {
       justify-content: center;
-      // padding: 3rem 0 0 0;
       position: relative;
-      max-width: 35rem;
       display: flex;
       flex-wrap: wrap;
     }
