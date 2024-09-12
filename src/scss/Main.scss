@@ -4,10 +4,13 @@
   --background-light: #ffffff;
   --background-light2: #f1f1f1;
   --text-light: #000000;
+  --title-light: rgb(49, 181, 225);
 
   --background-dark: #2e2e2e;
   --background-dark2: #4c4d51;
   --text-dark: #ffffff;
+  // --title-dark: #D86E94;
+  --title-dark: #DA7396;
   min-width: 400px;
 }
 
@@ -15,6 +18,7 @@
   --background: var(--background-light);
   --background2: var(--background-light2);
   --text-color: var(--text-light);
+  --title-color: var(--title-light);
   --border: #75767b;
   --border2: #2d2e32;
   --box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
@@ -24,6 +28,7 @@
   --background: var(--background-dark);
   --background2: var(--background-dark2);
   --text-color: var(--text-dark);
+  --title-color: var(--title-dark);
   --border: #2d2e32;
   --border2: #75767b;
   --box-shadow: 0 0 10px rgba(255, 255, 255, 0.17);
@@ -167,7 +172,7 @@ body {
     margin-left: 20px;
 
     &:hover {
-      color: rgb(49, 181, 225);
+      color: var(--title-color);
     }
   }
 

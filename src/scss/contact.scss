@@ -22,7 +22,7 @@
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: rgb(49, 181, 225);
+    color: var(--title-color);
   }
 
   h3 {
@@ -83,7 +83,7 @@
   transition: all 0.23s;
 
   &:hover {
-    color: rgb(49, 181, 225);
+    color: var(--title-color);
   }
 }
 

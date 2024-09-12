@@ -220,7 +220,7 @@
     font-size: 18px;
     font-weight: 600;
     font-family: poppins, sans-serif;
-    color: rgb(49, 181, 225);
+    color: var(--title-color);
   }
 }
 
@@ -242,7 +242,7 @@
 
 .portfolio-title {
     font-family: poppins, sans-serif;
-    color: rgb(49, 181, 225);
+    color: var(--title-color);
     font-size: 25px;
     font-weight: 600;
 
@@ -273,7 +273,7 @@
     text-transform: uppercase;
 
     &:hover {
-      color: rgb(49, 181, 225);
+      color: var(--title-color);
       transition: all 0.23s;
     }
   }
