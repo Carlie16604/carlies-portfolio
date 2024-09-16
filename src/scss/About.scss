@@ -3,7 +3,7 @@
 
   .about-content {
     display: flex;
-    flex-wrap: column;
+    // flex-wrap: column;
     gap: 5rem;
 
     @media (max-width: 1200px) {
@@ -36,9 +36,7 @@
   }
 
   .aboutInfo {
-    // display: flex;
     flex-wrap: wrap;
-    max-width: 40rem;
   }
 
   .text-about {
@@ -71,7 +69,7 @@
 .container3 {
   display: flex;
   margin: 0 auto;
-  max-width: 70rem;
+  max-width: 80rem;
   justify-content: center;
 }
 
