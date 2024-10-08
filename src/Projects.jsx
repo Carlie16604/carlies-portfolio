@@ -46,10 +46,10 @@ const Projects = () => {
                                     <img src={rocketship} className='pro-setting' title='View the Website' alt='preview icon'/>
                                     <p>Live Demo</p>
                                 </a>
-                                <a href='https://www.figma.com/design/QBaaWmJwpHgEG38mw4zpqD/Pilates?node-id=0-1&t=kcBGTzCMwBPg0jTl-0' target='_blank' rel='noreferrer'>
+                                {/* <a href='https://www.figma.com/design/QBaaWmJwpHgEG38mw4zpqD/Pilates?node-id=0-1&t=kcBGTzCMwBPg0jTl-0' target='_blank' rel='noreferrer'>
                                     <img src={figma} className='pro-setting' title='See the Design' alt='Figma icon'/>
                                     <p>Design</p>
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                     </div>
