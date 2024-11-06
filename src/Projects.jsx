@@ -21,7 +21,7 @@ const Projects = () => {
                     <div className='projects-grid'>
                         <div className='pro pro__1'>
                             <a className='imgLink' href='https://elevate-pilates.netlify.app/' target='_blank' rel='noreferrer'>
-                                <div className='pro__img' style={{backgroundColor: '#DBD8D5'}}>
+                                <div className='pro__img' style={{backgroundColor: '#DFDCD8'}}>
                                     <img style={{border: 'transparent', overflow: 'auto', position: 'relative', top: '-20px'}} src={Elevate} alt='Elevate snapshot'/>
                                 </div>
                             </a>
