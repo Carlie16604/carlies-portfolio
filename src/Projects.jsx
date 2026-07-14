@@ -85,7 +85,7 @@ const Projects = () => {
                         </div> */}
                     </div>
                     <div className='projects-grid'>
-                        <div className='pro pro__1'>
+                        <div className='pro pro__2'>
                             <a className='imgLink' href='https://carlie-malone.netlify.app/' target='_blank' rel='noreferrer'>
                                 <div className='pro__img'>
                                     <img className='pro_selfie' src={selfie} alt='selfie'/>
