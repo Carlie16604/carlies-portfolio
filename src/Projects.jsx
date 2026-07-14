@@ -54,7 +54,7 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className='projects-grid'>
-                        <div className='pro pro__2'>
+                        {/* <div className='pro pro__2'>
                             <a className='imgLink' href='https://black-market-50e6.onrender.com' target='_blank' rel='noreferrer'> 
                                 <img src={capstone} className='pro__img' alt='capstone pro'/>
                             </a>
@@ -70,7 +70,7 @@ const Projects = () => {
                                         <li className='bullets'>Responsible for verification, importing & exporting, routes, front & backend debugging, database management, etc.</li><br/>
                                         {/* <li className='bullets'>Played a pivotal role in building the platform, contributing to the frontend using React.js and backend utilizing Node.js, demonstrating proficiency in full-stack development.</li><br/> */}
                                         {/* <li className='bullets'>Excelled in communication, database management, project board, tasks management, human-computer interactions.</li><br/> */}
-                                    </p>
+                                    {/* </p>
                                 <div className='links'>
                                     <a href='https://github.com/team-black-market/Capstone-Project' target='_blank' rel='noreferrer'>
                                         <img src={github} className='pro-setting' title='See the code' alt='github icon'/>
@@ -82,7 +82,7 @@ const Projects = () => {
                                     </a>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className='projects-grid'>
                         <div className='pro pro__1'>
@@ -92,14 +92,14 @@ const Projects = () => {
                                 </div>
                             </a>
                             <div className='pro__text'>
-                            <h3>My Portfolio! 
+                            <h3>My Portfolio 
                                 <span className='date-class'>(November 2023)</span>
                             </h3>
                                 <p id='description'>
                                     <p className='desc2'>Solo Developer</p>
-                                    <li className='bullets'>This project is focused on UI development in combination of both software development and psychology for excellent user experience.</li><br/>
-                                    <li className='bullets'>Presents current & completed projects as well as demonstrating skills in developing a real world application for clients.</li><br/>
-                                    <li className='bullets'>Excelled with the art of prompt engineering & refined skills with design, React, Vite, and debugging.</li><br/>
+                                    <p className='desc1'>This project is focused on UI development in combination of both software development and psychology for excellent user experience.</p>
+                                    <p className='desc1'>Presents current & completed projects as well as demonstrating skills in developing a real world application for clients.</p>
+                                    {/* <p className='bullets'>Excelled with the art of prompt engineering & refined skills with design, React, Vite, and debugging.</p><br/> */}
                                     {/* <li className='bullets'>Learned new language, SCSS.</li><br/> */}
                                 </p>
                             <div className='links'>
