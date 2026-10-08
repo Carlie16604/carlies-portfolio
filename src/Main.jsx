@@ -44,7 +44,7 @@ function App() {
                   <img src="https://skillicons.dev/icons?i=js,nodejs,postgres" alt='javacript, nodejs, and Postgres' title='Javascript, Node.js, and Postgres'/>
                 </li>
                 <li>
-                  <img src='https://skillicons.dev/icons?i=react,vite,tailwind' alt='react, vite, & dotnet logo' title='React, Vite, and DotNet' />
+                  <img src='https://skillicons.dev/icons?i=react,vite,tailwind' alt='react, vite, & tailwind logo' title='React, Vite, and Tailwind' />
                 </li>
                 <li>
                   <img src="https://skillicons.dev/icons?i=figma,sass,postman" alt='Postman, Figma, & Sass logo' title='Postman, SASS, and Figma' />
