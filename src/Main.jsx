@@ -3,7 +3,7 @@ import './scss/Main.scss';
 import './scss/sun-and-moon.scss';
 import GitHub from './imgs/github.svg';
 import LinkedIn from './imgs/linkedin.svg';
-import selfie from './imgs/Carliee.jpg';
+import selfie from './imgs/pfp.jpg';
 import Titles from './Titles.jsx';
 import About from './AboutMe.jsx';
 import Projects from './Projects.jsx';
